@@ -1,5 +1,10 @@
 package psirights;
 
+import psirights.adapter.DBRightsRepository;
+import psirights.adapter.RightsRepositoryMock;
+import psirights.adapter.SwingViewAdapter;
+import psirights.dom.IRightsRepository;
+import psirights.dom.IView;
 import psirights.dom.RightsManager;
 
 public class PSI_Rights {
@@ -9,7 +14,16 @@ public class PSI_Rights {
 	 */
 	public static void main(String[] args) {
 
-		RightsManager rightsManager = new RightsManager();
+		IView view = new SwingViewAdapter();
+		IRightsRepository rightsRepo = new DBRightsRepository();  
+		
+		RightsManager rightsmanager = new RightsManager();
+
+		rightsmanager.uses(view, rightsRepo);
+		view.uses(rightsmanager);
+		
+		int ret = rightsmanager.retrieveUsers("XOPR", "Sys_Informieren");
+		
 	}
 
 }
