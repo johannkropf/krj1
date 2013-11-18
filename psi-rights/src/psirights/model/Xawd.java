@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+// Anwender
 @Entity
 @Table(name = "XAWD")
 public class Xawd {
