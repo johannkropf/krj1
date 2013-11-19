@@ -22,7 +22,8 @@ public class Xawd implements Serializable {
 
 	String xawdname;
 	String xawdbez;
-
+    Integer xawdtype;
+    
 	public Xawd() {
 	}
 

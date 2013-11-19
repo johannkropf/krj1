@@ -48,7 +48,7 @@ public class Xopg implements Serializable{
 		this.xopgbez = xopgbez;
 	}
 
-	public String to_String(){
+	public String toString(){
 		return "Xopg toString -> " + getXopgname() + " " + getXopgbez();
 	}
 
