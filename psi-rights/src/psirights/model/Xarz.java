@@ -1,7 +1,13 @@
 package psirights.model;
 
+import java.io.Serializable;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 // Anwenderzuordnung
@@ -9,6 +15,18 @@ import javax.persistence.Table;
 @Table(name = "XARZ")
 public class Xarz {
 	
+	@ManyToOne
+	@JoinColumn(insertable=false, updatable=false, name = "xawdname", referencedColumnName = "xawdname")
+	Xawd xawd;
+
+	@ManyToOne
+	@JoinColumn(insertable=false, updatable=false, name = "name", referencedColumnName = "name")
+	Xrol xrol;
+	
+/*	@ManyToMany
+	@JoinColumn(insertable=false, updatable=false, name = "name", referencedColumnName = "name")
+	List<Xrgz> xrgz;
+	*/
 	@Id
 	String xarzphysseq;
 
@@ -18,6 +36,8 @@ public class Xarz {
 	String validstart;
 	String validend;
 	
+	public Xarz() {
+	}
 	public String getXarzphysseq() {
 		return xarzphysseq;
 	}
@@ -55,5 +75,17 @@ public class Xarz {
 		this.validend = validend;
 	}
 	
+	public String getXawdBez(){
+		return this.xawd.getXawdbez();
+	}
+
+	public String getXrolDescription(){
+		return this.xrol.getDescription();
+	}
+	
+	public String toString(){
+		return "Xarz toString -> " + getXawdname() + " " + getName() + " " + getXunbname();
+	}
+
 	
 }
