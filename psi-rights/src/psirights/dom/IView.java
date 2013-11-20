@@ -7,7 +7,8 @@ import psirights.model.Xawd;
 
 public interface IView {
 
-	int displayUsers(List<Rights> users);
+	int showUsers(List<Rights> users);
+	int showOperations();
 
 	void uses(RightsManager rightsmanager);
 	

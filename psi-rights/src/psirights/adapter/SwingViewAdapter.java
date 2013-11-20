@@ -1,6 +1,5 @@
 package psirights.adapter;
 
-import java.awt.Cursor;
 import java.awt.Event;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -8,7 +7,6 @@ import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Vector;
 
 import javax.swing.JComponent;
 import javax.swing.JFrame;
@@ -23,7 +21,6 @@ import javax.swing.KeyStroke;
 import javax.swing.ListSelectionModel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.TreePath;
 
 import org.dom4j.Document;
 import org.dom4j.Element;
@@ -44,6 +41,7 @@ public class SwingViewAdapter implements IView {
 	private JTree menuTree;
 	private JXTable jTable1;
 	private JXTable jTableFunc;
+	private RightsManager controller;
 
 	public SwingViewAdapter() {
 		frame = new JFrame();
@@ -219,6 +217,7 @@ public class SwingViewAdapter implements IView {
 
 				// TODO Info an Controller,
 				// displayOperations(menuInfo.getMenuObject());
+				controller.showOperations(this.getPsiObject());
 
 			}
 		}
@@ -248,6 +247,7 @@ public class SwingViewAdapter implements IView {
 		}
 
 		// TODO Info an controller - displayUser();
+		controller.showUsers(this.getPsiObject(), this.getPsiOperations());
 
 	}
 
@@ -269,7 +269,7 @@ public class SwingViewAdapter implements IView {
 
 	@Override
 	public void uses(RightsManager rightsmanager) {
-		// TODO Auto-generated method stub
+		this.controller = rightsmanager;
 
 	}
 
@@ -295,9 +295,17 @@ public class SwingViewAdapter implements IView {
 	}
 
 	@Override
-	public int displayUsers(List<Rights> users) {
+	public int showUsers(List<Rights> users) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+
+	@Override
+	public int showOperations() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
 
 }

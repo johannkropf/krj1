@@ -18,22 +18,26 @@ public class RightsManager {
 		this.rightsRepository = rightsRepo;
 	}
 
-	public int retrieveUsers(String psiObject, String psiOperations ) {
-		this.rights = this.rightsRepository.findUsersForOperations(psiObject, psiOperations);
-		return rights.size();
-	}
-
-	public void displayUsers() {
-		view.displayUsers(this.rights);
-		return;
-	}
-
 	public Object getView() {
 		return this.view;
 	}
 
 	public Object getRepo() {
 		return this.rightsRepository;
+	}
+
+	public int showOperations(String psiObject) {
+		// retrieveOperations
+		// view.showOperations
+		
+		return 0;
+		
+	}
+
+	public int showUsers(String psiObject, String psiOperations) {
+		this.rights = this.rightsRepository.findUsersForOperations(psiObject, psiOperations);
+		view.showUsers(this.rights);
+		return rights.size();
 	}
 
 	

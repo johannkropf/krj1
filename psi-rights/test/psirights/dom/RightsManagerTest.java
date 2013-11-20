@@ -37,7 +37,7 @@ public class RightsManagerTest {
 	
 	@Test
 	public void testgetUsers() {
-		int ret = rightsmanager.retrieveUsers("XOPR", "Sys_Informieren");
+		int ret = rightsmanager.showUsers("XOPR", "Sys_Informieren");
 		assertEquals("Retrieved lines must be 2", 2, ret);
 	}
 
