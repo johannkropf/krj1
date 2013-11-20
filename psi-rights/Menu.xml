@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Arbeitsplatz>Arbeitsplatz
+	<System>System
+		<Meldungsprotokoll  object="XMPS">Meldungsprotokoll</Meldungsprotokoll>
+		<Drucker  object="XDRC">Drucker</Drucker>
+		<Konfiguration>Konfiguration
+			<Parameterstruktur object="XPAS">Parameterstruktur</Parameterstruktur>
+			<Parameter object="XPAW">Parameter</Parameter>
+			<Nummernkreise object="XNUM">Nummernkreise</Nummernkreise>
+			<EURO-Stichtagsumstellung object="PEUR">EURO-Umstellung</EURO-Stichtagsumstellung>
+			<Datenanalyse_und_-korrektur object="PKOP">Datenanalyse_und_-korrektur</Datenanalyse_und_-korrektur>
+			<Geschäftsjahr>Geschäftsjahr
+				<Geschäftsjahreskopf_Finanzbuchhaltung_Kostenrechnung object="KPGJ">Geschäftsjahreskopf_Finanzbuchhaltung_Kostenrechnung</Geschäftsjahreskopf_Finanzbuchhaltung_Kostenrechnung>
+				<Geschäftsperiode_Finanzbuchhaltung-Kostenrechnung object="KPGP">Geschäftsperiode_Finanzbuchhaltung-Kostenrechnung</Geschäftsperiode_Finanzbuchhaltung-Kostenrechnung>
+				<Geschäftsjahr_Finanzbuchhaltung-Kostenrechnung object="KPGS">Geschäftsjahr_Finanzbuchhaltung-Kostenrechnung</Geschäftsjahr_Finanzbuchhaltung-Kostenrechnung>
+				<Geschäftsjahreskopf_Einkaufsstatistik object="PEGJ">Geschäftsjahreskopf_Einkaufsstatistik</Geschäftsjahreskopf_Einkaufsstatistik>
+				<Geschäftsperiode_Einkaufsstatistik object="PEGP">Geschäftsperiode_Einkaufsstatistik</Geschäftsperiode_Einkaufsstatistik>
+				<Geschäftsjahreskopf_Materialwirtschaft object="PMGJ">Geschäftsjahreskopf_Materialwirtschaft</Geschäftsjahreskopf_Materialwirtschaft>
+				<Geschäftsperiode_Materialwirtschaft object="PMGP">Geschäftsperiode_Materialwirtschaft</Geschäftsperiode_Materialwirtschaft>
+			</Geschäftsjahr>
+			<Belegkonfiguration object="PDRM">Belegkonfiguration</Belegkonfiguration>
+			<PSIpenta_Datenbank-Flags object="XDBS">PSIpenta_Datenbank-Flags</PSIpenta_Datenbank-Flags>
+			<Angemeldete_Anwender object="XACT">Angemeldete_Anwender</Angemeldete_Anwender>
+		</Konfiguration>
+		<Workflow>Workflow
+			<Modellierung>Modellierung
+				<Ereignis object="XBEV">Ereignis</Ereignis>
+				<Systemmeldungen>Systemmeldungen
+					<Information_Flow_Manager object="XIFM">Information_Flow_Manager</Information_Flow_Manager>
+					<Information_Flow_für_Workflow object="XIFW">Information_Flow_für_Workflow</Information_Flow_für_Workflow>
+					<Workflow-Protokoll object="XWFP">Workflow-Protokoll</Workflow-Protokoll>
+				</Systemmeldungen>
+			</Modellierung>
+		</Workflow>
+		<Hintergrundauftrag>Hintergrundauftrag
+			<Kopf object="XHAK">Hintergrundauftragskopf</Kopf>
+			<Position object="XHAP">Hintergrundauftragsposition</Position>
+			<Struktur object="XHAF">Hintergrundauftrag</Struktur>
+		</Hintergrundauftrag>
+		<Organisationsmodell>Organisationsmodell
+			<Person object="XPER">Person</Person>
+			<Adresse_Basis object="XADR">Adresse_Basis</Adresse_Basis>
+			<Rolle object="XROL">Rolle</Rolle>
+			<Anwender object="XAWD">Anwender</Anwender>
+			<Anwenderzuordnung object="XARZ">Anwenderzuordnung</Anwenderzuordnung>
+			<Kompetenz object="XOPG">Kompetenz</Kompetenz>
+			<Anwendungsoperation object="XOPR">Anwendungsoperation</Anwendungsoperation>
+			<Feldvalidierung object="XOPF">Feldvalidierung</Feldvalidierung>
+			<Kompetenzzuordnung object="XRGZ">Kompetenzzuordnung</Kompetenzzuordnung>
+			<Anwendungsoperationszuordnung object="XOPZ">Anwendungsoperationszuordnung</Anwendungsoperationszuordnung>
+			<Bereich object="XUNB">Bereich</Bereich>
+			<Ebene object="XUNE">Ebene</Ebene>
+		</Organisationsmodell>
+		<Fabrikkalender>Fabrikkalender
+			<Tagesart_Fabrikkalender object="XART">Tagesart_Fabrikkalender</Tagesart_Fabrikkalender>
+			<Tageskategorie_Fabrikkalender object="XKAT">Tageskategorie_Fabrikkalender</Tageskategorie_Fabrikkalender>
+			<Fabrikkalender_Regel object="XFBR">Fabrikkalender_Regel</Fabrikkalender_Regel>
+			<Fabrikkalender_Abweichung object="XFBA">Fabrikkalender_Abweichung</Fabrikkalender_Abweichung>
+			<Fabrikkalender object="XFBK">Fabrikkalender</Fabrikkalender>
+		</Fabrikkalender>
+		<Multisite>Multisite
+			<Werk-Unternehmenseinheit object="XWRK">Werk-Unternehmenseinheit</Werk-Unternehmenseinheit>
+			<Werksbeziehung object="XWKB">Werksbeziehung</Werksbeziehung>
+			<Werks--Unternehmenseinheit-Objekt-Zuordnung object="XWOZ">Werks--Unternehmenseinheit-Objekt-Zuordnung</Werks--Unternehmenseinheit-Objekt-Zuordnung>
+			<Werk-Unternehmenseinheit_im_Auftragsmanagement object="PWRK">Werk-Unternehmenseinheit_im_Auftragsmanagement</Werk-Unternehmenseinheit_im_Auftragsmanagement>
+			<Werksbeziehung_im_Auftragsmanagement object="PWKB">Werksbeziehung_im_Auftragsmanagement</Werksbeziehung_im_Auftragsmanagement>
+			<Werksbeziehungs-Auftragsart-Umsetzung object="PWBA">Werksbeziehungs-Auftragsart-Umsetzung</Werksbeziehungs-Auftragsart-Umsetzung>
+			<Werk-Zentralbereichszuordnung object="XWZZ">Werk-Zentralbereichszuordnung</Werk-Zentralbereichszuordnung>
+			<Werksbeziehung-Versandart-Transportzeit object="PWVT">Werksbeziehung-Versandart-Transportzeit</Werksbeziehung-Versandart-Transportzeit>			
+		</Multisite>
+		<Objektinterface object="POBI">Objektinterface</Objektinterface>
+		<Dialogobjekt object="XOFF">Dialogobjekt</Dialogobjekt>
+	</System>
+	<Basis>Basis
+		<Grunddaten>Grunddaten
+			<Adresse object="PADR">Adresse</Adresse>
+			<Adresse_FiBu-Daten object="PAFI">Adresse_FiBu-Daten</Adresse_FiBu-Daten>
+			<Artikel>Artikel
+				<Artikel object="PART">Artikel</Artikel>
+				<Artikel_werksunabhängig object="PAWU">Artikel_werksunabhängig</Artikel_werksunabhängig>
+				<Artikel_werksspezifisch_im_logistischen_Unternehmen object="PAWL">Artikel_werksspezifisch_im_logistischen_Unternehmen</Artikel_werksspezifisch_im_logistischen_Unternehmen>
+				<Artikelstruktur object="PAST">Artikelstruktur</Artikelstruktur>
+				<Preistabelle object="PPRK">Preistabelle</Preistabelle>
+				<Durchschnittspreis_synchronisieren object="PDPS">Durchschnittspreis_synchronisieren</Durchschnittspreis_synchronisieren>
+				<Preistabelle_bereinigen object="PPTB">Preistabelle_bereinigen</Preistabelle_bereinigen>
+				<Änderungsindex_Konstruktion object="OAIK">Änderungsindex_Konstruktion</Änderungsindex_Konstruktion>
+			</Artikel>
+			<Artikel-Seriennummer>Artikel-Seriennummer
+				<Artikel-Seriennummerntyp object="PSET">Artikel-Seriennummerntyp</Artikel-Seriennummerntyp>
+				<Artikel-Seriennummer object="PSER">Artikel-Seriennummer</Artikel-Seriennummer>
+				<Artikel-Serien-Nr-Struktur_-mehrstufig- object="PSEM">Artikel-Serien-Nr-Struktur_-mehrstufig-</Artikel-Serien-Nr-Struktur_-mehrstufig->
+				<Artikel-Seriennummernjournal object="PSEJ">Artikel-Seriennummernjournal</Artikel-Seriennummernjournal>
+			</Artikel-Seriennummer>
+			<Belegungseinheit>Belegungseinheit
+				<Belegungseinheit object="PBEL">Belegungseinheit</Belegungseinheit>
+				<Belegungseinheiten-Stundensatz object="PSSB">Belegungseinheiten-Stundensatz</Belegungseinheiten-Stundensatz>
+				<Übergangszeit_zwischen_Belegungseinheiten object="PUGZ">Übergangszeit_zwischen_Belegungseinheiten</Übergangszeit_zwischen_Belegungseinheiten>
+			</Belegungseinheit>
+			<Belegungseinheiten-Hierarchie>Belegungseinheiten-Hierarchie
+				<Belegungseinheiten-Hierarchiebeziehung object="PBEH">Belegungseinheiten-Hierarchiebeziehung</Belegungseinheiten-Hierarchiebeziehung>
+				<Belegungseinheiten-Hierarchie object="PBHI">Belegungseinheiten-Hierarchie</Belegungseinheiten-Hierarchie>
+				<Belegungseinheiten-Hierarchiestruktur object="PBHS">Belegungseinheiten-Hierarchiestruktur</Belegungseinheiten-Hierarchiestruktur>
+				<Belegungseinheiten-Hierarchie_einstufige_Belegungseinheiten-Verwendung object="PBHE">Belegungseinheiten-Hierarchie_einstufige_Belegungseinheiten-Verwendung</Belegungseinheiten-Hierarchie_einstufige_Belegungseinheiten-Verwendung>
+				<Belegungseinheiten-Hierarchie_mehrstufige_Belegungseinheiten-Verwendung object="PBHM">Belegungseinheiten-Hierarchie_mehrstufige_Belegungseinheiten-Verwendung</Belegungseinheiten-Hierarchie_mehrstufige_Belegungseinheiten-Verwendung>
+			</Belegungseinheiten-Hierarchie>
+			<Packmittel>Packmittel
+				<Interne_Packmittelstückliste object="OIPM">Interne_Packmittelstückliste</Interne_Packmittelstückliste>
+				<Artikel-Packmittelstruktur object="OAPS">Artikel-Packmittelstruktur</Artikel-Packmittelstruktur>
+				<Artikel-Packmittelverwendung object="OAPV">Artikel-Packmittelverwendung</Artikel-Packmittelverwendung>
+				<Packmittelgruppe object="OPGR">Packmittelgruppe</Packmittelgruppe>
+			</Packmittel>
+			<Kaufmännische_Objekte>Kaufmännische_Objekte
+				<Kostenstelle>Kostenstelle
+					<Kostenstelle object="PKOS">Kostenstelle</Kostenstelle>
+					<Kostenstellen-Stundensatz object="PSSK">Kostenstellen-Stundensatz</Kostenstellen-Stundensatz>
+					<Bezugsgrößen object="KPPK">Bezugsgrößen</Bezugsgrößen>
+				</Kostenstelle>
+				<Bank object="PBAN">Bank</Bank>
+				<Bankverbindung object="PBAV">Bankverbindung</Bankverbindung>
+				<Prüftabelle_für_Umsatzsteuer-ID-Nr object="PUST">Prüftabelle_für_Umsatzsteuer-ID-Nr</Prüftabelle_für_Umsatzsteuer-ID-Nr>
+				<Kontierung>Kontierung
+					<Konto object="PKTO">Konto</Konto>
+					<Kostenart object="PKOA">Kostenart</Kostenart>
+					<Saisonvariatoren object="PSVA">Saisonvariatoren</Saisonvariatoren>
+					<Kontierungstabelle object="PKON">Kontierungstabelle</Kontierungstabelle>
+					<Bewegungsart object="PBWA">Bewegungsart</Bewegungsart>
+					<Zuordnung_Kostenart-Kostensplit object="PKSP">Zuordnung_Kostenart-Kostensplit</Zuordnung_Kostenart-Kostensplit>
+					<Kostenträgertabelle object="PKTT">Kostenträgertabelle</Kostenträgertabelle>
+					<Klassifikation_-Steuerart-_Konto- object="PSKL">Klassifikation_-Steuerart-_Konto-</Klassifikation_-Steuerart-_Konto->
+					<Steuerartfindung object="PEUS">Steuerartfindung</Steuerartfindung>
+					<Kontofindung_Ausgang object="PKFA">Kontofindung_Ausgang</Kontofindung_Ausgang>
+				</Kontierung>
+			</Kaufmännische_Objekte>
+			<Materialtabelle>Materialtabelle
+				<Kopf object="PMTK">Materialtabellenkopf</Kopf>
+				<Position object="PMTP">Materialtabellenposition</Position>
+				<Struktur object="PEMA">Materialtabellenstruktur</Struktur>
+				<Artikelverwendung_in_Materialtabelle object="PEMV">Artikelverwendung_in_Materialtabelle</Artikelverwendung_in_Materialtabelle>
+			</Materialtabelle>
+			<Grunddaten-Stückliste>Grunddaten-Stückliste
+				<Kopf object="PSTK">Stücklistenkopf</Kopf>
+				<Position object="PSTP">Stücklistenposition</Position>
+				<Baugruppenstückliste object="PESA">Baugruppenstückliste</Baugruppenstückliste>
+				<Strukturstückliste object="PMSA">Strukturstückliste</Strukturstückliste>
+				<Mengenübersicht_Stückliste object="PSAM">Mengenübersicht_Stückliste</Mengenübersicht_Stückliste>
+				<Einstufige_Artikelverwendung_in_Stücklisten object="PESV">Einstufige_Artikelverwendung_in_Stücklisten</Einstufige_Artikelverwendung_in_Stücklisten>
+				<Mehrstufige_Artikelverwendung_in_Stücklisten object="PMSV">Mehrstufige_Artikelverwendung_in_Stücklisten</Mehrstufige_Artikelverwendung_in_Stücklisten>
+				<Artikelverwendung_in_Stücklisten-Mengenübersicht object="PSVM">Artikelverwendung_in_Stücklisten-Mengenübersicht</Artikelverwendung_in_Stücklisten-Mengenübersicht>
+				<Nebenprodukt-Komponenten-Anteil object="ONKA">Nebenprodukt-Komponenten-Anteil</Nebenprodukt-Komponenten-Anteil>
+			</Grunddaten-Stückliste>
+			<Kapazitätstabelle>Kapazitätstabelle
+				<Kopf object="PKTK">Kapazitätstabellenkopf</Kopf>
+				<Position object="PKTP">Kapazitätstabellenposition</Position>
+				<Struktur object="PEKA">Kapazitätstabelle</Struktur>
+				<Belegungseinheitverwendung_in_Kapazitätstabellen object="PEVK">Belegungseinheitverwendung_in_Kapazitätstabellen</Belegungseinheitverwendung_in_Kapazitätstabellen>
+			</Kapazitätstabelle>
+			<Arbeitsplan>Arbeitsplan
+				<Kopf object="PAPK">Arbeitsplankopf</Kopf>
+				<Position object="PAPP">Arbeitsplanposition</Position>
+				<Struktur object="PEAA">Arbeitsplan</Struktur>
+				<Arbeitsgangkatalog object="OAGK">Arbeitsgangkatalog</Arbeitsgangkatalog>
+				<Belegungseinheitverwendung_in_APL object="PEAV">Belegungseinheitverwendung_in_APL</Belegungseinheitverwendung_in_APL>
+				<Übergangszeit_zwischen_Grunddaten-Arbeitsgängen object="PUGG">Übergangszeit_zwischen_Grunddaten-Arbeitsgängen</Übergangszeit_zwischen_Grunddaten-Arbeitsgängen>
+				<Arbeitsplanschritt object="PAPS">Arbeitsplanschritt</Arbeitsplanschritt>
+				<Arbeitsgangreferenzierung_umwandeln object="PARK">Arbeitsgangreferenzierung_umwandeln</Arbeitsgangreferenzierung_umwandeln>
+			</Arbeitsplan>
+			<mitzuliefernde_Unterlagen>mitzuliefernde_Unterlagen
+				<Mitzuliefernde_Unterlage object="PMUL">Mitzuliefernde_Unterlage</Mitzuliefernde_Unterlage>
+				<Mitzuliefernde_Artikelunterlage object="PMUA">Mitzuliefernde_Artikelunterlage</Mitzuliefernde_Artikelunterlage>
+				<Mitzuliefernde_Auftragsunterlage object="PMUF">Mitzuliefernde_Auftragsunterlage</Mitzuliefernde_Auftragsunterlage>
+			</mitzuliefernde_Unterlagen>
+			<Lieferrestriktionen>Lieferrestriktionen
+				<Lieferrestriktion object="PRST">Lieferrestriktion</Lieferrestriktion>
+				<Lieferrestriktion_mit_Bezug object="PRSB">Lieferrestriktion_mit_Bezug</Lieferrestriktion_mit_Bezug>
+			</Lieferrestriktionen>
+			<Grunddatenfreigabejournale>Grunddatenfreigabejournale
+				<Konstruktionsfreigabejournal object="PKFJ">Konstruktionsfreigabejournal</Konstruktionsfreigabejournal>
+				<Fertigungsfreigabejournal object="PFFJ">Fertigungsfreigabejournal</Fertigungsfreigabejournal>
+			</Grunddatenfreigabejournale>
+			<Metallteuerungszuschlag>Metallteuerungszuschlag
+				<Metallteuerungszuschlag object="OMTZ">Metallteuerungszuschlag</Metallteuerungszuschlag>
+				<Metallteuerungszuschlagjournal object="OMJL">Metallteuerungszuschlagjournal</Metallteuerungszuschlagjournal>
+			</Metallteuerungszuschlag>
+			<BO-Zuordnung>BO-Zuordnung
+				<BO-Zuordnungsregel object="FBZR">BO-Zuordnungsregel</BO-Zuordnungsregel>
+				<BO-Zuordnung object="FBOZ">BO-Zuordnung</BO-Zuordnung>
+			</BO-Zuordnung>
+			<Tabellen>Tabellen
+				<Attribute object="PATT">Attribute</Attribute>
+				<Ersatzteilarten object="PETA">Ersatzteilarten</Ersatzteilarten>
+				<Auftragsart object="PAAR">Auftragsart</Auftragsart>
+				<Artikelstatus object="PASS">Artikelstatus</Artikelstatus>
+				<Dispositionstabellen>Dispositionstabellen
+					<Disponent object="PDIS">Disponent</Disponent>
+					<Dispositionskreis object="PDKR">Dispositionskreis</Dispositionskreis>
+				</Dispositionstabellen>
+				<Mengeneinheit>Mengeneinheit
+					<Mengeneinheit object="PMEE">Mengeneinheit</Mengeneinheit>
+					<Umrechnung_zwischen_Mengeneinheiten object="PMEU">Umrechnung_zwischen_Mengeneinheiten</Umrechnung_zwischen_Mengeneinheiten>
+				</Mengeneinheit>
+				<Prozentverteilung object="PPRZ">Prozentverteilung</Prozentverteilung>
+				<Artenschlüssel>Artenschlüssel
+					<Artenschlüssel-Arbeitsplan object="PAPA">Artenschlüssel-Arbeitplan</Artenschlüssel-Arbeitsplan>
+					<Artenschlüssel-Stückliste object="PSTA">Artenschlüssel-Stückliste</Artenschlüssel-Stückliste>
+				</Artenschlüssel>
+				<Qualitätsmangel object="PQUM">Qualitätsmangel</Qualitätsmangel>
+				<Mehrverbrauchs-Storno-Gruppe object="PMSG">Mehrverbrauchs-Storno-Gruppe</Mehrverbrauchs-Storno-Gruppe>
+				<Gruppen>Gruppen
+					<Preisgruppe object="PPGR">Preisgruppe</Preisgruppe>
+					<Rabattgruppe object="ORGR">Rabattgruppe</Rabattgruppe>
+					<Produktgruppe object="PPRG">Produktgruppe</Produktgruppe>
+					<Produktgruppen-Zolltarifnummern-Beziehung object="PPZB">Produktgruppen-Zolltarifnummern-Beziehung</Produktgruppen-Zolltarifnummern-Beziehung>
+					<Ländergruppe object="PLGR">Ländergruppe</Ländergruppe>
+					<Warengruppe object="PWGR">Warengruppe</Warengruppe>
+					<Materialart object="PMRT">Materialart</Materialart>
+					<Materialklasse object="PAKL">Materialklasse</Materialklasse>
+					<Materialbehandlung object="PABH">Materialbehandlung</Materialbehandlung>
+					<Materialunterkategorie object="PAUK">Materialunterkategorie</Materialunterkategorie>
+					<Abwertungsgruppe object="PABW">Abwertungsgruppe</Abwertungsgruppe>
+				</Gruppen>
+				<Zolltarif-Nummer object="PZTN">Zolltarif-Nummer</Zolltarif-Nummer>
+				<Legierungsart object="PLEG">Legierungsart</Legierungsart>
+				<Branche object="PBRC">Branche</Branche>
+				<Lager>Lager
+					<Lagerort object="PLAG">Lagerort</Lagerort>
+					<Inventurzählzyklus object="PCCY">Inventurzählzyklus</Inventurzählzyklus>
+				</Lager>
+				<Steuertabellen>Steuertabellen
+					<Euro-Steuer object="PSTE">Euro-Steuer</Euro-Steuer>
+					<US-Steuer object="PSTU">US-Steuer</US-Steuer>
+					<Klassifikation_-Steuerart-_Konto- object="PSKL">Klassifikation_-Steuerart-_Konto-</Klassifikation_-Steuerart-_Konto->
+				</Steuertabellen>
+				<Land object="PLND">Land</Land>
+				<Sprache object="PSPR">Sprache</Sprache>
+				<Währung object="PWAE">Währung</Währung>
+				<Zahlungen>Zahlungen
+					<Zahlungsziel>Zahlungsziel
+						<Zahlungsziel object="PZZI">Zahlungsziel</Zahlungsziel>
+						<Zahlungsziel_Fremdsprache object="PZZF">Zahlungsziel_Fremdsprache</Zahlungsziel_Fremdsprache>
+					</Zahlungsziel>
+					<Zahlungsbedingungen>Zahlungsbedingungen
+						<Zahlungsbedingungen object="PZBD">Zahlungsbedingungen</Zahlungsbedingungen>
+						<Zahlungsbedingungen_Fremdsprache object="PZBF">Zahlungsbedingungen_Fremdsprache</Zahlungsbedingungen_Fremdsprache>
+					</Zahlungsbedingungen>
+					<Zahlungsart object="PZAA">Zahlungsart</Zahlungsart>
+				</Zahlungen>
+				<Zu-_oder_Abschlag>Zu-_oder_Abschlag
+					<Zu-_oder_Abschlag object="PZAB">Zu-_oder_Abschlag</Zu-_oder_Abschlag>
+					<Zu-_oder_Abschlag_Fremdsprache object="PZAF">Zu-_oder_Abschlag_Fremdsprache</Zu-_oder_Abschlag_Fremdsprache>
+				</Zu-_oder_Abschlag>
+				<Benennungskatalog object="PBEK">Benennungskatalog</Benennungskatalog>
+			</Tabellen>
+		</Grunddaten>
+		<Engineering>Engineering
+			<Engineering-Stückliste>Engineering-Stückliste
+				<Kopf object="NSTK">Engineering-Stücklistenkopf</Kopf>
+				<Position object="NSTP">Engineerring-Stücklistenposition</Position>
+				<Baugruppe object="NESA">Engineering-Baugruppenstückliste</Baugruppe>
+				<Struktur object="NMSA">Engineering-Strukturstückliste</Struktur>
+				<Mengenübersicht_Engineering-Stückliste object="NSAM">Mengenübersicht_Enigineering-Stückliste</Mengenübersicht_Engineering-Stückliste>
+				<Einstufige_Artikelverwendung_in_Engineering-STL object="NESV">Einstufige_Artikelverwendung_in_Engineering-STL</Einstufige_Artikelverwendung_in_Engineering-STL>
+				<Mehrstufige_Artikelverwendung_in_Engineering-STL object="NMSV">Mehrstufige_Artikelverwendung_in_Engineering-STL</Mehrstufige_Artikelverwendung_in_Engineering-STL>
+				<Artikelverwendung_in_Engineering-STL-Mengenübersicht object="NSVM">Artikelverwendung_in_Engineering-STL-Mengenübersicht</Artikelverwendung_in_Engineering-STL-Mengenübersicht>
+			</Engineering-Stückliste>
+		</Engineering>
+		<Klassifizierung>Klassifizierung
+			<Klasse object="PKLS">Klasse</Klasse>
+			<Klassenzuordnung object="PKLZ">Klassenzuordnung</Klassenzuordnung>
+			<Klassenexplorer object="PKEX">Klassenexplorer</Klassenexplorer>
+			<Klassifizierungsstruktur object="PKLB">Klassifizierungsstruktur</Klassifizierungsstruktur>
+			<Sachmerkmal object="PSMM">Sachmerkmal</Sachmerkmal>
+			<Sachmerkmalswert object="PSMW">Sachmerkmalswert</Sachmerkmalswert>
+			<Sachmerkmalsleiste object="PSML">Sachmerkmalsliste</Sachmerkmalsleiste>
+			<Objektzuordnung object="POBZ">Objektzuordnung</Objektzuordnung>
+			<Objektwertzuordnung object="POWZ">Objektwertzuordnung</Objektwertzuordnung>
+			<Objektsuche object="POSU">Objektsuche</Objektsuche>
+		</Klassifizierung>
+		<Dokument>Dokument
+			<Dokument object="XDMR">Dokument</Dokument>
+			<Dokumenten_Volltextsuche object="XDMF">Dokumenten_Volltextsuche</Dokumenten_Volltextsuche>
+			<Dokumententyp object="XDTY">Dokumententyp</Dokumententyp>
+			<externes_Dokumentenverwaltungssystem object="XDXS">externes_Dokumentenverwaltungssystem</externes_Dokumentenverwaltungssystem>
+		</Dokument>
+	</Basis>
+	<Auftragsmanagement>Auftragsmanagement
+		<Projekt>Projekt
+			<Projektklammer object="PPRO">Projektklammer</Projektklammer>
+			<Projekt-_-Kundenvorgangsakte object="PPST">Projekt-_-Kundenvorgangsakte</Projekt-_-Kundenvorgangsakte>
+		</Projekt>
+		<Vertrieb>Vertrieb
+			<Kunde object="PKUN">Kunde</Kunde>
+			<Kunde_Finanzbuchhaltungsdaten object="PKFI">Kunde_Finanzbuchhaltungsdaten</Kunde_Finanzbuchhaltungsdaten>
+			<Kunden-Merkmale object="PKUM">Kunden-Merkmale</Kunden-Merkmale>
+			<Kunden-Artikelreferenz>Kunden-Artikelreferenz
+				<Allgemeine_Sicht object="PKRF">Kunden-Artikelreferenz_Allgemein</Allgemeine_Sicht>
+				<Artikelsicht object="PKRA">Kunden-Artikelreferenz_Artikelsicht</Artikelsicht>
+				<Kundensicht object="PKRU">Kunden-Artikelreferenz_Kundensicht</Kundensicht>
+			</Kunden-Artikelreferenz>
+			<ausgehende_Ursprungserklärung object="PUSA">ausgehende_Ursprungserklärung</ausgehende_Ursprungserklärung>
+			<Vertreter object="PVER">Vertreter</Vertreter>
+			<Vertreter-Provisionsreferenz object="PVRF">Vertreter-Provisionsreferenz</Vertreter-Provisionsreferenz>
+			<Preisliste>Preisliste
+				<Artikelsicht>Artikelsicht
+					<Kopf object="PPAK">Artikel-Preislistenkopf</Kopf>
+					<Position object="PPAP">Artikel-Preislistenposition</Position>
+					<Struktur object="PPAG">Artikel-Preisliste</Struktur>
+				</Artikelsicht>
+				<Kundengruppensicht>Kundengruppensicht
+					<Kopf object="PPKK">Kundengruppen-Preislistenkopf</Kopf>
+					<Position object="PPKP">Kundengruppen-Preislistenposition</Position>
+					<Struktur object="PPKG">Kundengruppen-Preisliste</Struktur>
+				</Kundengruppensicht>
+				<Warengruppensicht>Warengruppensicht
+					<Kopf object="PPWK">Warengruppen-Preislistenkopf</Kopf>
+					<Position object="PPWP">Warengruppen-Preislistenposition</Position>
+					<Struktur object="PPWG">Warengruppen-Preisliste</Struktur>
+				</Warengruppensicht>
+				<Produktgruppensicht>Produktgruppensicht
+					<Kopf object="PPPK">Produktgruppen-Preislistenkopf</Kopf>
+					<Position object="PPPP">Produktgruppen-Preislistenposition</Position>
+					<Struktur object="PPPG">Produktgruppen-Preisliste</Struktur>
+				</Produktgruppensicht>
+			</Preisliste>
+			<Preislistentabelle object="PPLT">Preislistentabelle</Preislistentabelle>
+			<Mengenrabatt object="OMRB">Mengenrabatt</Mengenrabatt>
+			<Preisermittlungstest object="PPRT">Preisermittlungstest</Preisermittlungstest>
+			<Kundenvorgang>Kundenvorgang
+				<Kopf object="PKVK">Kundenvorgangkopf</Kopf>
+				<Position object="PKVP">Kundenvorgangsposition</Position>
+				<Struktur object="PKAU">Kundenvorgang</Struktur>
+				<Abruf-Unterposition object="PKVU">Kundenvorgang_Abruf-Unterposition</Abruf-Unterposition>
+				<Umterminieren_von_Kundenvorgangspositionen object="PKUT">Umterminieren_von_Kundenvorgangspositionen</Umterminieren_von_Kundenvorgangspositionen>
+				<Ergebnis object="PKVE">Kundenvorgang-Ergebnis</Ergebnis>
+				<Projekt--Kundenvorgangsakte object="PPST">Projekt--Kundenvorgangsakte</Projekt--Kundenvorgangsakte>
+				<Projektklammer object="PPRO">Projektklammer</Projektklammer>
+			</Kundenvorgang>
+			<Kundenvorgangsüberwachung>Kundenvorgangsüberwachung
+				<Kopf object="PKUK">Kundenvorgangskopf-Überwachung</Kopf>
+				<Position object="PKUP">Kundenvorgangspositions-Überwachung</Position>
+			</Kundenvorgangsüberwachung>
+			<Ausgangsrechnung>Ausgangsrechnung
+				<Kopf object="PKRK">Ausgangsrechnungskopf</Kopf>
+				<Position object="PKRP">Ausgangsrechnungsposition</Position>
+				<Struktur object="PKRE">Ausgangsrechnungsstruktur</Struktur>
+				<Anzahlungen_verrechnen object="PAAV">Anzahlungen_verrechnen</Anzahlungen_verrechnen>
+			</Ausgangsrechnung>
+			<Ausgangsrechnungs-Überwachung>Ausgangsrechnungs-Überwachung
+				<Kopf object="PRUK">Ausgangsrechnungskopf</Kopf>
+				<Position object="PRUP">Ausgangsrechnungsposition-Überwachung</Position>
+			</Ausgangsrechnungs-Überwachung>
+			<Finanzierungsplan>Finanzierungsplan
+				<Kopf object="PFZK">Finanzierungsplankopf</Kopf>
+				<Position object="PFZP">Finanzierungsplanposition</Position>
+			</Finanzierungsplan>
+			<Vertriebsbelegdruckpuffer object="PKBD">Vertriebsbelegdruckpuffer</Vertriebsbelegdruckpuffer>
+			<Abschlussroutinen>Abschlussroutinen
+				<Tagesabschluss object="PVRJ">Tagesabschluss</Tagesabschluss>
+				<Monatsabschluss object="PVMA">Monatsabschluss</Monatsabschluss>
+				<Jahresabschluss object="PVJA">Jahresabschluss</Jahresabschluss>
+			</Abschlussroutinen>
+			<Statistik>Statistik
+				<Journale>Journale
+					<Auftragsänderungsjournal object="PKAJ">Auftragsänderungsjournal</Auftragsänderungsjournal>
+					<Auftragsänderungsjournal_initialisieren object="PKAS">Auftragsänderungsjournal_initialisieren</Auftragsänderungsjournal_initialisieren>
+					<Rechnungsjournal object="PURJ">Rechnungsjournal</Rechnungsjournal>
+					<Ausgangsrechnungsnummernjournal object="PVRN">Ausgangsrechnungsnummernjournal</Ausgangsrechnungsnummernjournal>
+					<Rechnungsnummernjournal_initialisieren object="PVRS">Rechnungsnummernjournal_initialisieren</Rechnungsnummernjournal_initialisieren>
+				</Journale>
+				<Angebots--Auftragseingang object="PUAA">Angebots--Auftragseingang</Angebots--Auftragseingang>
+				<Angebotseingang object="PUAN">Angebotseingang</Angebotseingang>
+				<Auftragseingang object="PUAE">Auftragseingang</Auftragseingang>
+				<Umsatz object="PUAL">Umsatz</Umsatz>
+				<Kundengruppenumsatz object="PUKG">Kundengruppenumsatz</Kundengruppenumsatz>
+				<Kundenumsatz object="PUKS">Kundenumsatz</Kundenumsatz>
+				<Produktgruppenumsatz object="PUPG">Produktgruppenumsatz</Produktgruppenumsatz>
+				<Warengruppenumsatz object="PUWG">Warengruppenumsatz</Warengruppenumsatz>
+				<Artikelumsatz object="PUAR">Artikelumsatz</Artikelumsatz>
+				<Vertriebsgebietsumsatz object="PUVT">Vertriebsgebietsumsatz</Vertriebsgebietsumsatz>
+				<Vertretergruppenumsatz object="PUVG">Vertretergruppenumsatz</Vertretergruppenumsatz>
+				<Vertreterumsatz object="PUVS">Vertreterumsatz</Vertreterumsatz>
+			</Statistik>
+			<Tabellen>Tabellen
+				<Kundengruppe object="PKUG">Kundengruppe</Kundengruppe>
+				<Vertriebsgebiet object="PVTG">Vertriebsgebiet</Vertriebsgebiet>
+				<Einkaufsverband object="PVRB">Einkaufsverband</Einkaufsverband>
+				<Provision object="PPRV">Provision</Provision>
+				<Vertriebsbeleg object="PKBE">Vertriebsbeleg</Vertriebsbeleg>
+				<Produktnummer object="PBNR">Produktnummer</Produktnummer>
+				<Rundungstabelle object="PRUN">Rundungstabelle</Rundungstabelle>
+				<Realiserungseinschätzung object="PREA">Realiserungseinschätzung</Realiserungseinschätzung>
+			</Tabellen>
+		</Vertrieb>
+		<Versand>Versand
+			<Grunddaten>Grunddaten
+				<Artikel-Versanddaten object="VART">Artikel-Versanddaten</Artikel-Versanddaten>
+				<Spediteur object="VSPE">Spediteur</Spediteur>
+				<Versandstückliste object="VSTL">Versandstückliste</Versandstückliste>
+				<Tabellen>Tabellen
+					<Versandstelle object="VVST">Versandstelle</Versandstelle>
+					<Werk-Versandart-Versandstellenbeziehung object="VWVB">Werk-Versandart-Versandstellenbeziehung</Werk-Versandart-Versandstellenbeziehung>
+					<Versandgruppe object="VVGR">Versandgruppe</Versandgruppe>
+					<Packmittelart object="VPAR">Packmittelart</Packmittelart>
+					<Tour object="VTOU">Tour</Tour>
+					<Tour-Adressreferenz object="VTAR">Tour-Adressreferenz</Tour-Adressreferenz>
+					<Versandart>Versandart
+						<Versandart object="VVAR">Versandart</Versandart>
+						<Versandart-Fremdsprache object="VVAF">Versandart-Fremdsprache</Versandart-Fremdsprache>
+					</Versandart>
+					<Incoterm>Incoterm
+						<Incoterm object="VINC">Incoterm</Incoterm>
+						<Incoterm-Fremdsprache object="VINF">Incoterm-Fremdsprache</Incoterm-Fremdsprache>
+					</Incoterm>
+					<Zollverfahren object="VZLV">Zollverfahren</Zollverfahren>
+					<Art_des_Geschäfts object="VGAR">Art_des_Geschäfts</Art_des_Geschäfts>
+					<Gefahrengutklasse object="VGGK">Gefahrengutklasse</Gefahrengutklasse>
+				</Tabellen>
+			</Grunddaten>
+			<Versandabwicklung>Versandabwicklung
+				<Versandkomponente object="PKVV">Versandkomponente</Versandkomponente>
+				<Kommission>Kommission
+					<Kopf object="VKOK">Kommissionskopf</Kopf>
+					<Position object="VKOP">Kommissionsposition</Position>
+				</Kommission>
+				<Verpackung>Verpackung
+					<Packstück object="VPAC">Packstück</Packstück>
+					<Verpackungsstruktur object="VPAS">Verpackungsstruktur</Verpackungsstruktur>
+				</Verpackung>
+				<Sendung object="VSEN">Sendung</Sendung>
+				<Ladung object="VLAD">Ladung</Ladung>
+			</Versandabwicklung>
+			<Lieferschein>Lieferschein
+				<Kopf object="PKLK">Lieferscheinkopf</Kopf>
+				<Position object="PKLP">Lieferscheinposition</Position>
+				<Struktur object="PKLI">Lieferschein</Struktur>
+			</Lieferschein>
+		</Versand>
+		<Ansprechpartner object="PAPT">Ansprechpartner</Ansprechpartner>
+		<Materialwirtschaft>Materialwirtschaft
+			<Bestandsführung>Bestandsführung
+				<Artikel-Zu--Abgang object="PAZA">Artikel-Zu--Abgang</Artikel-Zu--Abgang>
+				<Artikel-Zu-Abgang_für_Beistellung object="OBZA">Artikel-Zu-Abgang_für_Beistellung</Artikel-Zu-Abgang_für_Beistellung>
+				<Artikel-Zu--Abgang_Wochenübersicht object="OAXA">Artikel-Zu--Abgang_Wochenübersicht</Artikel-Zu--Abgang_Wochenübersicht>
+				<Artikelverfügbarkeit object="PADC">Artikelverfügbarkeit</Artikelverfügbarkeit>
+				<Wochenbezogene_Verfügbarkeit object="PPVF">Wochenbezogene_Verfügbarkeit</Wochenbezogene_Verfügbarkeit>
+				<Strukturlisten_Bedarfssicht>Strukturlisten_Bedarfssicht
+					<Grunddaten-Strukturstückliste_Bedarfssicht object="OMSX">Grunddaten-Strukturstückliste_Bedarfssicht</Grunddaten-Strukturstückliste_Bedarfssicht>
+					<Fertigungs-Strukturstückliste_Bedarfssicht object="OFSM">Fertigungs-Strukturstückliste_Bedarfssicht</Fertigungs-Strukturstückliste_Bedarfssicht>
+				</Strukturlisten_Bedarfssicht>
+				<Artikel-Wareneingangsbestand object="PMWE">Artikel-Wareneingangsbestand</Artikel-Wareneingangsbestand>
+				<Artikellagerbestand object="PARB">Artikellagerbestand</Artikellagerbestand>
+				<Wareneingang_ungeplant object="PARN">Wareneingang_ungeplant</Wareneingang_ungeplant>
+				<Artikellagerbestand_Warenausgang_ungeplant object="PWAU">Artikellagerbestand_Warenausgang_ungeplant</Artikellagerbestand_Warenausgang_ungeplant>
+				<Lagerbestand_pro_Artikel object="PMLB">Lagerbestand_pro_Artikel</Lagerbestand_pro_Artikel>
+				<Projektbestand_aufbauen object="PPBE">Projektbestand_aufbauen</Projektbestand_aufbauen>
+				<Projektbestand_auflösen object="PPBA">Projektbestand_auflösen</Projektbestand_auflösen>
+				<Einzelpackstückverwaltung>Einzelpackstückverwaltung
+					<Einzelpackstück-Bestand object="OALP">Einzelpackstück-Bestand</Einzelpackstück-Bestand>
+					<Packstück_umlagern object="OALF">Packstück_umlagern</Packstück_umlagern>
+					<Einzelpackstück_-_Wareneingang_ungeplant object="OAPN">Einzelpackstück_-_Wareneingang_ungeplant</Einzelpackstück_-_Wareneingang_ungeplant>
+				</Einzelpackstückverwaltung>
+				<Versandlagerbestand object="PVLB">Versandlagerbestand</Versandlagerbestand>
+				<Artikel-ABC-Analyse object="PABC">Artikel-ABC-Analyse</Artikel-ABC-Analyse>
+				<Artikel-Bestandsanalyse object="PBSA">Artikel-Bestandsanalyse</Artikel-Bestandsanalyse>
+				<Abwertung>Abwertung
+					<Artikelabwertung object="PARA">Artikelabwertung</Artikelabwertung>
+					<Wertinventurkopf object="PNWK">Wertinventurkopf</Wertinventurkopf>
+					<Wertinventurposition object="PNWP">Wertinventurposition</Wertinventurposition>
+				</Abwertung>
+				<Fehlteil object="PFET">Fehlteil</Fehlteil>
+				<Fehlteil_pro_Artikel object="PMFM">Fehlteil_pro_Artikel</Fehlteil_pro_Artikel>
+				<Versand-Fehlteil object="PMFV">Versand-Fehlteil</Versand-Fehlteil>
+				<Artikel-Bestellmengenverteilung object="PMVT">Artikel-Bestellmengenverteilung</Artikel-Bestellmengenverteilung>
+				<Artikel-Mengenverteilung_Eingang_Produktion object="PMWT">Artikel-Mengenverteilung_Eingang_Produktion</Artikel-Mengenverteilung_Eingang_Produktion>
+				<Artikeljournal object="PAJL">Artikeljournal</Artikeljournal>
+				<Packstückjournal object="OPKJ">Packstückjournal</Packstückjournal>
+				<Charge object="PCHA">Charge</Charge>
+				<Chargenjournal object="OCHJ">Chargenjournal</Chargenjournal>
+				<Chargenverfolgung object="OCHV">Chargenverfolgung</Chargenverfolgung>
+			</Bestandsführung>
+			<Werksübergreifende_Bestandsführung>Werksübergreifende_Bestandsführung
+				<Artikellagerbestand_des_logistischen_Unternehmens object="PABL">Artikellagerbestand_des_logistischen_Unternehmens</Artikellagerbestand_des_logistischen_Unternehmens>
+				<Lagerbestand_pro_Artikel_des_logistischen_Unternehmens object="PMLL">Lagerbestand_pro_Artikel_des_logistischen_Unternehmens</Lagerbestand_pro_Artikel_des_logistischen_Unternehmens>
+				<Unterwegsbestand_des_logistischen_Unternehmens object="PUWB">Unterwegsbestand_des_logistischen_Unternehmens</Unterwegsbestand_des_logistischen_Unternehmens>
+				<Artikel-Verfügbarkeit_im_logistischen_Unternehmen object="PADL">Artikel-Verfügbarkeit_im_logistischen_Unternehmen</Artikel-Verfügbarkeit_im_logistischen_Unternehmen>
+				<Artikel-Zu--Abgang_im_logistischen_Unternehmen object="PAZL">Artikel-Zu--Abgang_im_logistischen_Unternehmen</Artikel-Zu--Abgang_im_logistischen_Unternehmen>
+				<Bestellvorschlag_im_logistischen_Unternehmen object="PBVL">Bestellvorschlag_im_logistischen_Unternehmen</Bestellvorschlag_im_logistischen_Unternehmen>
+				<Artikelverbrauchsdaten_im_logistischen_Unternehmen object="PAVL">Artikelverbrauchsdaten_im_logistischen_Unternehmen</Artikelverbrauchsdaten_im_logistischen_Unternehmen>
+				<Fehlteil_im_logistischen_Unternehmen object="PFEL">Fehlteil_im_logistischen_Unternehmens</Fehlteil_im_logistischen_Unternehmen>
+				<Fehlteil_pro_Artikel_im_logistischen_Unternehmen object="PMFL">Fehlteil_pro_Artikel_im_logistischen_Unternehmen</Fehlteil_pro_Artikel_im_logistischen_Unternehmen>
+			</Werksübergreifende_Bestandsführung>
+			<Lagerverwaltung>Lagerverwaltung
+				<Grunddaten>Grunddaten
+					<Lagerbereich object="LBDA">Lagerbereich</Lagerbereich>
+					<Artikeldaten_pro_Lagerbereich object="LALB">Artikeldaten_pro_Lagebereich</Artikeldaten_pro_Lagerbereich>
+					<Platzgruppe object="LPGR">Platzgruppe</Platzgruppe>
+					<Lagerplatz object="LPLA">Lagerplatz</Lagerplatz>
+				</Grunddaten>
+				<Lagerplatzbestand object="LPBE">Lagerplatzbestand</Lagerplatzbestand>
+				<Bewegungen>Bewegungen
+					<Materialauftrag_Lagersicht object="LMAU">Materialauftrag_Lagersicht</Materialauftrag_Lagersicht>
+					<Lagerbewegung object="LBEW">Lagerbewegung</Lagerbewegung>
+					<Bewegungsbeleg_drucken object="LBED">Bewegungsbeleg_drucken</Bewegungsbeleg_drucken>
+				</Bewegungen>
+				<Inventur>Inventur
+					<Lagerplatzinventurkopf object="LPIK">Lagerplatzinventurkopf</Lagerplatzinventurkopf>
+					<Lagerplatzinventurpositionen object="LPIP">Lagerplatzinventurpositionen</Lagerplatzinventurpositionen>
+					<Bestandsentwicklung_pro_Lagerplatz_drucken object="LPID">Bestandsentwicklung_pro_Lagerplatz_drucken</Bestandsentwicklung_pro_Lagerplatz_drucken>
+				</Inventur>
+				<Lagerjournal object="LLJL">Lagerjournal</Lagerjournal>
+				<Statistik>Statistik
+					<Monatsstatistik object="LMOS">Monatsstatistik</Monatsstatistik>
+					<Jahresstatistik object="LJAS">Jahresstatistik</Jahresstatistik>
+				</Statistik>
+				<Abschlussroutinen>Abschlussroutinen
+					<Monatsabschluss object="LMOA">Monatsabschluss</Monatsabschluss>
+					<Jahresabschluss object="LJAA">Jahresabschluss</Jahresabschluss>
+				</Abschlussroutinen>
+			</Lagerverwaltung>	
+			<Disposition>Disposition
+				<Bestellvorschlag object="PBVS">Bestellvorschlag</Bestellvorschlag>
+				<Artikel-Sekundärbedarfsmerker object="PMSE">Artikel-Sekundärbedarfsmerker</Artikel-Sekundärbedarfsmerker>
+				<Artikel-Sicherheitsbedarf object="PMSB">Artikel-Sicherheitsbedarf</Artikel-Sicherheitsbedarf>
+				<Artikel-Vorabreservierungsbestand object="PMVR">Artikel-Vorabreservierungsbestand</Artikel-Vorabreservierungsbestand>
+				<MVA-Segmente object="PMVA">MVA-Segmente</MVA-Segmente>
+			</Disposition>
+			<Materialauftrag_allgemein object="PMAU">Materialauftrag_allgemein</Materialauftrag_allgemein>
+			<Monatsabschluss object="PAMA">Monatsabschluss</Monatsabschluss>
+			<Statistik>Statistik
+				<Artikelverbrauchsdaten object="PARS">Artikelverbrauchsdaten</Artikelverbrauchsdaten>
+				<Artikelverbrauchsdaten_neu_berechnen object="PAUV">Artikelverbrauchsdaten_neu_berechnen</Artikelverbrauchsdaten_neu_berechnen>
+				<Artikelverbrauchsdaten_bereinigen object="PALV">Artikelverbrauchsdaten_bereinigen</Artikelverbrauchsdaten_bereinigen>
+				<Geschäftsjahreskopf_Materialwirtschaft object="PMGJ">Geschäftsjahreskopf_Materialwirtschaft</Geschäftsjahreskopf_Materialwirtschaft>
+				<Geschäftsperiode_Materialwirtschaft object="PMGP">Geschäftsperiode_Materialwirtschaft</Geschäftsperiode_Materialwirtschaft>
+				<Periodenabschlussstatistik_Materialwirtschaft object="PXJL">Periodenabschlussstatistik_Materialwirtschaft</Periodenabschlussstatistik_Materialwirtschaft>
+				<Artikeljournalstatistik_konvertieren object="PAJN">Artikeljournalstatistik_konvertieren</Artikeljournalstatistik_konvertieren>
+			</Statistik>
+			<Intrastat>Intrastat
+				<Intrastat-Meldung object="OINT">Intrastat-Meldung</Intrastat-Meldung>
+				<Intrastat-Sätze_laden object="OINF">Intrastat-Sätze_laden</Intrastat-Sätze_laden>
+			</Intrastat>
+			<Inventur>Inventur
+				<Inventurübersicht object="PINK">Inventurübersicht</Inventurübersicht>
+				<Inventurliste object="PINL">Inventurliste</Inventurliste>
+				<Inventurpositionen object="PINV">Inventurpositionen</Inventurpositionen>
+				<Inventur_Artikelsicht object="PINA">Inventur_Artikelsicht</Inventur_Artikelsicht>
+				<Inventurstatistik object="PINS">Inventurstatistik</Inventurstatistik>
+				<Inventur_Bestandsentwicklung object="PINB">Inventur_Bestandsentwicklung</Inventur_Bestandsentwicklung>
+			</Inventur>
+		</Materialwirtschaft>
+		<Sonderbedarf>Sonderbedarf
+			<Sonderbedarfskopf object="OSBK">Sonderbedarfskopf</Sonderbedarfskopf>
+			<Sonderbedarfsposition object="OSBP">Sonderbedarfsposition</Sonderbedarfsposition>
+			<Sonderbedarf-Schnellerfassung object="OSBS">Soderbedarf-Schnellerfassung</Sonderbedarf-Schnellerfassung>
+		</Sonderbedarf>
+		<Beschaffung>Beschaffung
+			<Lieferant object="PLIF">Lieferant</Lieferant>
+			<Lieferant_Finanzbuchhaltungsdaten object="PLFI">Lieferant_Finanzbuchhaltungsdaten</Lieferant_Finanzbuchhaltungsdaten>
+			<Lieferanten-Merkmale object="PLIM">Lieferanten-Merkmale</Lieferanten-Merkmale>
+			<Lieferantenquotierung object="OLIQ">Lieferantenquotierung</Lieferantenquotierung>
+			<Bestellreferenz>Bestellreferenz
+				<Kopf object="PBRK">Bestellreferenzkopf</Kopf>
+				<Position object="PBRP">Bestellreferenzposition</Position>
+				<Struktur object="PBRF">Bestellreferenzstruktur</Struktur>
+				<Artikelsicht object="PBRA">Bestellreferenz_Artikelsicht</Artikelsicht>
+				<Lieferantensicht object="PBRL">Bestellreferenz_Lieferantensicht</Lieferantensicht>
+				<Bestellpreisvergleich object="PBRV">Bestellpreisvergleich</Bestellpreisvergleich>
+				<Werkskondition object="PBRW">Werkskondition</Werkskondition>
+			</Bestellreferenz>
+			<eingehende_Ursprungserklärung object="PUSE">eingehende_Ursprungserklärung</eingehende_Ursprungserklärung>
+			<Bestellvorrat>Bestellvorrat
+				<Bestellvorrat object="PBVU">Bestellvorrat</Bestellvorrat>
+				<Bestellvorrat_füllen object="PBVN">Bestellvorrat_füllen</Bestellvorrat_füllen>
+			</Bestellvorrat>
+			<Einkaufsvorgang>Einkaufvorgang
+				<Kopf object="PEKK">Einkaufsvorgangskopf</Kopf>
+				<Position object="PEKP">Einkaufsvorgangsposition</Position>
+				<Struktur object="PEKV">Einkaufsvorgangsstruktur</Struktur>
+				<Einkaufsvorgangsakte object="PBST">Einkaufsvorgangsakte</Einkaufsvorgangsakte>
+				<Ware_annehmen object="PEKW">Ware_annehmen</Ware_annehmen>
+				<Bestellbestätigungsschnittstelle object="PEDI">Bestellbestätigungsschnittstelle</Bestellbestätigungsschnittstelle>
+			</Einkaufsvorgang>
+			<Beistellung>Beistellung
+				<Beistell-Lieferschein>Beistell-Lieferschein
+					<Kopf object="PELK">Beistell-Lieferscheinkopf</Kopf>
+					<Position object="PELP">Beistell-Lieferscheinposition</Position>
+				</Beistell-Lieferschein>
+				<Beistellbestellung_zu_Auswärtsvergaben object="PBUE">Beistellbestellung_zu_Auswärtsvergaben</Beistellbestellung_zu_Auswärtsvergaben>
+			</Beistellung>
+			<Einkaufsbelegdruckpuffer object="PBDR">Einkaufsbelegdruckpuffer</Einkaufsbelegdruckpuffer>
+			<Ware_ohne_Rechnung object="PEK1">Ware_ohne_Rechnung</Ware_ohne_Rechnung>
+			<Bestellobligo object="PEOB">Bestellobligo</Bestellobligo>
+			<Eingangsrechnung>Eingangsrechnung
+				<Kopf object="PREK">Eingangsrechnungskopf</Kopf>
+				<Position object="PREP">Eingangsrechnungsposition</Position>
+				<Struktur object="PREG">Eingangsrechnungsstruktur</Struktur>
+				<Vorabrechnung object="PVRG">Vorabrechnung</Vorabrechnung>
+				<VESR-Reorganisation object="PESR">VESR-Reorganisation</VESR-Reorganisation>
+				<Eingangsrechnungsimport>Eingangsrechnungsschnittstelle
+					<Eingangsrechnungsschnittstelle_Kopf object="OREK">Schnittschtelle_für_Eingangsrechnung-Kopf</Eingangsrechnungsschnittstelle_Kopf>
+					<Eingangsrechnungsschnittstelle_Position object="OREP">Schnittstelle_für_Eingangsrechnung-Position</Eingangsrechnungsschnittstelle_Position>
+				</Eingangsrechnungsimport>
+			</Eingangsrechnung>
+			<Finanzierungsplan_Einkauf>Finanzierungsplan_Einkauf
+				<Kopf object="OEZK">Finanzierungsplankopf_Einkauf</Kopf>
+				<Position object="OEZP">Finanzierungsplanposition_Einkauf</Position>
+			</Finanzierungsplan_Einkauf>
+			<Statistik>Statistik
+				<Einkaufsstatistik object="PEKS">Einkaufsstatistik</Einkaufsstatistik>
+				<Geschäftsjahreskopf_Einkaufsstatistik object="PEGJ">Geschäftsjahreskopf_Einkaufsstatistik</Geschäftsjahreskopf_Einkaufsstatistik>
+				<Geschäftsperiode_Einkaufsstatistik object="PEGP">Geschäftsperiode_Einkaufsstatistik</Geschäftsperiode_Einkaufsstatistik>
+				<Einkaufsstatistik_initialisieren object="PEKI">Einkaufsstatistik_initialisieren</Einkaufsstatistik_initialisieren>
+			</Statistik>
+			<Tabellen>Tabellen
+				<Lieferantengruppe object="PLIG">Lieferantengruppe</Lieferantengruppe>
+				<Warenannahmestelle object="PWST">Warenannahmestelle</Warenannahmestelle>
+				<Werk-Versandart-Warenannahmestellenbeziehung object="PWWB">Werk-Versandart-Warenannahmestellenbeziehung</Werk-Versandart-Warenannahmestellenbeziehung>
+				<Wareneingangskontrolle object="PWEK">Wareneingangskontrolle</Wareneingangskontrolle>
+				<Mahnstufe object="PMAS">Mahnstufe</Mahnstufe>
+				<Einkaufsbeleg object="PEBE">Einkaufsbeleg</Einkaufsbeleg>
+			</Tabellen>
+		</Beschaffung>
+		<Produktion>Produktion
+			<Fertigungsauftrag>Fertigungsauftrag
+				<Fertigungsauftragskopf>Fertigungsauftragskopf
+					<Kopf object="PFAK">Fertigungsauftragskopf</Kopf>
+					<Fertigungsauftrag_rückmelden object="PFFR">Fertigungsauftrag_rückmelden</Fertigungsauftrag_rückmelden>
+					<Zusatzarbeitsgang_anlegen object="PZAG">Zusatzarbeitsgang_anlegen</Zusatzarbeitsgang_anlegen>
+					<Warenausgang_Mehrentnahme object="PWME">Warenausgang_Mehrentnahme</Warenausgang_Mehrentnahme>
+					<Artikelverwendung object="PVFA">Artikelverwendung_in_Fertigungsauftragskopf</Artikelverwendung>
+					<Packmittelbedarf_aus_Fertigungsaufträgen object="OPVF">Packmittelbedarf_aus_Fertigungsaufträgen</Packmittelbedarf_aus_Fertigungsaufträgen>
+					<Packmitteldeckungsrechnung_aus_Fertigungsaufträgen object="OPVD">Packmitteldeckungsrechnung_aus_Fertigungsaufträgen</Packmitteldeckungsrechnung_aus_Fertigungsaufträgen>
+				</Fertigungsauftragskopf>
+				<Fertigungsmaterialtabelle>Fertigungsmaterialtabelle
+					<Position object="PFMP">Fertigungsmaterialtabellenposition</Position>
+					<Struktur object="PFMB">Fertigungsmaterialtabellenstruktur</Struktur>
+					<Abgleich_mit_Stücklisten object="PPMR">Fertigungs-Materialtabelle-Fertigungs-Stückliste_abgleichen</Abgleich_mit_Stücklisten>
+					<Artikelverwendung object="PVFM">Artikelverwendung_in_Fertigungsmaterialtabellenpositionen</Artikelverwendung>
+				</Fertigungsmaterialtabelle>
+				<Fertigungsstückliste>Fertigungsstückliste
+					<Position object="PFSP">Fertigungsstücklistenposition</Position>
+					<Struktur object="PFSB">Fertigungsbaugruppenstückliste</Struktur>
+					<mehrstufige_Struktur object="PFSM">Fertigungsstrukturstückliste</mehrstufige_Struktur>
+					<Auswärtsvergabe_Beistellungen object="PBEI">Beistellungen_zur_Auswärtsvergabe</Auswärtsvergabe_Beistellungen>
+					<Artikelverwendung object="PVFS">Artikelverwendung_in_Fertigungsstücklistenpositionen</Artikelverwendung>
+					<Pseudobestandteile object="PPBT">Pseudobestandteile</Pseudobestandteile>
+					<Ersatzteil-Stückliste object="PEST">Ersatzteil-Stückliste</Ersatzteil-Stückliste>
+					<Ersatzteilstückliste_generieren object="PESB">Ersatzteilstückliste_generieren</Ersatzteilstückliste_generieren>
+					<Struktur_Artikel-Seriennummernsicht object="PFSS">Fertigungsstrukturstückliste_Artikel-Seriennummernsicht</Struktur_Artikel-Seriennummernsicht>
+				</Fertigungsstückliste>
+				<Fertigungskapazitätstabelle>Fertigungskapazitätstabelle
+					<Position object="PFKP">Fertigungskapazitätstabellenposition</Position>
+					<Struktur object="PFKB">Fertigungskapazitätstabelle</Struktur>
+					<Fertigungskapazitätstabellenposition_rückmelden object="PFKR">Fertigungskapazitätstabellenposition_rückmelden</Fertigungskapazitätstabellenposition_rückmelden>
+					<Fertigungskapazitätstabellenposition_Lohn_rückmelden object="PFKL">Fertigungskapazitätstabellenposition_Lohn_rückmelden</Fertigungskapazitätstabellenposition_Lohn_rückmelden>
+					<Innerbetriebliche_Leistung_verrechnen object="PILK">Innerbetriebliche_Leistung_verrechnen</Innerbetriebliche_Leistung_verrechnen>
+				</Fertigungskapazitätstabelle>
+				<Fertigungsarbeitsplan>Fertigungsarbeitsplan
+					<Position object="PFAP">Fertigungsarbeitsplanposition</Position>
+					<Struktur object="PFAB">Fertigungsarbeitsplan</Struktur>
+					<Fertigungsarbeitsplanposition_rückmelden object="PFGR">Fertigungsarbeitsplanposition_rückmelden</Fertigungsarbeitsplanposition_rückmelden>
+					<Fertigungsarbeitsplanposition_Lohn_rückmelden object="PFGL">Fertigungsarbeitsplanposition_Lohn_rückmelden</Fertigungsarbeitsplanposition_Lohn_rückmelden>
+					<Innerbetriebliche_Leistung_verrechnen object="PILP">Innerbetriebliche_Leistung_verrechnen</Innerbetriebliche_Leistung_verrechnen>
+					<Fertigungsarbeitsgang_Belegungseinheitensicht object="PFBE">Fertigungsarbeitsgang_Belegungseinheitensicht</Fertigungsarbeitsgang_Belegungseinheitensicht>
+					<Übergangszeit_zwischen_Fertigungs-Arbeitsgängen object="PUGF">Übergangszeit_zwischen_Fertigungs-Arbeitsgängen</Übergangszeit_zwischen_Fertigungs-Arbeitsgängen>
+				</Fertigungsarbeitsplan>
+				<Produktions-Seriennummer object="OSER">Produktions-Seriennummer</Produktions-Seriennummer>
+				<Vergleich_Fertigung-Grunddaten object="PSVG">Vergleich_Fertigung-Grunddaten</Vergleich_Fertigung-Grunddaten>
+				<Fertigungsauftragsstruktur object="PFST">Fertigungsauftragsstruktur</Fertigungsauftragsstruktur>
+			</Fertigungsauftrag>
+			<Fertigungsarchiv>Fertigungsarchiv
+				<Fertigungsauftragskopf_Archiv>
+					<Kopf object="PAAK">Fertigungsauftragskopf_Archiv</Kopf>
+					<Artikelverwendung object="PVAA">Artikelverwendung_in_Fertigungsauftragsköpfen_Archiv</Artikelverwendung>
+				</Fertigungsauftragskopf_Archiv>
+				<Fertigungsmaterialtabelle_Archiv>Fertigungsmaterialtabelle_Archiv
+					<Position object="PAMP">Fertigungsmaterialtabellenposition_Archiv</Position>
+					<Struktur object="PAMB">Fertigungsmaterialtabellenstruktur_Archiv</Struktur>
+				</Fertigungsmaterialtabelle_Archiv>
+				<Fertigungsstückliste_Archiv>Fertigungsstückliste_Archiv
+					<Position object="PASP">Fertigungsstücklistenposition_Archiv</Position>
+					<Struktur object="PASB">Fertigungsbaugruppenstückliste_Archiv</Struktur>
+					<mehrstufige_Struktur object="PASM">Fertigungsstrukturstückliste_Archiv</mehrstufige_Struktur>
+					<Artikelverwendung object="PVAS">Artikelverwendung_in_Fertigungsstücklistenpositionen_Archiv</Artikelverwendung>
+				</Fertigungsstückliste_Archiv>
+				<Fertigungskapazitätstabelle_Archiv>Fertigungskapazitätstabelle_Archiv
+					<Position object="PAKP">Fertigungskapazitätstabellenposition_Archiv</Position>
+					<Struktur object="PAKB">Fertigungskapazitätstabelle_Archiv</Struktur>
+				</Fertigungskapazitätstabelle_Archiv>
+				<Fertigungsarbeitsplan_Archiv>Fertigungsarbeitsplan_Archiv
+					<Position object="PAAP">Fertigungsarbeitsplanposition_Archiv</Position>
+					<Struktur object="PAAB">Fertigungsarbeitsplan_Archiv</Struktur>
+				</Fertigungsarbeitsplan_Archiv>
+			</Fertigungsarchiv>
+			<Fahrzeugverwaltung>Fahrzeugverwaltung
+				<Fahrzeugbuch object="OFZB">Fahrzeugbuch</Fahrzeugbuch>
+				<XML-Datei_mit_Zulassungsbescheinigung_für_das_Kraftfahrt-Bundesamt_erstellen object="OKBA">XML-Datei_mit_Zulassungsbescheinigung_für_das_Kraftfahrt-Bundesamt_erstellen</XML-Datei_mit_Zulassungsbescheinigung_für_das_Kraftfahrt-Bundesamt_erstellen>
+				<Zulassungsgenehmigung object="OZGN">Zulassungsgenehmigung</Zulassungsgenehmigung>
+				<ABE_Identnummer object="OABE">ABE_Identnummer</ABE_Identnummer>
+				<Fahrzeugbuch_Anhang object="OFZ2">Fahrzeugbuch_Anhang</Fahrzeugbuch_Anhang>
+			</Fahrzeugverwaltung>
+			<Betriebsmittel>Betriebsmittel
+				<Betriebsmittelausgabe_in_Nutzung object="PBAU">Betriebsmittelausgabe_in_Nutzung</Betriebsmittelausgabe_in_Nutzung>
+				<Betriebsmittelrücknahme_aus_Nutzung object="PRNA">Betreibesmittelrücknahme_aus_Nutzung</Betriebsmittelrücknahme_aus_Nutzung>
+				<Betriebsmittel_Segmentnachweis object="PBNW">Betriebsmittel_Segmentnachweis</Betriebsmittel_Segmentnachweis>
+			</Betriebsmittel>
+			<Produktionsprogrammplanung>Proguktionsprogrammplanung
+				<Programmplan object="PPPL">Programmplan</Programmplan>
+				<Programmplan_pro_Artikel object="PPPA">Programmplan_pro_Artikel</Programmplan_pro_Artikel>
+				<Komponentenplan object="PMPP">Komponentenplan</Komponentenplan>
+			</Produktionsprogrammplanung>
+			<Steuerung>Steuerung
+				<Strukturlisten_Bedarfssicht>Strukturlisten_Bedarfssicht
+					<Grunddaten-Strukturstückliste_Bedarfssicht object="OMSX">Grunddaten-Strukturstückliste_Bedarfssicht</Grunddaten-Strukturstückliste_Bedarfssicht>
+					<Fertigungs-Strukturstückliste_Bedarfssicht object="OFSM">Fertigungs-Strukturstückliste_Bedarfssicht</Fertigungs-Strukturstückliste_Bedarfssicht>
+				</Strukturlisten_Bedarfssicht>
+				<Fehlmengenprüfung_pro_Fertigungsauftrag object="PFTL">Fehlmengenprüfung_pro_Fertigungsauftrag</Fehlmengenprüfung_pro_Fertigungsauftrag>
+				<Auftragsanalyse object="PANA">Auftragsanalyse</Auftragsanalyse>
+				<Belegungseinheitenauslastung object="PALS">Belegungseinheitenauslastung</Belegungseinheitenauslastung>
+				<Belegungsnachweis_pro_Belegungseinheit object="PALU">Belegungsnachweis_pro_Belegungseinheit</Belegungsnachweis_pro_Belegungseinheit>
+				<Stunden_pro_Kundenvorgang object="PSPK">Stunden_pro_Kundenvorgang</Stunden_pro_Kundenvorgang>
+				<Zu-_und_Abgänge_aus_der_Tages-_und_Wochenauslastung object="PXAL">Zu-_und_Abgänge_aus_der_Tages-_und_Wochenauslastung</Zu-_und_Abgänge_aus_der_Tages-_und_Wochenauslastung>
+				<Fertigungsbeleg object="PABE">Fertigungsbeleg</Fertigungsbeleg>
+				<Fertigungsbelegdruckpuffer object="PABD">Fertigungsbelegdruckpuffer</Fertigungsbelegdruckpuffer>
+			</Steuerung>
+			<Werkstattbestand object="PWBS">Werkstattbestand</Werkstattbestand>
+			<Werkstattbestandsrechnung object="PWBR">Werkstattbestandsrechnung</Werkstattbestandsrechnung>
+			<Rückmeldung>Rückmeldung
+				<Rückmeldungspuffer object="PRMS">Rückmeldungspuffer</Rückmeldungspuffer>
+				<Fertigungsjournal object="PFGJ">Fertigungsjournal</Fertigungsjournal>
+				<Innerbetriebliche_Leistung_verrechnen_ohne_Fertigungsauftragsbezug object="PILV">Innerbetriebliche_Leistung_verrechnen_ohne_Fertigungsauftragsbezug</Innerbetriebliche_Leistung_verrechnen_ohne_Fertigungsauftragsbezug>
+				<Neubewertung_Fertigungsjournal object="PFJN">Neubewertung_Fertigungsjournal</Neubewertung_Fertigungsjournal>
+			</Rückmeldung>
+			<Fertigungslogistik>Fertigungslogistik
+				<Schnittstelle_Fertigungslogistik object="PFLX">Schnittstelle_Fertigungslogistik</Schnittstelle_Fertigungslogistik>
+				<Schnittstelle_neu_aufsetzen object="PFLN">Schnittstelle_neu_aufsetzen</Schnittstelle_neu_aufsetzen>
+			</Fertigungslogistik>
+		</Produktion>
+		<Kalkulation>Kalkulation
+			<Kalkulationszuschlag object="PKZU">Kalkulationszuschlag</Kalkulationszuschlag>
+			<Kalkulationsschema object="PTAB">Kalkulationsschema</Kalkulationsschema>
+			<Extrakosten>Extrakosten
+				<Fertigungsauftrag_Extrakosten object="PEXA">Fertigungsauftrag_Extrakosten</Fertigungsauftrag_Extrakosten>
+				<Extrakosten_Grunddaten object="PEXG">Extrakosten_Grunddaten</Extrakosten_Grunddaten>
+			</Extrakosten>
+			<Kalkulationsaufrufe>Kalkulationsaufrufe
+				<Grunddatenkalkulation>Grunddatenkalkulation
+					<Grunddatenkalkulation_mit_Ergebnisanzeige object="PGKE">Grunddatenkalkulation_mit_Ergebnisanzeige</Grunddatenkalkulation_mit_Ergebnisanzeige>
+					<Grunddatenkalkulation_Bereich_Fremdteile object="PGKF">Grunddatenkalkulation_Bereich_Fremdteile</Grunddatenkalkulation_Bereich_Fremdteile>
+					<Grunddatenkalkulation_Bereich_Eigenteile object="PGKS">Grunddatenkalkulation_Bereich_Eigenteile</Grunddatenkalkulation_Bereich_Eigenteile>
+					<Kalkulationsübernahme_aus_liefernden_Werken object="PGKL">Kalkulationsübernahme_aus_liefernden_Werken</Kalkulationsübernahme_aus_liefernden_Werken>
+					<Verbundkalkulation object="PVBK">Verbundkalkulation</Verbundkalkulation>
+				</Grunddatenkalkulation>
+				<Fertigungsauftragskalkulation>Fertigungsauftragskalkulation
+					<Fertigungsauftragskalkulation_mit_Ergebnisanzeige object="PFKE">Fertigungsauftragskalkulation_mit_Ergebnisanzeige</Fertigungsauftragskalkulation_mit_Ergebnisanzeige>
+					<Fertigungsaufträge_kalkulieren object="PFKA">Fertigungsaufträge_klakulieren</Fertigungsaufträge_kalkulieren>
+					<Nachkalkulation_mit_Grunddatenupdate object="PNPG">Nachkalkulation_mit_Grunddatenupdate</Nachkalkulation_mit_Grunddatenupdate>
+				</Fertigungsauftragskalkulation>
+			</Kalkulationsaufrufe>
+			<Kalkulationsergebnisinformation>Kalkulationsergebnisinformation
+				<Kalkulationseinstellung object="PKE0">Kalkulationseinstellung</Kalkulationseinstellung>
+				<Ergebnisse_einer_Kalkulation>Ergebnisse_einer_Kalkulation
+					<Strukturübersicht_eines_Kalkulationsergebnisses object="PKE1">Strukturübersicht_eines_Kalkulationsergebnisses</Strukturübersicht_eines_Kalkulationsergebnisses>
+					<Strukturübersicht_einer_Kalkulationsbaugruppe object="PKS1">Strukturübersicht_einer_Kalkulationsbaugruppe</Strukturübersicht_einer_Kalkulationsbaugruppe>
+					<Ergebnisstruktur_einer_Arbeitsplan-Kalkulation object="PKA1">Ergebnisstruktur_einer_Arbeitsplan-Kalkulation</Ergebnisstruktur_einer_Arbeitsplan-Kalkulation>
+					<Kalkulationsstruktur object="PKSA">Kalkulationsstruktur</Kalkulationsstruktur>
+				</Ergebnisse_einer_Kalkulation>
+				<Vergleich_zweier_Kalkulationsergebnisse>Vergleich_zweier_Kalkulationsergebnisse
+					<Strukturübersicht_zweier_Kalkulationsergebnisse object="PKE2">Strukturübersicht_zweier_Kalkulationsergebnisse</Strukturübersicht_zweier_Kalkulationsergebnisse>
+					<Strukturübersicht_zweier_Kalkulationsbaugruppen object="PKS2">Strukturübersicht_zweier_Kalkulationsbaugruppen</Strukturübersicht_zweier_Kalkulationsbaugruppen>
+					<Ergebnisstruktur_zweier_Arbeitsplan-Kalkulationen object="PKA2">Ergebnisstruktur_zweier_Arbeitsplan-Kalkulationen</Ergebnisstruktur_zweier_Arbeitsplan-Kalkulationen>
+				</Vergleich_zweier_Kalkulationsergebnisse>
+				<Gegenüberstellung_dreier_Kalkulationsergebnisse>Gegenüberstellung_dreier_Kalkulationsergebnisse
+					<Strukturübersicht_dreier_Kalkulationsergebnisse object="PKE3">Strukturübersicht_dreier_Kalkulationsergebnisse</Strukturübersicht_dreier_Kalkulationsergebnisse>
+					<Strukturübersicht_dreier_Kalkulationsbaugruppen object="PKS3">Strukturübersicht_dreier_Kalkulationsbaugruppen</Strukturübersicht_dreier_Kalkulationsbaugruppen>
+					<Ergebnisstruktur_dreier_Arbeitsplan-Kalkulationen object="PKA3">Ergebnisstruktur_dreier_Arbeitsplan-Kalkulationen</Ergebnisstruktur_dreier_Arbeitsplan-Kalkulationen>
+				</Gegenüberstellung_dreier_Kalkulationsergebnisse>
+			</Kalkulationsergebnisinformation>
+			<Löschen_von_Kalkulationsergebnissen>Löschen_von_Kalkulationsergebnissen
+				<Kalkulationsergebnisse_Grunddaten>Kalkulationsergebnisse_Grunddaten
+					<Kalkulationseinstellung_Grunddaten object="PGK1">Kalkulationseinstellung_Grunddaten</Kalkulationseinstellung_Grunddaten>
+					<Kalkulationsergebnis_Grunddaten object="PGK0">Kalkulationsergebnis_Grunddaten</Kalkulationsergebnis_Grunddaten>
+				</Kalkulationsergebnisse_Grunddaten>
+				<Fertigungsauftrag_Kalkulationsergebnis>Fertigungsauftrag_Kalkulationsergebnis
+					<Fertigungsauftrag_Kalkulationseinstellung object="PAK1">Fertigungsauftrag_Kalkulationseinstellung</Fertigungsauftrag_Kalkulationseinstellung>
+					<Fertigungsauftrag_Kalkulationsergebnis object="PAK0">Fertigungsauftrag_Kalkulationsergebnis</Fertigungsauftrag_Kalkulationsergebnis>
+				</Fertigungsauftrag_Kalkulationsergebnis>
+				<Kalkulationsergebnisse_Archiv>Kalkulationsergebnisse_Archiv
+					<Kalkulationseinstellungen_Archiv object="PKK1">Kalkulationseinstellungen_Archiv</Kalkulationseinstellungen_Archiv>
+					<Kalkulationsergebnis_Archiv object="PKK0">Kalkulationsergebnis_Archiv</Kalkulationsergebnis_Archiv>
+				</Kalkulationsergebnisse_Archiv>
+			</Löschen_von_Kalkulationsergebnissen>
+		</Kalkulation>
+		<Variantenmanagement>Variantenmanagement
+			<Varianten-Artikel-Zuordnung object="PVAN">Varianten-Artikel-Zuordnung</Varianten-Artikel-Zuordnung>
+			<Muster>Muster
+				<Basismuster>Basismuster
+					<Basismusterkopf object="PMUK">Basismusterkopf</Basismusterkopf>
+					<Basismusterposition object="PMUP">Basismusterposition</Basismusterposition>
+				</Basismuster>
+			</Muster>
+		</Variantenmanagement>
+		<Servicemanagement>Servicemanagement
+			<Mitarbeiter-Qualifikation object="PMAQ">Mitarbeiter-Qualifikation</Mitarbeiter-Qualifikation>
+			<Mitarbeiter-Qualifikationszuordnung object="PMQZ">Mitarbeiter-Qualifikationszuordnung</Mitarbeiter-Qualifikationszuordnung>
+			<Ressourcenzuordnung object="PRZO">Ressourcenzuordnung</Ressourcenzuordnung>
+			<Service-Priorität object="IKPR">Service-Priorität</Service-Priorität>
+		</Servicemanagement>
+	</Auftragsmanagement>
+	<Rechnungswesen>Rechnungswesen
+		<Geschäftsjahr>Geschäftsjahr
+			<Geschäftsjahreskopf_Finanzbuchhaltung-Kostenrechnung object="KPGJ">Geschäftsjahreskopf_Finanzbuchhaltung-Kostenrechnung</Geschäftsjahreskopf_Finanzbuchhaltung-Kostenrechnung>
+			<Geschäftsperiode_Finanzbuchhaltung-Kostenrechnung object="KPGP">Geschäftsperiode_Finanzbuchhaltung-Kostenrechnung</Geschäftsperiode_Finanzbuchhaltung-Kostenrechnung>
+			<Geschäftsjahr_Finanzbuchhaltung-Kostenrechnung object="KPGS">Geschäftsjahr_Finanzbuchhaltung-Kostenrechnung</Geschäftsjahr_Finanzbuchhaltung-Kostenrechnung>
+		</Geschäftsjahr>
+		<Kostenrechnung>Kostenrechnung
+			<Basis>Basis
+				<Kostenarttyp object="KPTY">Kostenarttyp</Kostenarttyp>
+				<Wertart object="KPAW">Wertart</Wertart>
+				<Auflösung_Wertart object="KWAP">Auflösung_Wertart</Auflösung_Wertart>
+				<Abrechnungsvariante object="KPAV">Abrechnungsvariante</Abrechnungsvariante>
+				<Bewegungsherkunftsdefinition object="KHER">Bewegungsherkunftsdefinition</Bewegungsherkunftsdefinition>
+			</Basis>
+			<Stammdaten>Stammdaten
+				<Kostenart object="PKOA">Kostenart</Kostenart>
+				<Stammdatenverbindung_Auftragsmanagement-Kostenrechnung object="KSTV">Stammdatenverbindung_Auftragsmanagement-Kostenrechnung</Stammdatenverbindung_Auftragsmanagement-Kostenrechnung>
+				<Saisonvariatoren object="PSVA">Saisonvariatoren</Saisonvariatoren>
+				<Kostenartengruppe>Kostenartengruppe
+					<Kostenartengruppe object="KREF">Kostenartengruppe</Kostenartengruppe>
+					<Verknüpfung_Kostenart-Kostenartengruppe object="KPR2">Verknüpfung_Kostenart-Kostenartengruppe</Verknüpfung_Kostenart-Kostenartengruppe>
+					<Kostenartengruppe_mehrstufig object="KKGM">Kostenartengruppe_mehrstufig</Kostenartengruppe_mehrstufig>
+					<Kostenartengruppen_aktualisieren object="KREN">Kostenartengruppen_aktualisieren</Kostenartengruppen_aktualisieren>
+				</Kostenartengruppe>
+				<Kostenobjekt>Kostenobjekt
+					<Kostenstelle>Kostenstelle
+						<Kostenstelle object="PKOS">Kostenstelle</Kostenstelle>
+						<Kostenstellen-Stundensatz object="PSSK">Kostenstellen-Stundensatz</Kostenstellen-Stundensatz>
+						<Bezugsgrößen object="KPPK">Bezugsgrößen</Bezugsgrößen>
+					</Kostenstelle>
+					<Auftrag>Auftrag
+						<Kostenrechnungsauftrag object="KPAK">Kostenrechnungsauftrag</Kostenrechnungsauftrag>
+						<Verrechnungsart object="KPAA">Verrechnungsart</Verrechnungsart>
+						<Verrechnungsobjekt_Auftrag object="KPAO">Verrechnungsobjekt_Auftrag</Verrechnungsobjekt_Auftrag>
+						<Auftragsgruppe object="KPAG">Auftragsgruppe</Auftragsgruppe>
+						<Auftragsstatus object="KPAS">Auftragsstatus</Auftragsstatus>
+					</Auftrag>
+					<Kostenträger object="KKOT">Kostenträger</Kostenträger>
+					<Kostenartenrechnung object="KKAR">Kostenartenrechnung</Kostenartenrechnung>
+					<Zuordnung_Kostenobjekte object="KPZU">Zuordnung_Kostenobjekte</Zuordnung_Kostenobjekte>
+					<Objektgruppe object="KPOG">Objektgruppe</Objektgruppe>
+					<Zuordnungsgruppen object="KPTU">Zuordnungsgruppen</Zuordnungsgruppen>
+				</Kostenobjekt>
+				<Zuschlag>Zuschlag
+					<Zuschlagskopf object="KPZV">Zuschlagskopf</Zuschlagskopf>
+					<Zuschlagsregel object="KPZD">Zuschlagsregel</Zuschlagsregel>
+					<Zuschlag object="KPZS">Zuschlag</Zuschlag>
+				</Zuschlag>
+				<Umlage>Umlage
+					<Umlage_Entlastung object="KPUE">Umlage_Entlastung</Umlage_Entlastung>
+					<Umlage_Belastung object="KPUB">Umlage_Belastung</Umlage_Belastung>
+					<Umlage object="KPUS">Umlage</Umlage>
+				</Umlage>
+				<Verknüpfung>Verknüpfung
+					<Verknüpfung_Kostenart-Kostenartengruppe object="KPR2">Verknüpfung_Kostenart-Kostenartengruppe</Verknüpfung_Kostenart-Kostenartengruppe>
+					<Verknüpfung_Kostenart-Kostenobjekt object="KPTT">Verknüpfung_Kostenart-Kostenobjekt</Verknüpfung_Kostenart-Kostenobjekt>
+					<Verknüpfung_Kosten--Verrechnungsart object="KPAT">Verknüpfung_Kosten--Verrechnungsart</Verknüpfung_Kosten--Verrechnungsart>
+					<Verknüpfung_Wertart-Kostenarttyp object="KPTW">Verknüpfung_Wertart-Kostenarttyp</Verknüpfung_Wertart-Kostenarttyp>
+					<Verknüpfung_Wertart object="KPWA">Verknüpfung_Wertart</Verknüpfung_Wertart>
+				</Verknüpfung>
+			</Stammdaten>
+			<Bewegungsdaten>Bewegungsdaten
+				<Bewegung>Bewegung
+					<Bewegungskopf object="KPG2">Bewegungskopf</Bewegungskopf>
+					<Bewegungsposition object="KPGT">Bewegungsposition</Bewegungsposition>
+					<Bewegung object="KPGX">Bewegung</Bewegung>
+					<Bewegungen_erfassen object="KPGE">Bewegungen_erfassen</Bewegungen_erfassen>
+					<Importschnittstelle object="KPB4">Importschnittstelle</Importschnittstelle>
+					<Bereitstellen_periodische_Bewegungen object="KTZO">Bereitstellen_periodische_Bewegungen</Bereitstellen_periodische_Bewegungen>
+					<Bewegungsjournal>Bewegungsjournal
+						<Bewegungsjournal object="KPBJ">Bewegungsjournal</Bewegungsjournal>
+						<Bewegungsjournal_Details object="KPSS">Bewegungsjournal_Details</Bewegungsjournal_Details>
+						<Bereinigung_Bewegungsjournale object="KBBJ">Bereinigungsjournale</Bereinigung_Bewegungsjournale>
+					</Bewegungsjournal>
+				</Bewegung>
+				<Planungsarbeiten>Planungsarbeiten
+					<Planerfassung object="KPLW">Planerfassung</Planerfassung>
+					<Plan-GK_berechnen object="KPLG">Plan-GK_berechnen</Plan-GK_berechnen>
+					<Planlauf object="KPLL">Planlauf</Planlauf>
+					<Importschnittstelle_Planwerte object="KPT4">Importschnittstelle_Planwerte</Importschnittstelle_Planwerte>
+					<Testfunktion>Testfunktion
+						<Planwerte_für_Bezugsgrößen_berechnen object="KGPB">Planwerte_für_Bezugsgrößen_berechnen</Planwerte_für_Bezugsgrößen_berechnen>
+						<Planwerte_für_Kostenstellen_berechnen object="KGPO">Planwerte_für_Kostenstellen_berechnen</Planwerte_für_Kostenstellen_berechnen>
+						<Planlauf_Umlagen_berechnen object="KUUG">Planlauf_Umlagen_berechnen</Planlauf_Umlagen_berechnen>
+						<Planlauf_Zuschläge_berechnen object="KUZG">Planlauf_Zuschläge_berechnen</Planlauf_Zuschläge_berechnen>
+						<Kostensätze_generieren object="KGKS">Kostensätze_generieren</Kostensätze_generieren>
+					</Testfunktion>
+					<Kopierfunktionen>Kopierfunktionen
+						<Kopierdefinition object="KPKD">Kopierdefinition</Kopierdefinition>
+						<Kopiertabelle>Kopiertabelle
+							<Kopiertabellenkopf object="KPBB">Kopiertabelle</Kopiertabellenkopf>
+							<Kopiertabellenposition object="KPBV">Kopiertabellenposition</Kopiertabellenposition>
+							<Kopiertabellenstruktur object="KPSB">Kopiertabellenstruktur</Kopiertabellenstruktur>
+						</Kopiertabelle>
+					</Kopierfunktionen>
+				</Planungsarbeiten>
+				<Abschlussroutinen>Abschlussroutinen
+					<Periodenabschluss object="KABP">Periodenabschluss</Periodenabschluss>
+					<Rollback_Periodenabschluss object="KABR">Rollback_Periodenabschluss</Rollback_Periodenabschluss>
+					<Testfunktion>Testfunktion
+						<Periodenabschluss_Umlagen_berechnen object="KTUG">Periodenabschluss_Umlagen_berechnen</Periodenabschluss_Umlagen_berechnen>
+						<Periodenabschluss_Zuschläge_berechnen object="KTZG">Periodenabschluss_Zuschläge_berechnen</Periodenabschluss_Zuschläge_berechnen>
+						<Weiterverrechnung_Aufträge_berechnen object="KWVA">Weiterverrechnung_Aufträge_berechnen</Weiterverrechnung_Aufträge_berechnen>
+						<Sollkosten_generieren object="KGSK">Sollkosten_generieren</Sollkosten_generieren>
+					</Testfunktion>
+				</Abschlussroutinen>
+				<Kostenrechnungsverbundtabelle object="KKOV">Kostenrechnungsverbundtabelle</Kostenrechnungsverbundtabelle>
+				<Sollwertermittlung_Auftrag object="KSOK">Sollwertermittlung_Auftrag</Sollwertermittlung_Auftrag>
+				<Kostenrechnungsauftragsjournal object="KAOJ">Kostenrechnungsauftragsjournal</Kostenrechnungsauftragsjournal>
+				<Kostenrechnungsauftragsjournal-Wertsumme_bereinigen object="KAOL">Kostenrechnungsauftragsjournal-Wertsumme_bereinigen</Kostenrechnungsauftragsjournal-Wertsumme_bereinigen>			
+				<Wertsummen>Wertsummen
+					<Wertsummen_Kostenobjekte object="KPTS">Wertsummen_Kostenobjekte</Wertsummen_Kostenobjekte>
+					<Wertsummen_Aufträge objecte="KPTM">Wertsummen_Aufträge</Wertsummen_Aufträge>
+					<Wertsummen_aktualisieren object="KSOP">Wertsummen_aktualisieren</Wertsummen_aktualisieren>
+				</Wertsummen>
+				<Budgettext object="KBTX">Budgettext</Budgettext>
+			</Bewegungsdaten>
+			<Auswertungen>Auswertungen
+				<Definition_PowerCube object="KMDC">Definition_PowerCube</Definition_PowerCube>
+				<Dimension_PowerCube object="KMDL">Dimension_PowerCube</Dimension_PowerCube>
+				<Kostenartendimension object="KMKD">Kostenartendimension</Kostenartendimension>
+				<Verknüpfung_Kostenartendimension-Kostenartengruppe object="KMDG">Verknüpfung_Kostenartendimension-Kostenartengruppe</Verknüpfung_Kostenartendimension-Kostenartengruppe>
+				<Kostenartendimension_mehrstufig object="KMDM">Kostenartendimension_mehrstufig</Kostenartendimension_mehrstufig>
+			</Auswertungen>
+		</Kostenrechnung>
+		<Puffer_Rechnungswesen>Puffer_Rechnungswesen
+			<Puffer_Finanzbuchhaltung object="PFIB">Puffer_Finanzbuchhaltung</Puffer_Finanzbuchhaltung>
+			<Struktur_Puffer_Finanzbuchhaltung object="PFIS">Struktur_Puffer_Finanzbuchhaltung</Struktur_Puffer_Finanzbuchhaltung>
+			<Finanzbuchhaltungspuffer_löschen object="PFBB">Finanzbuchhaltungspuffer_löschen</Finanzbuchhaltungspuffer_löschen>
+			<Puffer_Kostenrechnung object="PKOR">Puffer_Kostenrechnung</Puffer_Kostenrechnung>
+			<Kostenrechnungspuffer_löschen object="PKBB">Kostenrechnungspuffer_löschen</Kostenrechnungspuffer_löschen>
+			<Puffer_offene_Posten object="PITO">Puffer_offene_Posten</Puffer_offene_Posten>
+			<Liste_der_offenen_Posten object="PFIO">Liste_der_offenen_Posten</Liste_der_offenen_Posten>
+			<Abstimmliste_mit_Fibu object="PFAL">Abstimmliste_mit_Fibu</Abstimmliste_mit_Fibu>
+		</Puffer_Rechnungswesen>
+		<Finanzbuchhaltung>Finanzbuchhaltung
+			<Bewegungsdaten object="PVBT">Bewegungsdaten</Bewegungsdaten>
+			<Offene_Posten_aktualisieren object="PVOP">Offene_Posten_aktualisieren</Offene_Posten_aktualisieren>
+			<Währungskurs_aktualisieren object="PVWA">Währungskurs_aktualisieren</Währungskurs_aktualisieren>
+			<Kostenrechnungsdaten_übernehmen object="PVBI">Kostenrechnungsdaten_übernehmen</Kostenrechnungsdaten_übernehmen>
+		</Finanzbuchhaltung>
+	</Rechnungswesen>
+</Arbeitsplatz>

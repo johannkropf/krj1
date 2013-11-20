@@ -4,27 +4,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 import psirights.dom.IRightsRepository;
-import psirights.model.Xawd;
+import psirights.model.Rights;
 
 public class RightsRepositoryMock implements IRightsRepository {
 
 	@Override
-	public List<Xawd> findUsersForOperations(String psiObject,
+	public List<Rights> findUsersForOperations(String psiObject,
 			String psiOperations) {
 		
-		List<Xawd> users = new ArrayList<Xawd>();
+		List<Rights> users = new ArrayList<Rights>();
 		
-		Xawd xawd = new Xawd();
-		xawd.setXawdbez("ha001");
-		xawd.setXawdname("Huber Hans");
-		xawd.setXawdphysseq("1");
-		users.add(xawd);
+		Rights rights = new Rights();
+		rights.setXawdbez("ha001");
+		rights.setXawdname("Huber Hans");
+		users.add(rights);
 
-		xawd = new Xawd();
-		xawd.setXawdbez("ha002");
-		xawd.setXawdname("Meier Sepp");
-		xawd.setXawdphysseq("2");
-		users.add(xawd);
+		rights = new Rights();
+		rights.setXawdbez("ha002");
+		rights.setXawdname("Meier Sepp");
+		users.add(rights);
 		
 		return users;
 	}

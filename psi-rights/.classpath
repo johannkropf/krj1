@@ -15,6 +15,7 @@
 	<classpathentry kind="lib" path="lib/mail.jar"/>
 	<classpathentry kind="lib" path="lib/ojdbc6.jar"/>
 	<classpathentry kind="lib" path="lib/postgresql-9.2-1003.jdbc4.jar"/>
+	<classpathentry kind="lib" path="lib/swinglabs-0.8.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

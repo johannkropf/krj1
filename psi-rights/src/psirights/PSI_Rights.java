@@ -22,8 +22,6 @@ public class PSI_Rights {
 		rightsmanager.uses(view, rightsRepo);
 		view.uses(rightsmanager);
 		
-		int ret = rightsmanager.retrieveUsers("XOPR", "Sys_Informieren");
-		
 	}
 
 }

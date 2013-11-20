@@ -2,13 +2,13 @@ package psirights.dom;
 
 import java.util.List;
 
-import psirights.model.Xawd;
+import psirights.model.Rights;
 
 public class RightsManager {
 
 	private IView view;
 	private IRightsRepository rightsRepository;
-    private List<Xawd> users;
+    private List<Rights> rights;
     
 	public RightsManager() {
 	}
@@ -19,12 +19,12 @@ public class RightsManager {
 	}
 
 	public int retrieveUsers(String psiObject, String psiOperations ) {
-		this.users = this.rightsRepository.findUsersForOperations(psiObject, psiOperations);
-		return users.size();
+		this.rights = this.rightsRepository.findUsersForOperations(psiObject, psiOperations);
+		return rights.size();
 	}
 
 	public void displayUsers() {
-		view.displayUsers(this.users);
+		view.displayUsers(this.rights);
 		return;
 	}
 
