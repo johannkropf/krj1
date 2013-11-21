@@ -34,11 +34,11 @@ public class RepositoryMock implements IRepository {
         List<Operations> operations = new ArrayList<Operations>();
 
         Operations operation = new Operations();
-        operation.setOperation("Sys_Informieren");
+        operation.setMethode("Sys_Informieren");
         operations.add(operation);
 
         operation = new Operations();
-        operation.setOperation("Sys_Korrigieren");
+        operation.setMethode("Sys_Korrigieren");
         operations.add(operation);
 
         return operations;

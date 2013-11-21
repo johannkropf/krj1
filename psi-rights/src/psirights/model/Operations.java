@@ -6,23 +6,23 @@ package psirights.model;
  * Time: 12:55
  */
 public class Operations {
-    String operation;
+    String methode;
 
     public Operations() {
     }
 
-    public String getOperation() {
-        return operation;
+    public String getMethode() {
+        return methode;
     }
 
-    public void setOperation(String operation) {
-        this.operation = operation;
+    public void setMethode(String methode) {
+        this.methode = methode;
     }
 
     @Override
     public String toString() {
         return "Operatons{" +
-                "operation='" + operation + '\'' +
+                "methode='" + methode + '\'' +
                 '}';
     }
 }

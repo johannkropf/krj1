@@ -17,9 +17,10 @@ public class DBRepository implements IRepository {
 	public List<Rights> findUsersForOperations(String psiObject,
 			String psiOperations) {
 
+        System.out.println("DBRepository Params: >" +psiObject + "< >" + psiOperations + "<");
+
 		Session session = MyHibernateUtil.getSessionFactory()
 				.getCurrentSession();
-
 		session.beginTransaction();
 
 		Query q = session.createQuery("select f.xawdname as xawdname, " +
@@ -29,25 +30,40 @@ public class DBRepository implements IRepository {
 				"c.siteid as werk, " +
 				"a.xoprobj as objekt " +
 				"from Xopz a join a.xopg b join b.xrgz c join c.xrol d join d.xarz e join e.xawd f " +
-		 		"where a.xoprobj = :object and a.xoprmethode = :methode " +
+		 		"where a.xoprobj = :object and a.xoprmethode in ( :methode ) " +
 		 		"and f.xawdtype = 1 and f.xawdname not in ('rbob', 'system') ");
         q.setResultTransformer(Transformers.aliasToBean(Rights.class));
 
 		q.setString("object", psiObject);
-		q.setString("methode", psiOperations);
-		
+		//q.setString("methode", psiOperations);
+		q.setString("methode", "'Sys_Informieren', 'Sys_Korrigieren'");
+
 		List<Rights> results = q.list();
-//		for (Rights result : results) {
-//			System.out.println(result.toString());
-//		}
+		for (Rights result : results) {
+			System.out.println(result.toString());
+		}
 
 		session.getTransaction().commit();
+
+        System.out.println("DBRepository Anzahl Datensaetze: " + results.size());
 
 		return results;
 	}
 
     @Override
     public List<Operations> findOperationsForObject(String psiObject) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+
+        // select xoprmethode from xopr where xoprobj = '" + object + "' order by xoprmethode"
+        Session session = MyHibernateUtil.getSessionFactory().getCurrentSession();
+        session.beginTransaction();
+
+        Query q = session.createQuery("select xoprmethode as methode from Xopr as xopr where xopr.xoprobj = :object order by xoprmethode");
+        q.setResultTransformer(Transformers.aliasToBean(Operations.class));
+        q.setString("object", psiObject);
+
+        List<Operations> results = q.list();
+
+        session.getTransaction().commit();
+        return results;
     }
 }

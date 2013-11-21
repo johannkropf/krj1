@@ -15,5 +15,6 @@
     <mapping class="psirights.model.Xopz" />
     <mapping class="psirights.model.Xrol" />
     <mapping class="psirights.model.Xopg" />
+    <mapping class="psirights.model.Xopr" />
   </session-factory>
 </hibernate-configuration>

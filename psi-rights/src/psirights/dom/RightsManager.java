@@ -32,7 +32,6 @@ public class RightsManager {
 		this.operations = this.repository.findOperationsForObject(psiObject);
         view.showOperations(this.operations);
 		return this.operations.size();
-		
 	}
 
 	public int showUsers(String psiObject, String psiOperations) {
