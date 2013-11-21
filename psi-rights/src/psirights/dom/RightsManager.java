@@ -2,6 +2,7 @@ package psirights.dom;
 
 import java.util.List;
 
+import psirights.model.Operations;
 import psirights.model.Rights;
 
 public class RightsManager {
@@ -9,7 +10,9 @@ public class RightsManager {
 	private IView view;
 	private IRightsRepository rightsRepository;
     private List<Rights> rights;
-    
+    private IOperationsRepository operationsRepository;
+    private List<Operations> operations;
+
 	public RightsManager() {
 	}
 
@@ -27,17 +30,16 @@ public class RightsManager {
 	}
 
 	public int showOperations(String psiObject) {
-		// retrieveOperations
-		// view.showOperations
-		
-		return 0;
+		this.operations = this.operationsRepository.findOperationsForObject(psiObject);
+        view.showOperations(this.operations);
+		return this.operations.size();
 		
 	}
 
 	public int showUsers(String psiObject, String psiOperations) {
 		this.rights = this.rightsRepository.findUsersForOperations(psiObject, psiOperations);
 		view.showUsers(this.rights);
-		return rights.size();
+		return this.rights.size();
 	}
 
 	

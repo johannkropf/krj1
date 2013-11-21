@@ -16,9 +16,7 @@ public class Rights {
 	public void setXawdname(String xawdname) {
 		this.xawdname = xawdname;
 	}
-	
-	
-	
+
 	public String getXawdbez() {
 		return xawdbez;
 	}

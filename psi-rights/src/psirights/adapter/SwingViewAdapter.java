@@ -32,6 +32,7 @@ import org.jdesktop.swingx.decorator.HighlighterPipeline;
 
 import psirights.dom.IView;
 import psirights.dom.RightsManager;
+import psirights.model.Operations;
 import psirights.model.Rights;
 
 public class SwingViewAdapter implements IView {
@@ -68,7 +69,7 @@ public class SwingViewAdapter implements IView {
 
 		JMenuItem jMenuAbout = new JMenuItem();
 		jMenuHelp.add(jMenuAbout);
-		jMenuAbout.setText("Über...");
+		jMenuAbout.setText("ï¿½ber...");
 		jMenuAbout.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				// About();
@@ -175,7 +176,7 @@ public class SwingViewAdapter implements IView {
 
 	}
 
-	// XML für Menübaum einlesen
+	// XML fï¿½r Menï¿½baum einlesen
 	public JTree buildTree(String pathToXml) throws Exception {
 		SAXReader reader = new SAXReader();
 
@@ -197,7 +198,7 @@ public class SwingViewAdapter implements IView {
 		return result;
 	}
 
-	// Menübaum wurde angeklickt
+	// Menuebaum wurde angeklickt
 	private void menuTree_mouseClicked(MouseEvent e) {
 		int selRow = menuTree.getRowForLocation(e.getX(), e.getY());
 		// TreePath selPath = menuTree.getPathForLocation(e.getX(), e.getY());
@@ -215,7 +216,7 @@ public class SwingViewAdapter implements IView {
 
 				this.setPsiObject(menuInfo.getMenuObject());
 
-				// TODO Info an Controller,
+				// Info an Controller,
 				// displayOperations(menuInfo.getMenuObject());
 				controller.showOperations(this.getPsiObject());
 
@@ -223,7 +224,7 @@ public class SwingViewAdapter implements IView {
 		}
 	}
 
-	// Tabelle Anwenderoperationen - Auswahl geändert
+	// Tabelle Anwenderoperationen - Auswahl geï¿½ndert
 	// wird aufgerufen von SharedListSelectionHandler
 	public void leftTableChanged() {
 
@@ -246,7 +247,7 @@ public class SwingViewAdapter implements IView {
 			// + modelFunc.getValueAt(selection[x], 0) + "'");
 		}
 
-		// TODO Info an controller - displayUser();
+		// Info an controller
 		controller.showUsers(this.getPsiObject(), this.getPsiOperations());
 
 	}
@@ -273,7 +274,7 @@ public class SwingViewAdapter implements IView {
 
 	}
 
-	// Anwenderoperationen anzeigen aufgrund des gewählten Menüeintrages
+	// Anwenderoperationen anzeigen aufgrund des gewï¿½hlten Menï¿½eintrages
 	private void displayOperations(String object) {
 		/*
 		 * Vector datavFunc = null;
@@ -301,7 +302,7 @@ public class SwingViewAdapter implements IView {
 	}
 
 	@Override
-	public int showOperations() {
+	public int showOperations(List<Operations> operations) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
