@@ -6,22 +6,22 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import psirights.adapter.RightsRepositoryMock;
+import psirights.adapter.RepositoryMock;
 import psirights.adapter.SwingViewAdapter;
 
 public class RightsManagerTest {
 
 	IView view;
-	IRightsRepository rightsRepo;
+	IRepository repository;
 	RightsManager rightsmanager;
 
 	@Before
 	public void setUp() throws Exception {
 		view = new SwingViewAdapter();
-		rightsRepo = new RightsRepositoryMock();
+		repository = new RepositoryMock();
 		rightsmanager = new RightsManager();
 
-		rightsmanager.uses(view, rightsRepo);
+		rightsmanager.uses(view, repository);
 		view.uses(rightsmanager);
 	}
 
@@ -41,5 +41,10 @@ public class RightsManagerTest {
 		assertEquals("Retrieved lines must be 2", 2, ret);
 	}
 
+    @Test
+    public void testgetOperations() {
+        int ret = rightsmanager.showOperations("XOPR");
+        assertEquals("Retrieved must be 2", 2, ret);
+    }
 	
 }

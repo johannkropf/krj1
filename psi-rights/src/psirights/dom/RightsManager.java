@@ -8,17 +8,16 @@ import psirights.model.Rights;
 public class RightsManager {
 
 	private IView view;
-	private IRightsRepository rightsRepository;
+	private IRepository repository;
     private List<Rights> rights;
-    private IOperationsRepository operationsRepository;
     private List<Operations> operations;
 
 	public RightsManager() {
 	}
 
-	public void uses(IView view, IRightsRepository rightsRepo) {
+	public void uses(IView view, IRepository rightsRepo) {
 		this.view = view;
-		this.rightsRepository = rightsRepo;
+		this.repository = rightsRepo;
 	}
 
 	public Object getView() {
@@ -26,18 +25,18 @@ public class RightsManager {
 	}
 
 	public Object getRepo() {
-		return this.rightsRepository;
+		return this.repository;
 	}
 
 	public int showOperations(String psiObject) {
-		this.operations = this.operationsRepository.findOperationsForObject(psiObject);
+		this.operations = this.repository.findOperationsForObject(psiObject);
         view.showOperations(this.operations);
 		return this.operations.size();
 		
 	}
 
 	public int showUsers(String psiObject, String psiOperations) {
-		this.rights = this.rightsRepository.findUsersForOperations(psiObject, psiOperations);
+		this.rights = this.repository.findUsersForOperations(psiObject, psiOperations);
 		view.showUsers(this.rights);
 		return this.rights.size();
 	}

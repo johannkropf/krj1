@@ -1,8 +1,8 @@
 package psirights;
 
-import psirights.adapter.DBRightsRepository;
+import psirights.adapter.DBRepository;
 import psirights.adapter.SwingViewAdapter;
-import psirights.dom.IRightsRepository;
+import psirights.dom.IRepository;
 import psirights.dom.IView;
 import psirights.dom.RightsManager;
 
@@ -14,7 +14,7 @@ public class PSI_Rights {
 	public static void main(String[] args) {
 
 		IView view = new SwingViewAdapter();
-		IRightsRepository rightsRepo = new DBRightsRepository();  
+		IRepository rightsRepo = new DBRepository();
 		
 		RightsManager rightsmanager = new RightsManager();
 

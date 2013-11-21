@@ -6,11 +6,12 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.transform.Transformers;
 
-import psirights.dom.IRightsRepository;
+import psirights.dom.IRepository;
 import psirights.hibernate.MyHibernateUtil;
+import psirights.model.Operations;
 import psirights.model.Rights;
 
-public class DBRightsRepository implements IRightsRepository {
+public class DBRepository implements IRepository {
 
 	@Override
 	public List<Rights> findUsersForOperations(String psiObject,
@@ -45,4 +46,8 @@ public class DBRightsRepository implements IRightsRepository {
 		return results;
 	}
 
+    @Override
+    public List<Operations> findOperationsForObject(String psiObject) {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
 }
