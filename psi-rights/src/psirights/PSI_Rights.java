@@ -1,7 +1,6 @@
 package psirights;
 
 import psirights.adapter.DBRightsRepository;
-import psirights.adapter.RightsRepositoryMock;
 import psirights.adapter.SwingViewAdapter;
 import psirights.dom.IRightsRepository;
 import psirights.dom.IView;
