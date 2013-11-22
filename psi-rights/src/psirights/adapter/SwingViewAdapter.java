@@ -5,22 +5,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Vector;
 
-import javax.swing.JComponent;
-import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.JScrollPane;
-import javax.swing.JSeparator;
-import javax.swing.JSplitPane;
-import javax.swing.JTree;
-import javax.swing.KeyStroke;
-import javax.swing.ListSelectionModel;
+import javax.swing.*;
 import javax.swing.border.EmptyBorder;
+import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.tree.DefaultMutableTreeNode;
 
@@ -39,7 +31,7 @@ import psirights.model.Rights;
 
 public class SwingViewAdapter implements IView {
     private String psiObject;
-    private String psiOperations;
+    private List<String> psiOperations;
     private JFrame frame;
     private JTree menuTree;
     private JXTable jTable1;
@@ -47,6 +39,7 @@ public class SwingViewAdapter implements IView {
     private RightsManager controller;
 
     public SwingViewAdapter() {
+        psiOperations = new ArrayList<String>();
         frame = new JFrame();
         frame.setTitle("PSI-Rechte");
         frame.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
@@ -71,7 +64,7 @@ public class SwingViewAdapter implements IView {
 
         JMenuItem jMenuAbout = new JMenuItem();
         jMenuHelp.add(jMenuAbout);
-        jMenuAbout.setText("�ber...");
+        jMenuAbout.setText("Über...");
         jMenuAbout.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // About();
@@ -178,7 +171,7 @@ public class SwingViewAdapter implements IView {
 
     }
 
-    // XML f�r Men�baum einlesen
+    // XML für Menübaum einlesen
     public JTree buildTree(String pathToXml) throws Exception {
         SAXReader reader = new SAXReader();
 
@@ -204,6 +197,8 @@ public class SwingViewAdapter implements IView {
     private void menuTree_mouseClicked(MouseEvent e) {
         int selRow = menuTree.getRowForLocation(e.getX(), e.getY());
         // TreePath selPath = menuTree.getPathForLocation(e.getX(), e.getY());
+
+        this.setPsiObject("");
 
         if (selRow != -1) {
 
@@ -236,20 +231,12 @@ public class SwingViewAdapter implements IView {
 
         Arrays.sort(selection);
 
-        this.setPsiOperations("");
+        this.psiOperations.clear();
 
         for (int x = selection.length - 1; x >= 0; x--) {
 
-            if (!this.getPsiOperations().isEmpty()) {
-                this.setPsiOperations(this.getPsiOperations() + ", ");
-            }
-
             String sel = jTableFunc.getModel().getValueAt(selection[x], 0).toString();
-            this.setPsiOperations(this.getPsiOperations() + "'"
-                    + sel + "'");
-
-            // this.setPsiOperations( this.getPsiOperations() + "'"
-            // + modelFunc.getValueAt(selection[x], 0) + "'");
+            this.psiOperations.add(sel);
         }
 
         // Info an controller
@@ -266,11 +253,11 @@ public class SwingViewAdapter implements IView {
         this.psiObject = psiObject;
     }
 
-    public String getPsiOperations() {
+    public List<String> getPsiOperations() {
         return psiOperations;
     }
 
-    public void setPsiOperations(String psiOperations) {
+    public void setPsiOperations(List<String> psiOperations) {
         this.psiOperations = psiOperations;
     }
 
@@ -280,42 +267,42 @@ public class SwingViewAdapter implements IView {
 
     }
 
-    // Anwenderoperationen anzeigen aufgrund des gew�hlten Men�eintrages
-    private void displayOperations(String object) {
-        /*
-		 * Vector datavFunc = null;
-		 * 
-		 * Cursor hourglassCursor = new Cursor(Cursor.WAIT_CURSOR);
-		 * frame.setCursor(hourglassCursor);
-		 * 
-		 * datavFunc = dm.getData(
-		 * "select xoprmethode from xopr where xoprobj = '" + object +
-		 * "' order by xoprmethode");
-		 * 
-		 * modelFunc.setDataVector(datavFunc, dm.getColumnNames());
-		 * 
-		 * jTableFunc.getColumnModel().getColumn(0).setPreferredWidth(250);
-		 * 
-		 * Cursor normalCursor = new Cursor(Cursor.DEFAULT_CURSOR);
-		 * frame.setCursor(normalCursor);
-		 */
-    }
-
     @Override
     public int showUsers(List<Rights> users) {
         Vector<String> tableHeaders = new Vector<String>();
         Vector tableData = new Vector();
 
         tableHeaders.add("User");
+        tableHeaders.add("Name");
+        tableHeaders.add("Rolle");
+        tableHeaders.add("Kompetenz");
+        tableHeaders.add("Werk");
+        tableHeaders.add("Objekt");
+        tableHeaders.add("Methode");
 
         for (Rights user : users) {
             Vector<Object> oneRow = new Vector<Object>();
             oneRow.add(user.getXawdname());
+            oneRow.add(user.getXawdbez());
+            oneRow.add(user.getRolle());
+            oneRow.add(user.getKompetenz());
+            oneRow.add(user.getWerk());
+            oneRow.add(user.getObjekt());
+            oneRow.add(user.getMethode());
             tableData.add(oneRow);
         }
         jTable1.setModel(new DefaultTableModel(tableData, tableHeaders));
 
         jTable1.getColumnModel().getColumn(0).setPreferredWidth(60);
+        jTable1.getColumnModel().getColumn(1).setPreferredWidth(180);
+        jTable1.getColumnModel().getColumn(2).setPreferredWidth(70);
+        jTable1.getColumnModel().getColumn(3).setPreferredWidth(120);
+        jTable1.getColumnModel().getColumn(4).setPreferredWidth(50);
+        jTable1.getColumnModel().getColumn(5).setPreferredWidth(60);
+        jTable1.getColumnModel().getColumn(6).setPreferredWidth(150);
+        DefaultTableCellRenderer myRenderer = new DefaultTableCellRenderer();
+        myRenderer.setHorizontalAlignment(JLabel.CENTER);
+
         return users.size();
     }
 

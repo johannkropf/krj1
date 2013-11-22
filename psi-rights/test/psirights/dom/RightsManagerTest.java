@@ -9,6 +9,9 @@ import org.junit.Test;
 import psirights.adapter.RepositoryMock;
 import psirights.adapter.SwingViewAdapter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class RightsManagerTest {
 
 	IView view;
@@ -37,7 +40,9 @@ public class RightsManagerTest {
 	
 	@Test
 	public void testgetUsers() {
-		int ret = rightsmanager.showUsers("XOPR", "Sys_Informieren");
+        List<String> methode = new ArrayList();
+        methode.add("Sys_Informieren");
+		int ret = rightsmanager.showUsers("XOPR", methode);
 		assertEquals("Retrieved lines must be 2", 2, ret);
 	}
 

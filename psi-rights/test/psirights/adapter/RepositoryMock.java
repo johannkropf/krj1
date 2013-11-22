@@ -11,7 +11,7 @@ public class RepositoryMock implements IRepository {
 
 	@Override
 	public List<Rights> findUsersForOperations(String psiObject,
-			String psiOperations) {
+			List<String> psiOperations) {
 		
 		List<Rights> users = new ArrayList<Rights>();
 		

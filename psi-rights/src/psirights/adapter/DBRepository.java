@@ -15,9 +15,7 @@ public class DBRepository implements IRepository {
 
 	@Override
 	public List<Rights> findUsersForOperations(String psiObject,
-			String psiOperations) {
-
-        System.out.println("DBRepository Params: >" +psiObject + "< >" + psiOperations + "<");
+			List<String> psiOperations) {
 
 		Session session = MyHibernateUtil.getSessionFactory()
 				.getCurrentSession();
@@ -28,24 +26,19 @@ public class DBRepository implements IRepository {
 				"d.name as rolle, " +
 				"b.xopgname as kompetenz, " +
 				"c.siteid as werk, " +
-				"a.xoprobj as objekt " +
+				"a.xoprobj as objekt, " +
+                "a.xoprmethode as methode " +
 				"from Xopz a join a.xopg b join b.xrgz c join c.xrol d join d.xarz e join e.xawd f " +
-		 		"where a.xoprobj = :object and a.xoprmethode in ( :methode ) " +
+		 		"where a.xoprobj = :object and a.xoprmethode in :methode " +
 		 		"and f.xawdtype = 1 and f.xawdname not in ('rbob', 'system') ");
         q.setResultTransformer(Transformers.aliasToBean(Rights.class));
 
 		q.setString("object", psiObject);
-		//q.setString("methode", psiOperations);
-		q.setString("methode", "'Sys_Informieren', 'Sys_Korrigieren'");
+		q.setParameterList("methode", psiOperations);
 
 		List<Rights> results = q.list();
-		for (Rights result : results) {
-			System.out.println(result.toString());
-		}
 
 		session.getTransaction().commit();
-
-        System.out.println("DBRepository Anzahl Datensaetze: " + results.size());
 
 		return results;
 	}
@@ -53,7 +46,6 @@ public class DBRepository implements IRepository {
     @Override
     public List<Operations> findOperationsForObject(String psiObject) {
 
-        // select xoprmethode from xopr where xoprobj = '" + object + "' order by xoprmethode"
         Session session = MyHibernateUtil.getSessionFactory().getCurrentSession();
         session.beginTransaction();
 

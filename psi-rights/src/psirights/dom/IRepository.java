@@ -8,7 +8,7 @@ import psirights.model.Xawd;
 
 public interface IRepository {
 
-	List<Rights> findUsersForOperations(String psiObject, String psiOperations);
+	List<Rights> findUsersForOperations(String psiObject, List<String> psiOperations);
 
     List<Operations> findOperationsForObject(String psiObject);
 }

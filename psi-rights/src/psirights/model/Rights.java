@@ -8,7 +8,8 @@ public class Rights {
 	String kompetenz;
 	String werk;
 	String objekt;
-	
+    String methode;
+
 	public String getXawdname() {
 		return xawdname;
 	}
@@ -60,6 +61,12 @@ public class Rights {
 	public String toString(){
 		return "Rights toString -> " + this.xawdname;
 	}
-	
-	
+
+    public String getMethode() {
+        return methode;
+    }
+
+    public void setMethode(String methode) {
+        this.methode = methode;
+    }
 }
