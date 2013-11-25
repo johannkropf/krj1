@@ -30,7 +30,8 @@ public class DBRepository implements IRepository {
                 "a.xoprmethode as methode " +
 				"from Xopz a join a.xopg b join b.xrgz c join c.xrol d join d.xarz e join e.xawd f " +
 		 		"where a.xoprobj = :object and a.xoprmethode in :methode " +
-		 		"and f.xawdtype = 1 and f.xawdname not in ('rbob', 'system') ");
+		 		"and f.xawdtype = 1 and f.xawdname not in ('rbob', 'system') " +
+                "order by f.xawdname, c.siteid");
         q.setResultTransformer(Transformers.aliasToBean(Rights.class));
 
 		q.setString("object", psiObject);

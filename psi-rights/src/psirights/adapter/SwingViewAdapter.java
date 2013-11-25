@@ -64,7 +64,7 @@ public class SwingViewAdapter implements IView {
 
         JMenuItem jMenuAbout = new JMenuItem();
         jMenuHelp.add(jMenuAbout);
-        jMenuAbout.setText("Ãœber...");
+        jMenuAbout.setText("Über...");
         jMenuAbout.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // About();
