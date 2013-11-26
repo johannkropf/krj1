@@ -2,19 +2,34 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:h="http://java.sun.com/jsf/html">
+	xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core">
 
 <h:head>
 <meta name="viewport" content="user-scalable-no, width=device-width"></meta>
+<title>psi-rights</title>
 </h:head>
+
 <h:body>
 
-	<h1>JSF 2 outputStylesheet example</h1>
+	<h1>PSI-Rights</h1>
 
 	<h:outputStylesheet library="css" name="iphone.css" />
 
-	<div class="red">This is red color</div>
-
+	<h:dataTable value="#{webAdapterBean.menu}" var="o">
+ 
+    			<h:column>
+    				<!-- column header -->
+    				<f:facet name="header">Order No</f:facet>
+    				<!-- row record -->
+    				#{o}
+    			</h:column>
+ 
+ 
+    		</h:dataTable>
+ 
+	
+	
 </h:body>
 
 </html>

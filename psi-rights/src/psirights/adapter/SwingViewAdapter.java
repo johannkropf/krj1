@@ -171,7 +171,7 @@ public class SwingViewAdapter implements IView {
 
     }
 
-    // XML für Menübaum einlesen
+    // XML fuer Menuebaum einlesen
     public JTree buildTree(String pathToXml) throws Exception {
         SAXReader reader = new SAXReader();
 
