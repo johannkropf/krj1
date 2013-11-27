@@ -3,33 +3,50 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
-	  xmlns:f="http://java.sun.com/jsf/core">
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
 
 <h:head>
-<meta name="viewport" content="user-scalable-no, width=device-width"></meta>
-<title>psi-rights</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="user-scalable-no, width=device-width"></meta>
+
+	<!-- hat nicht funktioniert	
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+ -->
+	<h:outputStylesheet library="css" name="iphone.css" />
+	<!--	<h:outputStylesheet library="css" name="iphone.css"  media="only screen and (max-width:480px)"/>
+	<h:outputStylesheet library="css" name="standard4.css"  media="screen and (min-width:481px)"/>  -->
+	<title>PSI-Rechte</title>
 </h:head>
 
 <h:body>
 
-	<h1>PSI-Rights</h1>
+	<div id="header">
+		<h1>
+			<a href="index.xhtml">PSI-Rechte</a>
+		</h1>
+	</div>
 
-	<h:outputStylesheet library="css" name="iphone.css" />
+	<div id="menu">
+		<h:form>
 
-	<h:dataTable value="#{webAdapterBean.menu}" var="o">
- 
-    			<h:column>
-    				<!-- column header -->
-    				<f:facet name="header">Order No</f:facet>
-    				<!-- row record -->
-    				#{o}
-    			</h:column>
- 
- 
-    		</h:dataTable>
- 
-	
-	
+			<ul>
+				<ui:repeat value="#{webAdapterBean.menu}" var="o">
+					<li><h:commandLink value="#{o}"
+							action="#{webAdapterBean.toString}" /></li>
+				</ui:repeat>
+			</ul>
+
+		</h:form>
+
+		<!--     
+        <ul>
+            <li><a href="http://www.selfhtml5.org/2010-apps-programmieren/apps-programmieren-das-iphone-stylesheet">zurück zum Artikel</a></li>
+        </ul>
+         -->
+	</div>
+
 </h:body>
 
 </html>

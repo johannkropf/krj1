@@ -1,18 +1,26 @@
 @charset "utf-8";
 /* CSS Document */
 
-body {
-	background-color: #ddd;
-	color: #222;
-	font-family: Helvetica;
-	font-size: 14px;
-	margin: 0;
+
+body {font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	background-image:url(../images/iphone4-app-programmieren.jpg);
+	background-repeat: no-repeat;
 	padding: 0;
+	margin: 0;
 }
 
-#header h1 {
+#wrapper {
+	margin: 106px 0 0 27px;
+	width: 251px;
+	height: 379px;
+	overflow: hidden;
+}
+
+#header h1, h1 {
 	margin: 0;
 	padding: 0;
+	font-size: 140%;
 }
 
 #header h1 a {
@@ -20,14 +28,16 @@ body {
 	border-bottom: 1px solid #666;
 	color: #222;
 	display: block;
-	font-size: 20px;
 	font-weight: bold;
 	padding: 10px 0;
 	text-align: center;
 	text-decoration: none;
-    text-shadow: 1px 1px 0px #EEE;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999));	
+	text-shadow: 0 1px 0 #DDD, 0 -1px 3px #AAA;
+	xtext-shadow: #553333 1px 1px 2px;		
+
 }
+
+h2 {font-size: 120%}
 
 #menu ul {
 	list-style: none;
@@ -40,10 +50,10 @@ body {
 	border: 1px solid #999;
 	color: #222;
 	display: block;
-	font-size: 17px;
+	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: -1px;
-	padding: 12px 10px;
+	padding: 8px 6px;
 	text-decoration: none;
 }
 
@@ -59,11 +69,26 @@ body {
 
 
 
-
-
+#content, #sidebar {
+	padding: 12px;}
 
 
 #hinweis {
- 	display: none;
- }
+	position: absolute;
+	top: 40px;
+	left: 360px;
+	padding: 20px;
+	background-color:#FF6;
+	border: 1px solid #CCC;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	

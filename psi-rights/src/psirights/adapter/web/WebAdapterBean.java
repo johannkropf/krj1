@@ -25,7 +25,6 @@ import psirights.model.Rights;
 @SessionScoped
 public class WebAdapterBean implements IView {
 
-	// private String menu;
 	private List<String> menu;
 	private RightsManager rightsmanager;
 	private IRepository rightsRepo;
@@ -34,16 +33,23 @@ public class WebAdapterBean implements IView {
 		rightsmanager = new RightsManager();
 		rightsRepo = new DBRepository();
 		rightsmanager.uses(this, rightsRepo);
-		menu = new ArrayList();
-		this.setMenu("");
+		menu = new ArrayList<String>();
+		this.readMenu();
 	}
 
 	public List<String> getMenu() {
 		return menu;
 	}
+	
+	public void setMenu(List<String> menu) {
+		this.menu = menu;
+	}
 
-	public void setMenu(String menu) {
+	public void readMenu() {
 
+		List<String> menuXml;
+		menuXml = new ArrayList<String>();
+		
 		SAXReader reader = new SAXReader();
 		ExternalContext ec = FacesContext.getCurrentInstance()
 				.getExternalContext();
@@ -58,14 +64,15 @@ public class WebAdapterBean implements IView {
 			while (childs.hasNext()) {
 
 				Element child = (Element) childs.next();
-				System.out.println("Element: " + child.getName());
-				this.menu.add(child.getName());
+				//System.out.println("Element: " + child.getName());
+				menuXml.add(child.getName());
 			}
 
 		} catch (DocumentException e) {
 			e.printStackTrace();
 		}
-
+		
+		this.setMenu(menuXml);
 	}
 
 	@Override
@@ -92,3 +99,7 @@ public class WebAdapterBean implements IView {
 	}
 
 }
+
+/*
+	@ManagedProperty or <f:viewParam> to set GET parameters as bean properties.
+*/
