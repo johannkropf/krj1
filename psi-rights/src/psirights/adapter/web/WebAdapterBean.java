@@ -15,6 +15,7 @@ import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
 import psirights.adapter.DBRepository;
+import psirights.adapter.MenuInfo;
 import psirights.dom.IRepository;
 import psirights.dom.IView;
 import psirights.dom.RightsManager;
@@ -25,81 +26,98 @@ import psirights.model.Rights;
 @SessionScoped
 public class WebAdapterBean implements IView {
 
-	private List<String> menu;
-	private RightsManager rightsmanager;
-	private IRepository rightsRepo;
+    private RightsManager rightsmanager;
+    private IRepository rightsRepo;
+    private List<MenuInfo> menuInfos;
+    private int menuId;
+    Document doc;
 
-	public WebAdapterBean() {
-		rightsmanager = new RightsManager();
-		rightsRepo = new DBRepository();
-		rightsmanager.uses(this, rightsRepo);
-		menu = new ArrayList<String>();
-		this.readMenu();
-	}
+    public WebAdapterBean() {
+        rightsmanager = new RightsManager();
+        rightsRepo = new DBRepository();
+        rightsmanager.uses(this, rightsRepo);
+        menuInfos = new ArrayList<MenuInfo>();
+        doc = null;
+        menuId = -1;
 
-	public List<String> getMenu() {
-		return menu;
-	}
-	
-	public void setMenu(List<String> menu) {
-		this.menu = menu;
-	}
+        this.readMenu();
+    }
 
-	public void readMenu() {
+    public int getMenuId() {
+        return menuId;
+    }
 
-		List<String> menuXml;
-		menuXml = new ArrayList<String>();
-		
-		SAXReader reader = new SAXReader();
-		ExternalContext ec = FacesContext.getCurrentInstance()
-				.getExternalContext();
+    public void setMenuId(int menuId) {
+        System.out.println("setMenuId --> " + Integer.toString(menuId));
+        this.menuId = menuId;
+    }
 
-		try {
-			Document doc = reader.read(ec
-					.getResourceAsStream("/WEB-INF/Menu.xml"));
+    public void readMenu() {
+        Element data;
 
-			Element data = doc.getRootElement();
-			Iterator<Element> childs = data.elementIterator();
+        try {
+            if (doc == null) {
+                SAXReader reader = new SAXReader();
+                ExternalContext ec = FacesContext.getCurrentInstance()
+                        .getExternalContext();
+                doc = reader.read(ec
+                        .getResourceAsStream("/WEB-INF/Menu.xml"));
+            }
 
-			while (childs.hasNext()) {
+            if (menuId == -1) {
+                data = doc.getRootElement();
+            } else {
+                data = menuInfos.get(this.menuId).getElement();
+                System.out.println("ungleich -1 " + menuInfos.get(this.menuId).getElement().toString());
+            }
 
-				Element child = (Element) childs.next();
-				//System.out.println("Element: " + child.getName());
-				menuXml.add(child.getName());
-			}
+            Iterator<Element> childs = data.elementIterator();
 
-		} catch (DocumentException e) {
-			e.printStackTrace();
-		}
-		
-		this.setMenu(menuXml);
-	}
+            int id = 0;
+            menuInfos.clear();
 
-	@Override
-	public String toString() {
-		return "WebAdapterBean [menu=" + menu + "]";
-	}
+            while (childs.hasNext()) {
 
-	@Override
-	public int showUsers(List<Rights> users) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+                Element child = (Element) childs.next();
 
-	@Override
-	public void uses(RightsManager rightsmanager) {
-		// TODO Auto-generated method stub
+                MenuInfo menuInfo = new MenuInfo(child.getText(), child.attributeValue(
+                        "object", ""), id, child);
+                menuInfos.add(menuInfo);
+                id++;
+            }
 
-	}
+        } catch (DocumentException e) {
+            e.printStackTrace();
+        }
+    }
 
-	@Override
-	public int showOperations(List<Operations> operations) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    public List<MenuInfo> getMenuInfos() {
+        readMenu();
+        return menuInfos;
+    }
 
+    public void setMenuInfos(List<MenuInfo> menuInfos) {
+        this.menuInfos = menuInfos;
+    }
+
+    @Override
+    public int showUsers(List<Rights> users) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public void uses(RightsManager rightsmanager) {
+        // TODO Auto-generated method stub
+    }
+
+    @Override
+    public int showOperations(List<Operations> operations) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
 }
 
 /*
-	@ManagedProperty or <f:viewParam> to set GET parameters as bean properties.
-*/
+ @ManagedProperty or <f:viewParam> to set GET parameters as bean properties.
+ */

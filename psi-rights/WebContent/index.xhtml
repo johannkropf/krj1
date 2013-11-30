@@ -2,51 +2,58 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:ui="http://java.sun.com/jsf/facelets">
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
 
-<h:head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="user-scalable-no, width=device-width"></meta>
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="user-scalable-no, width=device-width"></meta>
 
-	<!-- hat nicht funktioniert	
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
- -->
-	<h:outputStylesheet library="css" name="iphone.css" />
-	<!--	<h:outputStylesheet library="css" name="iphone.css"  media="only screen and (max-width:480px)"/>
-	<h:outputStylesheet library="css" name="standard4.css"  media="screen and (min-width:481px)"/>  -->
-	<title>PSI-Rechte</title>
-</h:head>
+        <!-- hat nicht funktioniert	
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        -->
+        <h:outputStylesheet library="css" name="iphone.css" />
+        <!--	<h:outputStylesheet library="css" name="iphone.css"  media="only screen and (max-width:480px)"/>
+        <h:outputStylesheet library="css" name="standard4.css"  media="screen and (min-width:481px)"/>  -->
+        <title>PSI-Rechte</title>
 
-<h:body>
 
-	<div id="header">
-		<h1>
-			<a href="index.xhtml">PSI-Rechte</a>
-		</h1>
-	</div>
+    </h:head>
 
-	<div id="menu">
-		<h:form>
+    <h:body>
+        <f:metadata>
+            <f:viewParam name="menuId" value="#{webAdapterBean.menuId}" />
+        </f:metadata>
 
-			<ul>
-				<ui:repeat value="#{webAdapterBean.menu}" var="o">
-					<li><h:commandLink value="#{o}"
-							action="#{webAdapterBean.toString}" /></li>
-				</ui:repeat>
-			</ul>
 
-		</h:form>
+        <div id="header">
+            <h1>
+                <a href="index.xhtml">PSI-Rechte</a>
+            </h1>
+        </div>
 
-		<!--     
-        <ul>
-            <li><a href="http://www.selfhtml5.org/2010-apps-programmieren/apps-programmieren-das-iphone-stylesheet">zurück zum Artikel</a></li>
-        </ul>
-         -->
-	</div>
+        <div id="menu">
+            <h:form>
 
-</h:body>
+                <ul>
+                    <ui:repeat value="#{webAdapterBean.menuInfos}" var="menu">
+
+                        <li><h:link outcome="index" value="#{menu.menuName}">
+                                <f:param name="menuId" value="#{menu.id}" />
+                            </h:link></li>
+                    </ui:repeat>
+                </ul>
+
+            </h:form>
+
+            <!--     
+            <ul>
+                <li><a href="http://www.selfhtml5.org/2010-apps-programmieren/apps-programmieren-das-iphone-stylesheet">zurück zum Artikel</a></li>
+            </ul>
+            -->
+        </div>
+    </h:body>
 
 </html>
