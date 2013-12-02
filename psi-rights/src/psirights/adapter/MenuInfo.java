@@ -6,14 +6,14 @@ public class MenuInfo {
 
     public String menuName;
     public String menuObject;
-    public int id;
-    public Element element;
+    public String id;
+//    public Element element;
 
-    public MenuInfo(String menu, String object, int id, Element element) {
-        menuName = menu;
-        menuObject = object;
+    public MenuInfo(String menu, String object, String id /*, Element element*/) {
+        this.menuName = menu;
+        this.menuObject = object;
         this.id = id;
-        this.element = element;
+//        this.element = element;
     }
 
     public String toString() {
@@ -32,19 +32,19 @@ public class MenuInfo {
         this.menuName = menuName;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public Element getElement() {
-        return element;
-    }
-
-    public void setElement(Element element) {
-        this.element = element;
-    }
+//    public Element getElement() {
+//        return element;
+//    }
+//
+//    public void setElement(Element element) {
+//        this.element = element;
+//    }
 }

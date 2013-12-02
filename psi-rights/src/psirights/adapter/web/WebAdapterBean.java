@@ -29,18 +29,23 @@ public class WebAdapterBean implements IView {
     private RightsManager rightsmanager;
     private IRepository rightsRepo;
     private List<MenuInfo> menuInfos;
+    private List<MenuInfo> currentMenu;
     private int menuId;
-    Document doc;
+//    Document doc;
+    private int id;
 
     public WebAdapterBean() {
         rightsmanager = new RightsManager();
         rightsRepo = new DBRepository();
         rightsmanager.uses(this, rightsRepo);
         menuInfos = new ArrayList<MenuInfo>();
-        doc = null;
+        currentMenu = new ArrayList<MenuInfo>();
+
+//        doc = null;
         menuId = -1;
 
-        this.readMenu();
+        //this.readMenu();
+//        buildMenu();
     }
 
     public int getMenuId() {
@@ -52,23 +57,57 @@ public class WebAdapterBean implements IView {
         this.menuId = menuId;
     }
 
-    public void readMenu() {
-        Element data;
+    private void buildMenu() {
+        menuInfos.clear();
 
         try {
-            if (doc == null) {
-                SAXReader reader = new SAXReader();
-                ExternalContext ec = FacesContext.getCurrentInstance()
-                        .getExternalContext();
-                doc = reader.read(ec
-                        .getResourceAsStream("/WEB-INF/Menu.xml"));
-            }
+            SAXReader reader = new SAXReader();
+            ExternalContext ec = FacesContext.getCurrentInstance()
+                    .getExternalContext();
+            Document doc = reader.read(ec
+                    .getResourceAsStream("/WEB-INF/Menu.xml"));
+            this.id = 0;
+            build(doc.getRootElement());
 
+        } catch (DocumentException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void build(Element e) {
+        MenuInfo menuInfo = new MenuInfo(e.getText(), e.attributeValue(
+                "object", ""), "id");
+
+        System.out.println("Element: " + e.getUniquePath());
+        System.out.println("Element1: " + e.getQualifiedName());
+
+        menuInfos.add(menuInfo);
+        this.id++;
+
+        for (Object o : e.elements()) {
+            Element child = (Element) o;
+            build(child);
+        }
+    }
+
+    public void readMenu() {
+        Element data=null;
+
+        try {
+            SAXReader reader = new SAXReader();
+            ExternalContext ec = FacesContext.getCurrentInstance()
+                    .getExternalContext();
+            Document doc = reader.read(ec
+                    .getResourceAsStream("/WEB-INF/Menu.xml"));
+
+            menuId = -1;
+            
             if (menuId == -1) {
                 data = doc.getRootElement();
             } else {
-                data = menuInfos.get(this.menuId).getElement();
-                System.out.println("ungleich -1 " + menuInfos.get(this.menuId).getElement().toString());
+ //               data = menuInfos.get(this.menuId).getElement();
+ //               System.out.println("ungleich -1 " + menuInfos.get(this.menuId).getElement().toString());
             }
 
             Iterator<Element> childs = data.elementIterator();
@@ -81,7 +120,7 @@ public class WebAdapterBean implements IView {
                 Element child = (Element) childs.next();
 
                 MenuInfo menuInfo = new MenuInfo(child.getText(), child.attributeValue(
-                        "object", ""), id, child);
+                        "object", ""), child.attributeValue("id", ""));
                 menuInfos.add(menuInfo);
                 id++;
             }
@@ -121,3 +160,33 @@ public class WebAdapterBean implements IView {
 /*
  @ManagedProperty or <f:viewParam> to set GET parameters as bean properties.
  */
+/*
+public Element elementByID(String elementID) {
+        for (int i = 0, size = nodeCount(); i < size; i++) {
+            Node node = node(i);
+
+            if (node instanceof Element) {
+                Element element = (Element) node;
+                String id = elementID(element);
+
+                if ((id != null) && id.equals(elementID)) {
+                    return element;
+                } else {
+                    element = element.elementByID(elementID);
+
+                    if (element != null) {
+                        return element;
+                    }
+                }
+            }
+        }
+
+        return null;
+    }
+
+    protected String elementID(Element element) {
+        // XXX: there will be other ways of finding the ID
+        // XXX: should probably have an IDResolver or something
+        return element.attributeValue("ID");
+    }
+*/

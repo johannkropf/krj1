@@ -1,312 +1,312 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Arbeitsplatz>Arbeitsplatz
-	<System>System
-		<Meldungsprotokoll  object="XMPS">Meldungsprotokoll</Meldungsprotokoll>
-		<Drucker  object="XDRC">Drucker</Drucker>
-		<Konfiguration>Konfiguration
-			<Parameterstruktur object="XPAS">Parameterstruktur</Parameterstruktur>
-			<Parameter object="XPAW">Parameter</Parameter>
-			<Nummernkreise object="XNUM">Nummernkreise</Nummernkreise>
-			<EURO-Stichtagsumstellung object="PEUR">EURO-Umstellung</EURO-Stichtagsumstellung>
-			<Datenanalyse_und_-korrektur object="PKOP">Datenanalyse_und_-korrektur</Datenanalyse_und_-korrektur>
-			<Geschäftsjahr>Geschäftsjahr
-				<Geschäftsjahreskopf_Finanzbuchhaltung_Kostenrechnung object="KPGJ">Geschäftsjahreskopf_Finanzbuchhaltung_Kostenrechnung</Geschäftsjahreskopf_Finanzbuchhaltung_Kostenrechnung>
-				<Geschäftsperiode_Finanzbuchhaltung-Kostenrechnung object="KPGP">Geschäftsperiode_Finanzbuchhaltung-Kostenrechnung</Geschäftsperiode_Finanzbuchhaltung-Kostenrechnung>
-				<Geschäftsjahr_Finanzbuchhaltung-Kostenrechnung object="KPGS">Geschäftsjahr_Finanzbuchhaltung-Kostenrechnung</Geschäftsjahr_Finanzbuchhaltung-Kostenrechnung>
-				<Geschäftsjahreskopf_Einkaufsstatistik object="PEGJ">Geschäftsjahreskopf_Einkaufsstatistik</Geschäftsjahreskopf_Einkaufsstatistik>
-				<Geschäftsperiode_Einkaufsstatistik object="PEGP">Geschäftsperiode_Einkaufsstatistik</Geschäftsperiode_Einkaufsstatistik>
-				<Geschäftsjahreskopf_Materialwirtschaft object="PMGJ">Geschäftsjahreskopf_Materialwirtschaft</Geschäftsjahreskopf_Materialwirtschaft>
-				<Geschäftsperiode_Materialwirtschaft object="PMGP">Geschäftsperiode_Materialwirtschaft</Geschäftsperiode_Materialwirtschaft>
+<Arbeitsplatz id="1">Arbeitsplatz
+	<System id="2">System
+		<Meldungsprotokoll id="3" object="XMPS">Meldungsprotokoll</Meldungsprotokoll>
+		<Drucker id="4" object="XDRC">Drucker</Drucker>
+		<Konfiguration id="5">Konfiguration
+			<Parameterstruktur id="6" object="XPAS">Parameterstruktur</Parameterstruktur>
+			<Parameter id="7" object="XPAW">Parameter</Parameter>
+			<Nummernkreise id="8" object="XNUM">Nummernkreise</Nummernkreise>
+			<EURO-Stichtagsumstellung id="9" object="PEUR">EURO-Umstellung</EURO-Stichtagsumstellung>
+			<Datenanalyse_und_-korrektur id="10" object="PKOP">Datenanalyse_und_-korrektur</Datenanalyse_und_-korrektur>
+			<Geschäftsjahr id="11">Geschäftsjahr
+				<Geschäftsjahreskopf_Finanzbuchhaltung_Kostenrechnung id="12" object="KPGJ">Geschäftsjahreskopf_Finanzbuchhaltung_Kostenrechnung</Geschäftsjahreskopf_Finanzbuchhaltung_Kostenrechnung>
+				<Geschäftsperiode_Finanzbuchhaltung-Kostenrechnung id="13" object="KPGP">Geschäftsperiode_Finanzbuchhaltung-Kostenrechnung</Geschäftsperiode_Finanzbuchhaltung-Kostenrechnung>
+				<Geschäftsjahr_Finanzbuchhaltung-Kostenrechnung id="14" object="KPGS">Geschäftsjahr_Finanzbuchhaltung-Kostenrechnung</Geschäftsjahr_Finanzbuchhaltung-Kostenrechnung>
+				<Geschäftsjahreskopf_Einkaufsstatistik id="15" object="PEGJ">Geschäftsjahreskopf_Einkaufsstatistik</Geschäftsjahreskopf_Einkaufsstatistik>
+				<Geschäftsperiode_Einkaufsstatistik id="16" object="PEGP">Geschäftsperiode_Einkaufsstatistik</Geschäftsperiode_Einkaufsstatistik>
+				<Geschäftsjahreskopf_Materialwirtschaft id="17" object="PMGJ">Geschäftsjahreskopf_Materialwirtschaft</Geschäftsjahreskopf_Materialwirtschaft>
+				<Geschäftsperiode_Materialwirtschaft id="18" object="PMGP">Geschäftsperiode_Materialwirtschaft</Geschäftsperiode_Materialwirtschaft>
 			</Geschäftsjahr>
-			<Belegkonfiguration object="PDRM">Belegkonfiguration</Belegkonfiguration>
-			<PSIpenta_Datenbank-Flags object="XDBS">PSIpenta_Datenbank-Flags</PSIpenta_Datenbank-Flags>
-			<Angemeldete_Anwender object="XACT">Angemeldete_Anwender</Angemeldete_Anwender>
+			<Belegkonfiguration id="19" object="PDRM">Belegkonfiguration</Belegkonfiguration>
+			<PSIpenta_Datenbank-Flags id="20" object="XDBS">PSIpenta_Datenbank-Flags</PSIpenta_Datenbank-Flags>
+			<Angemeldete_Anwender id="21" object="XACT">Angemeldete_Anwender</Angemeldete_Anwender>
 		</Konfiguration>
-		<Workflow>Workflow
-			<Modellierung>Modellierung
-				<Ereignis object="XBEV">Ereignis</Ereignis>
-				<Systemmeldungen>Systemmeldungen
-					<Information_Flow_Manager object="XIFM">Information_Flow_Manager</Information_Flow_Manager>
-					<Information_Flow_für_Workflow object="XIFW">Information_Flow_für_Workflow</Information_Flow_für_Workflow>
-					<Workflow-Protokoll object="XWFP">Workflow-Protokoll</Workflow-Protokoll>
+		<Workflow id="22">Workflow
+			<Modellierung id="23">Modellierung
+				<Ereignis id="24" object="XBEV">Ereignis</Ereignis>
+				<Systemmeldungen id="25">Systemmeldungen
+					<Information_Flow_Manager id="26" object="XIFM">Information_Flow_Manager</Information_Flow_Manager>
+					<Information_Flow_für_Workflow id="27" object="XIFW">Information_Flow_für_Workflow</Information_Flow_für_Workflow>
+					<Workflow-Protokoll id="28" object="XWFP">Workflow-Protokoll</Workflow-Protokoll>
 				</Systemmeldungen>
 			</Modellierung>
 		</Workflow>
-		<Hintergrundauftrag>Hintergrundauftrag
-			<Kopf object="XHAK">Hintergrundauftragskopf</Kopf>
-			<Position object="XHAP">Hintergrundauftragsposition</Position>
-			<Struktur object="XHAF">Hintergrundauftrag</Struktur>
+		<Hintergrundauftrag id="29">Hintergrundauftrag
+			<Kopf id="30" object="XHAK">Hintergrundauftragskopf</Kopf>
+			<Position id="31" object="XHAP">Hintergrundauftragsposition</Position>
+			<Struktur id="32" object="XHAF">Hintergrundauftrag</Struktur>
 		</Hintergrundauftrag>
-		<Organisationsmodell>Organisationsmodell
-			<Person object="XPER">Person</Person>
-			<Adresse_Basis object="XADR">Adresse_Basis</Adresse_Basis>
-			<Rolle object="XROL">Rolle</Rolle>
-			<Anwender object="XAWD">Anwender</Anwender>
-			<Anwenderzuordnung object="XARZ">Anwenderzuordnung</Anwenderzuordnung>
-			<Kompetenz object="XOPG">Kompetenz</Kompetenz>
-			<Anwendungsoperation object="XOPR">Anwendungsoperation</Anwendungsoperation>
-			<Feldvalidierung object="XOPF">Feldvalidierung</Feldvalidierung>
-			<Kompetenzzuordnung object="XRGZ">Kompetenzzuordnung</Kompetenzzuordnung>
-			<Anwendungsoperationszuordnung object="XOPZ">Anwendungsoperationszuordnung</Anwendungsoperationszuordnung>
-			<Bereich object="XUNB">Bereich</Bereich>
-			<Ebene object="XUNE">Ebene</Ebene>
+		<Organisationsmodell id="33" >Organisationsmodell
+			<Person id="34" object="XPER">Person</Person>
+			<Adresse_Basis id="35" object="XADR">Adresse_Basis</Adresse_Basis>
+			<Rolle id="36" object="XROL">Rolle</Rolle>
+			<Anwender id="37" object="XAWD">Anwender</Anwender>
+			<Anwenderzuordnung id="38" object="XARZ">Anwenderzuordnung</Anwenderzuordnung>
+			<Kompetenz id="39" object="XOPG">Kompetenz</Kompetenz>
+			<Anwendungsoperation id="40" object="XOPR">Anwendungsoperation</Anwendungsoperation>
+			<Feldvalidierung id="41" object="XOPF">Feldvalidierung</Feldvalidierung>
+			<Kompetenzzuordnung id="42" object="XRGZ">Kompetenzzuordnung</Kompetenzzuordnung>
+			<Anwendungsoperationszuordnung id="43" object="XOPZ">Anwendungsoperationszuordnung</Anwendungsoperationszuordnung>
+			<Bereich id="44" object="XUNB">Bereich</Bereich>
+			<Ebene id="45" object="XUNE">Ebene</Ebene>
 		</Organisationsmodell>
-		<Fabrikkalender>Fabrikkalender
-			<Tagesart_Fabrikkalender object="XART">Tagesart_Fabrikkalender</Tagesart_Fabrikkalender>
-			<Tageskategorie_Fabrikkalender object="XKAT">Tageskategorie_Fabrikkalender</Tageskategorie_Fabrikkalender>
-			<Fabrikkalender_Regel object="XFBR">Fabrikkalender_Regel</Fabrikkalender_Regel>
-			<Fabrikkalender_Abweichung object="XFBA">Fabrikkalender_Abweichung</Fabrikkalender_Abweichung>
-			<Fabrikkalender object="XFBK">Fabrikkalender</Fabrikkalender>
+		<Fabrikkalender id="46">Fabrikkalender
+			<Tagesart_Fabrikkalender id="47" object="XART">Tagesart_Fabrikkalender</Tagesart_Fabrikkalender>
+			<Tageskategorie_Fabrikkalender id="48" object="XKAT">Tageskategorie_Fabrikkalender</Tageskategorie_Fabrikkalender>
+			<Fabrikkalender_Regel id="49" object="XFBR">Fabrikkalender_Regel</Fabrikkalender_Regel>
+			<Fabrikkalender_Abweichung id="50" object="XFBA">Fabrikkalender_Abweichung</Fabrikkalender_Abweichung>
+			<Fabrikkalender id="51" object="XFBK">Fabrikkalender</Fabrikkalender>
 		</Fabrikkalender>
-		<Multisite>Multisite
-			<Werk-Unternehmenseinheit object="XWRK">Werk-Unternehmenseinheit</Werk-Unternehmenseinheit>
-			<Werksbeziehung object="XWKB">Werksbeziehung</Werksbeziehung>
-			<Werks--Unternehmenseinheit-Objekt-Zuordnung object="XWOZ">Werks--Unternehmenseinheit-Objekt-Zuordnung</Werks--Unternehmenseinheit-Objekt-Zuordnung>
-			<Werk-Unternehmenseinheit_im_Auftragsmanagement object="PWRK">Werk-Unternehmenseinheit_im_Auftragsmanagement</Werk-Unternehmenseinheit_im_Auftragsmanagement>
-			<Werksbeziehung_im_Auftragsmanagement object="PWKB">Werksbeziehung_im_Auftragsmanagement</Werksbeziehung_im_Auftragsmanagement>
-			<Werksbeziehungs-Auftragsart-Umsetzung object="PWBA">Werksbeziehungs-Auftragsart-Umsetzung</Werksbeziehungs-Auftragsart-Umsetzung>
-			<Werk-Zentralbereichszuordnung object="XWZZ">Werk-Zentralbereichszuordnung</Werk-Zentralbereichszuordnung>
-			<Werksbeziehung-Versandart-Transportzeit object="PWVT">Werksbeziehung-Versandart-Transportzeit</Werksbeziehung-Versandart-Transportzeit>			
+		<Multisite id="52">Multisite
+			<Werk-Unternehmenseinheit id="53" object="XWRK">Werk-Unternehmenseinheit</Werk-Unternehmenseinheit>
+			<Werksbeziehung id="54" object="XWKB">Werksbeziehung</Werksbeziehung>
+			<Werks--Unternehmenseinheit-Objekt-Zuordnung id="55" object="XWOZ">Werks--Unternehmenseinheit-Objekt-Zuordnung</Werks--Unternehmenseinheit-Objekt-Zuordnung>
+			<Werk-Unternehmenseinheit_im_Auftragsmanagement id="56" object="PWRK">Werk-Unternehmenseinheit_im_Auftragsmanagement</Werk-Unternehmenseinheit_im_Auftragsmanagement>
+			<Werksbeziehung_im_Auftragsmanagement id="57" object="PWKB">Werksbeziehung_im_Auftragsmanagement</Werksbeziehung_im_Auftragsmanagement>
+			<Werksbeziehungs-Auftragsart-Umsetzung id="58" object="PWBA">Werksbeziehungs-Auftragsart-Umsetzung</Werksbeziehungs-Auftragsart-Umsetzung>
+			<Werk-Zentralbereichszuordnung id="59" object="XWZZ">Werk-Zentralbereichszuordnung</Werk-Zentralbereichszuordnung>
+			<Werksbeziehung-Versandart-Transportzeit id="60" object="PWVT">Werksbeziehung-Versandart-Transportzeit</Werksbeziehung-Versandart-Transportzeit>			
 		</Multisite>
-		<Objektinterface object="POBI">Objektinterface</Objektinterface>
-		<Dialogobjekt object="XOFF">Dialogobjekt</Dialogobjekt>
+		<Objektinterface id="61" object="POBI">Objektinterface</Objektinterface>
+		<Dialogobjekt id="62" object="XOFF">Dialogobjekt</Dialogobjekt>
 	</System>
-	<Basis>Basis
-		<Grunddaten>Grunddaten
-			<Adresse object="PADR">Adresse</Adresse>
-			<Adresse_FiBu-Daten object="PAFI">Adresse_FiBu-Daten</Adresse_FiBu-Daten>
-			<Artikel>Artikel
-				<Artikel object="PART">Artikel</Artikel>
-				<Artikel_werksunabhängig object="PAWU">Artikel_werksunabhängig</Artikel_werksunabhängig>
-				<Artikel_werksspezifisch_im_logistischen_Unternehmen object="PAWL">Artikel_werksspezifisch_im_logistischen_Unternehmen</Artikel_werksspezifisch_im_logistischen_Unternehmen>
-				<Artikelstruktur object="PAST">Artikelstruktur</Artikelstruktur>
-				<Preistabelle object="PPRK">Preistabelle</Preistabelle>
-				<Durchschnittspreis_synchronisieren object="PDPS">Durchschnittspreis_synchronisieren</Durchschnittspreis_synchronisieren>
-				<Preistabelle_bereinigen object="PPTB">Preistabelle_bereinigen</Preistabelle_bereinigen>
-				<Änderungsindex_Konstruktion object="OAIK">Änderungsindex_Konstruktion</Änderungsindex_Konstruktion>
+	<Basis id="63" >Basis
+		<Grunddaten id="64">Grunddaten
+			<Adresse id="65" object="PADR">Adresse</Adresse>
+			<Adresse_FiBu-Daten id="66" object="PAFI">Adresse_FiBu-Daten</Adresse_FiBu-Daten>
+			<Artikel id="67">Artikel
+				<Artikel id="68" object="PART">Artikel</Artikel>
+				<Artikel_werksunabhängig id="69" object="PAWU">Artikel_werksunabhängig</Artikel_werksunabhängig>
+				<Artikel_werksspezifisch_im_logistischen_Unternehmen id="70" object="PAWL">Artikel_werksspezifisch_im_logistischen_Unternehmen</Artikel_werksspezifisch_im_logistischen_Unternehmen>
+				<Artikelstruktur id="71" object="PAST">Artikelstruktur</Artikelstruktur>
+				<Preistabelle id="72" object="PPRK">Preistabelle</Preistabelle>
+				<Durchschnittspreis_synchronisieren id="73" object="PDPS">Durchschnittspreis_synchronisieren</Durchschnittspreis_synchronisieren>
+				<Preistabelle_bereinigen id="74" object="PPTB">Preistabelle_bereinigen</Preistabelle_bereinigen>
+				<Änderungsindex_Konstruktion id="75" object="OAIK">Änderungsindex_Konstruktion</Änderungsindex_Konstruktion>
 			</Artikel>
-			<Artikel-Seriennummer>Artikel-Seriennummer
-				<Artikel-Seriennummerntyp object="PSET">Artikel-Seriennummerntyp</Artikel-Seriennummerntyp>
-				<Artikel-Seriennummer object="PSER">Artikel-Seriennummer</Artikel-Seriennummer>
-				<Artikel-Serien-Nr-Struktur_-mehrstufig- object="PSEM">Artikel-Serien-Nr-Struktur_-mehrstufig-</Artikel-Serien-Nr-Struktur_-mehrstufig->
-				<Artikel-Seriennummernjournal object="PSEJ">Artikel-Seriennummernjournal</Artikel-Seriennummernjournal>
+			<Artikel-Seriennummer id="76">Artikel-Seriennummer
+				<Artikel-Seriennummerntyp id="77" object="PSET">Artikel-Seriennummerntyp</Artikel-Seriennummerntyp>
+				<Artikel-Seriennummer id="78" object="PSER">Artikel-Seriennummer</Artikel-Seriennummer>
+				<Artikel-Serien-Nr-Struktur_-mehrstufig- id="79" object="PSEM">Artikel-Serien-Nr-Struktur_-mehrstufig-</Artikel-Serien-Nr-Struktur_-mehrstufig->
+				<Artikel-Seriennummernjournal id="80" object="PSEJ">Artikel-Seriennummernjournal</Artikel-Seriennummernjournal>
 			</Artikel-Seriennummer>
-			<Belegungseinheit>Belegungseinheit
-				<Belegungseinheit object="PBEL">Belegungseinheit</Belegungseinheit>
-				<Belegungseinheiten-Stundensatz object="PSSB">Belegungseinheiten-Stundensatz</Belegungseinheiten-Stundensatz>
-				<Übergangszeit_zwischen_Belegungseinheiten object="PUGZ">Übergangszeit_zwischen_Belegungseinheiten</Übergangszeit_zwischen_Belegungseinheiten>
+			<Belegungseinheit id="81">Belegungseinheit
+				<Belegungseinheit id="82" object="PBEL">Belegungseinheit</Belegungseinheit>
+				<Belegungseinheiten-Stundensatz id="83" object="PSSB">Belegungseinheiten-Stundensatz</Belegungseinheiten-Stundensatz>
+				<Übergangszeit_zwischen_Belegungseinheiten id="84" object="PUGZ">Übergangszeit_zwischen_Belegungseinheiten</Übergangszeit_zwischen_Belegungseinheiten>
 			</Belegungseinheit>
-			<Belegungseinheiten-Hierarchie>Belegungseinheiten-Hierarchie
-				<Belegungseinheiten-Hierarchiebeziehung object="PBEH">Belegungseinheiten-Hierarchiebeziehung</Belegungseinheiten-Hierarchiebeziehung>
-				<Belegungseinheiten-Hierarchie object="PBHI">Belegungseinheiten-Hierarchie</Belegungseinheiten-Hierarchie>
-				<Belegungseinheiten-Hierarchiestruktur object="PBHS">Belegungseinheiten-Hierarchiestruktur</Belegungseinheiten-Hierarchiestruktur>
-				<Belegungseinheiten-Hierarchie_einstufige_Belegungseinheiten-Verwendung object="PBHE">Belegungseinheiten-Hierarchie_einstufige_Belegungseinheiten-Verwendung</Belegungseinheiten-Hierarchie_einstufige_Belegungseinheiten-Verwendung>
-				<Belegungseinheiten-Hierarchie_mehrstufige_Belegungseinheiten-Verwendung object="PBHM">Belegungseinheiten-Hierarchie_mehrstufige_Belegungseinheiten-Verwendung</Belegungseinheiten-Hierarchie_mehrstufige_Belegungseinheiten-Verwendung>
+			<Belegungseinheiten-Hierarchie id="85">Belegungseinheiten-Hierarchie
+				<Belegungseinheiten-Hierarchiebeziehung id="86" object="PBEH">Belegungseinheiten-Hierarchiebeziehung</Belegungseinheiten-Hierarchiebeziehung>
+				<Belegungseinheiten-Hierarchie id="87" object="PBHI">Belegungseinheiten-Hierarchie</Belegungseinheiten-Hierarchie>
+				<Belegungseinheiten-Hierarchiestruktur id="88" object="PBHS">Belegungseinheiten-Hierarchiestruktur</Belegungseinheiten-Hierarchiestruktur>
+				<Belegungseinheiten-Hierarchie_einstufige_Belegungseinheiten-Verwendung id="89" object="PBHE">Belegungseinheiten-Hierarchie_einstufige_Belegungseinheiten-Verwendung</Belegungseinheiten-Hierarchie_einstufige_Belegungseinheiten-Verwendung>
+				<Belegungseinheiten-Hierarchie_mehrstufige_Belegungseinheiten-Verwendung id="90" object="PBHM">Belegungseinheiten-Hierarchie_mehrstufige_Belegungseinheiten-Verwendung</Belegungseinheiten-Hierarchie_mehrstufige_Belegungseinheiten-Verwendung>
 			</Belegungseinheiten-Hierarchie>
-			<Packmittel>Packmittel
-				<Interne_Packmittelstückliste object="OIPM">Interne_Packmittelstückliste</Interne_Packmittelstückliste>
-				<Artikel-Packmittelstruktur object="OAPS">Artikel-Packmittelstruktur</Artikel-Packmittelstruktur>
-				<Artikel-Packmittelverwendung object="OAPV">Artikel-Packmittelverwendung</Artikel-Packmittelverwendung>
-				<Packmittelgruppe object="OPGR">Packmittelgruppe</Packmittelgruppe>
+			<Packmittel id="91">Packmittel
+				<Interne_Packmittelstückliste id="92" object="OIPM">Interne_Packmittelstückliste</Interne_Packmittelstückliste>
+				<Artikel-Packmittelstruktur id="93" object="OAPS">Artikel-Packmittelstruktur</Artikel-Packmittelstruktur>
+				<Artikel-Packmittelverwendung id="94" object="OAPV">Artikel-Packmittelverwendung</Artikel-Packmittelverwendung>
+				<Packmittelgruppe id="95" object="OPGR">Packmittelgruppe</Packmittelgruppe>
 			</Packmittel>
-			<Kaufmännische_Objekte>Kaufmännische_Objekte
-				<Kostenstelle>Kostenstelle
-					<Kostenstelle object="PKOS">Kostenstelle</Kostenstelle>
-					<Kostenstellen-Stundensatz object="PSSK">Kostenstellen-Stundensatz</Kostenstellen-Stundensatz>
-					<Bezugsgrößen object="KPPK">Bezugsgrößen</Bezugsgrößen>
+			<Kaufmännische_Objekte id="96">Kaufmännische_Objekte
+				<Kostenstelle id="97">Kostenstelle
+					<Kostenstelle id="98" object="PKOS">Kostenstelle</Kostenstelle>
+					<Kostenstellen-Stundensatz id="99" object="PSSK">Kostenstellen-Stundensatz</Kostenstellen-Stundensatz>
+					<Bezugsgrößen id="100" object="KPPK">Bezugsgrößen</Bezugsgrößen>
 				</Kostenstelle>
-				<Bank object="PBAN">Bank</Bank>
-				<Bankverbindung object="PBAV">Bankverbindung</Bankverbindung>
-				<Prüftabelle_für_Umsatzsteuer-ID-Nr object="PUST">Prüftabelle_für_Umsatzsteuer-ID-Nr</Prüftabelle_für_Umsatzsteuer-ID-Nr>
-				<Kontierung>Kontierung
-					<Konto object="PKTO">Konto</Konto>
-					<Kostenart object="PKOA">Kostenart</Kostenart>
-					<Saisonvariatoren object="PSVA">Saisonvariatoren</Saisonvariatoren>
-					<Kontierungstabelle object="PKON">Kontierungstabelle</Kontierungstabelle>
-					<Bewegungsart object="PBWA">Bewegungsart</Bewegungsart>
-					<Zuordnung_Kostenart-Kostensplit object="PKSP">Zuordnung_Kostenart-Kostensplit</Zuordnung_Kostenart-Kostensplit>
-					<Kostenträgertabelle object="PKTT">Kostenträgertabelle</Kostenträgertabelle>
-					<Klassifikation_-Steuerart-_Konto- object="PSKL">Klassifikation_-Steuerart-_Konto-</Klassifikation_-Steuerart-_Konto->
-					<Steuerartfindung object="PEUS">Steuerartfindung</Steuerartfindung>
-					<Kontofindung_Ausgang object="PKFA">Kontofindung_Ausgang</Kontofindung_Ausgang>
+				<Bank id="101" object="PBAN">Bank</Bank>
+				<Bankverbindung id="102" object="PBAV">Bankverbindung</Bankverbindung>
+				<Prüftabelle_für_Umsatzsteuer-ID-Nr id="103" object="PUST">Prüftabelle_für_Umsatzsteuer-ID-Nr</Prüftabelle_für_Umsatzsteuer-ID-Nr>
+				<Kontierung id="104">Kontierung
+					<Konto id="105" object="PKTO">Konto</Konto>
+					<Kostenart id="106" object="PKOA">Kostenart</Kostenart>
+					<Saisonvariatoren id="107" object="PSVA">Saisonvariatoren</Saisonvariatoren>
+					<Kontierungstabelle id="108" object="PKON">Kontierungstabelle</Kontierungstabelle>
+					<Bewegungsart id="109" object="PBWA">Bewegungsart</Bewegungsart>
+					<Zuordnung_Kostenart-Kostensplit id="110" object="PKSP">Zuordnung_Kostenart-Kostensplit</Zuordnung_Kostenart-Kostensplit>
+					<Kostenträgertabelle id="111" object="PKTT">Kostenträgertabelle</Kostenträgertabelle>
+					<Klassifikation_-Steuerart-_Konto- id="112" object="PSKL">Klassifikation_-Steuerart-_Konto-</Klassifikation_-Steuerart-_Konto->
+					<Steuerartfindung id="113" object="PEUS">Steuerartfindung</Steuerartfindung>
+					<Kontofindung_Ausgang id="114" object="PKFA">Kontofindung_Ausgang</Kontofindung_Ausgang>
 				</Kontierung>
 			</Kaufmännische_Objekte>
-			<Materialtabelle>Materialtabelle
-				<Kopf object="PMTK">Materialtabellenkopf</Kopf>
-				<Position object="PMTP">Materialtabellenposition</Position>
-				<Struktur object="PEMA">Materialtabellenstruktur</Struktur>
-				<Artikelverwendung_in_Materialtabelle object="PEMV">Artikelverwendung_in_Materialtabelle</Artikelverwendung_in_Materialtabelle>
+			<Materialtabelle id="115">Materialtabelle
+				<Kopf id="116" object="PMTK">Materialtabellenkopf</Kopf>
+				<Position id="117" object="PMTP">Materialtabellenposition</Position>
+				<Struktur id="118" object="PEMA">Materialtabellenstruktur</Struktur>
+				<Artikelverwendung_in_Materialtabelle id="119" object="PEMV">Artikelverwendung_in_Materialtabelle</Artikelverwendung_in_Materialtabelle>
 			</Materialtabelle>
-			<Grunddaten-Stückliste>Grunddaten-Stückliste
-				<Kopf object="PSTK">Stücklistenkopf</Kopf>
-				<Position object="PSTP">Stücklistenposition</Position>
-				<Baugruppenstückliste object="PESA">Baugruppenstückliste</Baugruppenstückliste>
-				<Strukturstückliste object="PMSA">Strukturstückliste</Strukturstückliste>
-				<Mengenübersicht_Stückliste object="PSAM">Mengenübersicht_Stückliste</Mengenübersicht_Stückliste>
-				<Einstufige_Artikelverwendung_in_Stücklisten object="PESV">Einstufige_Artikelverwendung_in_Stücklisten</Einstufige_Artikelverwendung_in_Stücklisten>
-				<Mehrstufige_Artikelverwendung_in_Stücklisten object="PMSV">Mehrstufige_Artikelverwendung_in_Stücklisten</Mehrstufige_Artikelverwendung_in_Stücklisten>
-				<Artikelverwendung_in_Stücklisten-Mengenübersicht object="PSVM">Artikelverwendung_in_Stücklisten-Mengenübersicht</Artikelverwendung_in_Stücklisten-Mengenübersicht>
-				<Nebenprodukt-Komponenten-Anteil object="ONKA">Nebenprodukt-Komponenten-Anteil</Nebenprodukt-Komponenten-Anteil>
+			<Grunddaten-Stückliste id="120">Grunddaten-Stückliste
+				<Kopf id="121" object="PSTK">Stücklistenkopf</Kopf>
+				<Position id="122" object="PSTP">Stücklistenposition</Position>
+				<Baugruppenstückliste id="123" object="PESA">Baugruppenstückliste</Baugruppenstückliste>
+				<Strukturstückliste id="124" object="PMSA">Strukturstückliste</Strukturstückliste>
+				<Mengenübersicht_Stückliste id="125" object="PSAM">Mengenübersicht_Stückliste</Mengenübersicht_Stückliste>
+				<Einstufige_Artikelverwendung_in_Stücklisten id="126" object="PESV">Einstufige_Artikelverwendung_in_Stücklisten</Einstufige_Artikelverwendung_in_Stücklisten>
+				<Mehrstufige_Artikelverwendung_in_Stücklisten id="127" object="PMSV">Mehrstufige_Artikelverwendung_in_Stücklisten</Mehrstufige_Artikelverwendung_in_Stücklisten>
+				<Artikelverwendung_in_Stücklisten-Mengenübersicht id="128" object="PSVM">Artikelverwendung_in_Stücklisten-Mengenübersicht</Artikelverwendung_in_Stücklisten-Mengenübersicht>
+				<Nebenprodukt-Komponenten-Anteil id="129" object="ONKA">Nebenprodukt-Komponenten-Anteil</Nebenprodukt-Komponenten-Anteil>
 			</Grunddaten-Stückliste>
-			<Kapazitätstabelle>Kapazitätstabelle
-				<Kopf object="PKTK">Kapazitätstabellenkopf</Kopf>
-				<Position object="PKTP">Kapazitätstabellenposition</Position>
-				<Struktur object="PEKA">Kapazitätstabelle</Struktur>
-				<Belegungseinheitverwendung_in_Kapazitätstabellen object="PEVK">Belegungseinheitverwendung_in_Kapazitätstabellen</Belegungseinheitverwendung_in_Kapazitätstabellen>
+			<Kapazitätstabelle id="130">Kapazitätstabelle
+				<Kopf id="131" object="PKTK">Kapazitätstabellenkopf</Kopf>
+				<Position id="132" object="PKTP">Kapazitätstabellenposition</Position>
+				<Struktur id="133" object="PEKA">Kapazitätstabelle</Struktur>
+				<Belegungseinheitverwendung_in_Kapazitätstabellen id="134" object="PEVK">Belegungseinheitverwendung_in_Kapazitätstabellen</Belegungseinheitverwendung_in_Kapazitätstabellen>
 			</Kapazitätstabelle>
-			<Arbeitsplan>Arbeitsplan
-				<Kopf object="PAPK">Arbeitsplankopf</Kopf>
-				<Position object="PAPP">Arbeitsplanposition</Position>
-				<Struktur object="PEAA">Arbeitsplan</Struktur>
-				<Arbeitsgangkatalog object="OAGK">Arbeitsgangkatalog</Arbeitsgangkatalog>
-				<Belegungseinheitverwendung_in_APL object="PEAV">Belegungseinheitverwendung_in_APL</Belegungseinheitverwendung_in_APL>
-				<Übergangszeit_zwischen_Grunddaten-Arbeitsgängen object="PUGG">Übergangszeit_zwischen_Grunddaten-Arbeitsgängen</Übergangszeit_zwischen_Grunddaten-Arbeitsgängen>
-				<Arbeitsplanschritt object="PAPS">Arbeitsplanschritt</Arbeitsplanschritt>
-				<Arbeitsgangreferenzierung_umwandeln object="PARK">Arbeitsgangreferenzierung_umwandeln</Arbeitsgangreferenzierung_umwandeln>
+			<Arbeitsplan id="135">Arbeitsplan
+				<Kopf id="136" object="PAPK">Arbeitsplankopf</Kopf>
+				<Position id="137" object="PAPP">Arbeitsplanposition</Position>
+				<Struktur id="138" object="PEAA">Arbeitsplan</Struktur>
+				<Arbeitsgangkatalog id="139" object="OAGK">Arbeitsgangkatalog</Arbeitsgangkatalog>
+				<Belegungseinheitverwendung_in_APL id="140" object="PEAV">Belegungseinheitverwendung_in_APL</Belegungseinheitverwendung_in_APL>
+				<Übergangszeit_zwischen_Grunddaten-Arbeitsgängen id="141" object="PUGG">Übergangszeit_zwischen_Grunddaten-Arbeitsgängen</Übergangszeit_zwischen_Grunddaten-Arbeitsgängen>
+				<Arbeitsplanschritt id="142" object="PAPS">Arbeitsplanschritt</Arbeitsplanschritt>
+				<Arbeitsgangreferenzierung_umwandeln id="143" object="PARK">Arbeitsgangreferenzierung_umwandeln</Arbeitsgangreferenzierung_umwandeln>
 			</Arbeitsplan>
-			<mitzuliefernde_Unterlagen>mitzuliefernde_Unterlagen
-				<Mitzuliefernde_Unterlage object="PMUL">Mitzuliefernde_Unterlage</Mitzuliefernde_Unterlage>
-				<Mitzuliefernde_Artikelunterlage object="PMUA">Mitzuliefernde_Artikelunterlage</Mitzuliefernde_Artikelunterlage>
-				<Mitzuliefernde_Auftragsunterlage object="PMUF">Mitzuliefernde_Auftragsunterlage</Mitzuliefernde_Auftragsunterlage>
+			<mitzuliefernde_Unterlagen id="144">mitzuliefernde_Unterlagen
+				<Mitzuliefernde_Unterlage id="145" object="PMUL">Mitzuliefernde_Unterlage</Mitzuliefernde_Unterlage>
+				<Mitzuliefernde_Artikelunterlage id="146" object="PMUA">Mitzuliefernde_Artikelunterlage</Mitzuliefernde_Artikelunterlage>
+				<Mitzuliefernde_Auftragsunterlage id="147" object="PMUF">Mitzuliefernde_Auftragsunterlage</Mitzuliefernde_Auftragsunterlage>
 			</mitzuliefernde_Unterlagen>
-			<Lieferrestriktionen>Lieferrestriktionen
-				<Lieferrestriktion object="PRST">Lieferrestriktion</Lieferrestriktion>
-				<Lieferrestriktion_mit_Bezug object="PRSB">Lieferrestriktion_mit_Bezug</Lieferrestriktion_mit_Bezug>
+			<Lieferrestriktionen id="148">Lieferrestriktionen
+				<Lieferrestriktion id="149" object="PRST">Lieferrestriktion</Lieferrestriktion>
+				<Lieferrestriktion_mit_Bezug id="150" object="PRSB">Lieferrestriktion_mit_Bezug</Lieferrestriktion_mit_Bezug>
 			</Lieferrestriktionen>
-			<Grunddatenfreigabejournale>Grunddatenfreigabejournale
-				<Konstruktionsfreigabejournal object="PKFJ">Konstruktionsfreigabejournal</Konstruktionsfreigabejournal>
-				<Fertigungsfreigabejournal object="PFFJ">Fertigungsfreigabejournal</Fertigungsfreigabejournal>
+			<Grunddatenfreigabejournale id="151">Grunddatenfreigabejournale
+				<Konstruktionsfreigabejournal id="152" object="PKFJ">Konstruktionsfreigabejournal</Konstruktionsfreigabejournal>
+				<Fertigungsfreigabejournal id="153" object="PFFJ">Fertigungsfreigabejournal</Fertigungsfreigabejournal>
 			</Grunddatenfreigabejournale>
-			<Metallteuerungszuschlag>Metallteuerungszuschlag
-				<Metallteuerungszuschlag object="OMTZ">Metallteuerungszuschlag</Metallteuerungszuschlag>
-				<Metallteuerungszuschlagjournal object="OMJL">Metallteuerungszuschlagjournal</Metallteuerungszuschlagjournal>
+			<Metallteuerungszuschlag id="154">Metallteuerungszuschlag
+				<Metallteuerungszuschlag id="155" object="OMTZ">Metallteuerungszuschlag</Metallteuerungszuschlag>
+				<Metallteuerungszuschlagjournal id="156" object="OMJL">Metallteuerungszuschlagjournal</Metallteuerungszuschlagjournal>
 			</Metallteuerungszuschlag>
-			<BO-Zuordnung>BO-Zuordnung
-				<BO-Zuordnungsregel object="FBZR">BO-Zuordnungsregel</BO-Zuordnungsregel>
-				<BO-Zuordnung object="FBOZ">BO-Zuordnung</BO-Zuordnung>
+			<BO-Zuordnung id="157">BO-Zuordnung
+				<BO-Zuordnungsregel id="158" object="FBZR">BO-Zuordnungsregel</BO-Zuordnungsregel>
+				<BO-Zuordnung id="159" object="FBOZ">BO-Zuordnung</BO-Zuordnung>
 			</BO-Zuordnung>
-			<Tabellen>Tabellen
-				<Attribute object="PATT">Attribute</Attribute>
-				<Ersatzteilarten object="PETA">Ersatzteilarten</Ersatzteilarten>
-				<Auftragsart object="PAAR">Auftragsart</Auftragsart>
-				<Artikelstatus object="PASS">Artikelstatus</Artikelstatus>
-				<Dispositionstabellen>Dispositionstabellen
-					<Disponent object="PDIS">Disponent</Disponent>
-					<Dispositionskreis object="PDKR">Dispositionskreis</Dispositionskreis>
+			<Tabellen id="160">Tabellen
+				<Attribute id="161" object="PATT">Attribute</Attribute>
+				<Ersatzteilarten id="162" object="PETA">Ersatzteilarten</Ersatzteilarten>
+				<Auftragsart id="163" object="PAAR">Auftragsart</Auftragsart>
+				<Artikelstatus id="164" object="PASS">Artikelstatus</Artikelstatus>
+				<Dispositionstabellen id="165">Dispositionstabellen
+					<Disponent id="166" object="PDIS">Disponent</Disponent>
+					<Dispositionskreis id="167" object="PDKR">Dispositionskreis</Dispositionskreis>
 				</Dispositionstabellen>
-				<Mengeneinheit>Mengeneinheit
-					<Mengeneinheit object="PMEE">Mengeneinheit</Mengeneinheit>
-					<Umrechnung_zwischen_Mengeneinheiten object="PMEU">Umrechnung_zwischen_Mengeneinheiten</Umrechnung_zwischen_Mengeneinheiten>
+				<Mengeneinheit id="168">Mengeneinheit
+					<Mengeneinheit id="169" object="PMEE">Mengeneinheit</Mengeneinheit>
+					<Umrechnung_zwischen_Mengeneinheiten id="170" object="PMEU">Umrechnung_zwischen_Mengeneinheiten</Umrechnung_zwischen_Mengeneinheiten>
 				</Mengeneinheit>
-				<Prozentverteilung object="PPRZ">Prozentverteilung</Prozentverteilung>
-				<Artenschlüssel>Artenschlüssel
-					<Artenschlüssel-Arbeitsplan object="PAPA">Artenschlüssel-Arbeitplan</Artenschlüssel-Arbeitsplan>
-					<Artenschlüssel-Stückliste object="PSTA">Artenschlüssel-Stückliste</Artenschlüssel-Stückliste>
+				<Prozentverteilung id="171" object="PPRZ">Prozentverteilung</Prozentverteilung>
+				<Artenschlüssel id="172">Artenschlüssel
+					<Artenschlüssel-Arbeitsplan id="173" object="PAPA">Artenschlüssel-Arbeitplan</Artenschlüssel-Arbeitsplan>
+					<Artenschlüssel-Stückliste id="174" object="PSTA">Artenschlüssel-Stückliste</Artenschlüssel-Stückliste>
 				</Artenschlüssel>
-				<Qualitätsmangel object="PQUM">Qualitätsmangel</Qualitätsmangel>
-				<Mehrverbrauchs-Storno-Gruppe object="PMSG">Mehrverbrauchs-Storno-Gruppe</Mehrverbrauchs-Storno-Gruppe>
-				<Gruppen>Gruppen
-					<Preisgruppe object="PPGR">Preisgruppe</Preisgruppe>
-					<Rabattgruppe object="ORGR">Rabattgruppe</Rabattgruppe>
-					<Produktgruppe object="PPRG">Produktgruppe</Produktgruppe>
-					<Produktgruppen-Zolltarifnummern-Beziehung object="PPZB">Produktgruppen-Zolltarifnummern-Beziehung</Produktgruppen-Zolltarifnummern-Beziehung>
-					<Ländergruppe object="PLGR">Ländergruppe</Ländergruppe>
-					<Warengruppe object="PWGR">Warengruppe</Warengruppe>
-					<Materialart object="PMRT">Materialart</Materialart>
-					<Materialklasse object="PAKL">Materialklasse</Materialklasse>
-					<Materialbehandlung object="PABH">Materialbehandlung</Materialbehandlung>
-					<Materialunterkategorie object="PAUK">Materialunterkategorie</Materialunterkategorie>
-					<Abwertungsgruppe object="PABW">Abwertungsgruppe</Abwertungsgruppe>
+				<Qualitätsmangel id="175" object="PQUM">Qualitätsmangel</Qualitätsmangel>
+				<Mehrverbrauchs-Storno-Gruppe id="176" object="PMSG">Mehrverbrauchs-Storno-Gruppe</Mehrverbrauchs-Storno-Gruppe>
+				<Gruppen id="177">Gruppen
+					<Preisgruppe id="178" object="PPGR">Preisgruppe</Preisgruppe>
+					<Rabattgruppe id="179" object="ORGR">Rabattgruppe</Rabattgruppe>
+					<Produktgruppe id="180" object="PPRG">Produktgruppe</Produktgruppe>
+					<Produktgruppen-Zolltarifnummern-Beziehung id="181" object="PPZB">Produktgruppen-Zolltarifnummern-Beziehung</Produktgruppen-Zolltarifnummern-Beziehung>
+					<Ländergruppe id="182" object="PLGR">Ländergruppe</Ländergruppe>
+					<Warengruppe id="183" object="PWGR">Warengruppe</Warengruppe>
+					<Materialart id="184" object="PMRT">Materialart</Materialart>
+					<Materialklasse id="185" object="PAKL">Materialklasse</Materialklasse>
+					<Materialbehandlung id="186" object="PABH">Materialbehandlung</Materialbehandlung>
+					<Materialunterkategorie id="187" object="PAUK">Materialunterkategorie</Materialunterkategorie>
+					<Abwertungsgruppe id="188" object="PABW">Abwertungsgruppe</Abwertungsgruppe>
 				</Gruppen>
-				<Zolltarif-Nummer object="PZTN">Zolltarif-Nummer</Zolltarif-Nummer>
-				<Legierungsart object="PLEG">Legierungsart</Legierungsart>
-				<Branche object="PBRC">Branche</Branche>
-				<Lager>Lager
-					<Lagerort object="PLAG">Lagerort</Lagerort>
-					<Inventurzählzyklus object="PCCY">Inventurzählzyklus</Inventurzählzyklus>
+				<Zolltarif-Nummer id="189" object="PZTN">Zolltarif-Nummer</Zolltarif-Nummer>
+				<Legierungsart id="190" object="PLEG">Legierungsart</Legierungsart>
+				<Branche id="191" object="PBRC">Branche</Branche>
+				<Lager id="192">Lager
+					<Lagerort id="193" object="PLAG">Lagerort</Lagerort>
+					<Inventurzählzyklus id="194" object="PCCY">Inventurzählzyklus</Inventurzählzyklus>
 				</Lager>
-				<Steuertabellen>Steuertabellen
-					<Euro-Steuer object="PSTE">Euro-Steuer</Euro-Steuer>
-					<US-Steuer object="PSTU">US-Steuer</US-Steuer>
-					<Klassifikation_-Steuerart-_Konto- object="PSKL">Klassifikation_-Steuerart-_Konto-</Klassifikation_-Steuerart-_Konto->
+				<Steuertabellen id="195">Steuertabellen
+					<Euro-Steuer id="196" object="PSTE">Euro-Steuer</Euro-Steuer>
+					<US-Steuer id="197" object="PSTU">US-Steuer</US-Steuer>
+					<Klassifikation_-Steuerart-_Konto- id="198" object="PSKL">Klassifikation_-Steuerart-_Konto-</Klassifikation_-Steuerart-_Konto->
 				</Steuertabellen>
-				<Land object="PLND">Land</Land>
-				<Sprache object="PSPR">Sprache</Sprache>
-				<Währung object="PWAE">Währung</Währung>
-				<Zahlungen>Zahlungen
-					<Zahlungsziel>Zahlungsziel
-						<Zahlungsziel object="PZZI">Zahlungsziel</Zahlungsziel>
-						<Zahlungsziel_Fremdsprache object="PZZF">Zahlungsziel_Fremdsprache</Zahlungsziel_Fremdsprache>
+				<Land id="199" object="PLND">Land</Land>
+				<Sprache id="200" object="PSPR">Sprache</Sprache>
+				<Währung id="201" object="PWAE">Währung</Währung>
+				<Zahlungen id="202">Zahlungen
+					<Zahlungsziel id="203">Zahlungsziel
+						<Zahlungsziel id="204" object="PZZI">Zahlungsziel</Zahlungsziel>
+						<Zahlungsziel_Fremdsprache id="205" object="PZZF">Zahlungsziel_Fremdsprache</Zahlungsziel_Fremdsprache>
 					</Zahlungsziel>
-					<Zahlungsbedingungen>Zahlungsbedingungen
-						<Zahlungsbedingungen object="PZBD">Zahlungsbedingungen</Zahlungsbedingungen>
-						<Zahlungsbedingungen_Fremdsprache object="PZBF">Zahlungsbedingungen_Fremdsprache</Zahlungsbedingungen_Fremdsprache>
+					<Zahlungsbedingungen id="206">Zahlungsbedingungen
+						<Zahlungsbedingungen id="207" object="PZBD">Zahlungsbedingungen</Zahlungsbedingungen>
+						<Zahlungsbedingungen_Fremdsprache id="208" object="PZBF">Zahlungsbedingungen_Fremdsprache</Zahlungsbedingungen_Fremdsprache>
 					</Zahlungsbedingungen>
-					<Zahlungsart object="PZAA">Zahlungsart</Zahlungsart>
+					<Zahlungsart id="209" object="PZAA">Zahlungsart</Zahlungsart>
 				</Zahlungen>
-				<Zu-_oder_Abschlag>Zu-_oder_Abschlag
-					<Zu-_oder_Abschlag object="PZAB">Zu-_oder_Abschlag</Zu-_oder_Abschlag>
-					<Zu-_oder_Abschlag_Fremdsprache object="PZAF">Zu-_oder_Abschlag_Fremdsprache</Zu-_oder_Abschlag_Fremdsprache>
+				<Zu-_oder_Abschlag id="210">Zu-_oder_Abschlag
+					<Zu-_oder_Abschlag id="211" object="PZAB">Zu-_oder_Abschlag</Zu-_oder_Abschlag>
+					<Zu-_oder_Abschlag_Fremdsprache id="212" object="PZAF">Zu-_oder_Abschlag_Fremdsprache</Zu-_oder_Abschlag_Fremdsprache>
 				</Zu-_oder_Abschlag>
-				<Benennungskatalog object="PBEK">Benennungskatalog</Benennungskatalog>
+				<Benennungskatalog id="213" object="PBEK">Benennungskatalog</Benennungskatalog>
 			</Tabellen>
 		</Grunddaten>
-		<Engineering>Engineering
-			<Engineering-Stückliste>Engineering-Stückliste
-				<Kopf object="NSTK">Engineering-Stücklistenkopf</Kopf>
-				<Position object="NSTP">Engineerring-Stücklistenposition</Position>
-				<Baugruppe object="NESA">Engineering-Baugruppenstückliste</Baugruppe>
-				<Struktur object="NMSA">Engineering-Strukturstückliste</Struktur>
-				<Mengenübersicht_Engineering-Stückliste object="NSAM">Mengenübersicht_Enigineering-Stückliste</Mengenübersicht_Engineering-Stückliste>
-				<Einstufige_Artikelverwendung_in_Engineering-STL object="NESV">Einstufige_Artikelverwendung_in_Engineering-STL</Einstufige_Artikelverwendung_in_Engineering-STL>
-				<Mehrstufige_Artikelverwendung_in_Engineering-STL object="NMSV">Mehrstufige_Artikelverwendung_in_Engineering-STL</Mehrstufige_Artikelverwendung_in_Engineering-STL>
-				<Artikelverwendung_in_Engineering-STL-Mengenübersicht object="NSVM">Artikelverwendung_in_Engineering-STL-Mengenübersicht</Artikelverwendung_in_Engineering-STL-Mengenübersicht>
+		<Engineering id="214">Engineering
+			<Engineering-Stückliste id="215">Engineering-Stückliste
+				<Kopf id="216" object="NSTK">Engineering-Stücklistenkopf</Kopf>
+				<Position id="217" object="NSTP">Engineerring-Stücklistenposition</Position>
+				<Baugruppe id="218" object="NESA">Engineering-Baugruppenstückliste</Baugruppe>
+				<Struktur id="219" object="NMSA">Engineering-Strukturstückliste</Struktur>
+				<Mengenübersicht_Engineering-Stückliste id="220" object="NSAM">Mengenübersicht_Enigineering-Stückliste</Mengenübersicht_Engineering-Stückliste>
+				<Einstufige_Artikelverwendung_in_Engineering-STL id="221" object="NESV">Einstufige_Artikelverwendung_in_Engineering-STL</Einstufige_Artikelverwendung_in_Engineering-STL>
+				<Mehrstufige_Artikelverwendung_in_Engineering-STL id="222" object="NMSV">Mehrstufige_Artikelverwendung_in_Engineering-STL</Mehrstufige_Artikelverwendung_in_Engineering-STL>
+				<Artikelverwendung_in_Engineering-STL-Mengenübersicht id="223" object="NSVM">Artikelverwendung_in_Engineering-STL-Mengenübersicht</Artikelverwendung_in_Engineering-STL-Mengenübersicht>
 			</Engineering-Stückliste>
 		</Engineering>
-		<Klassifizierung>Klassifizierung
-			<Klasse object="PKLS">Klasse</Klasse>
-			<Klassenzuordnung object="PKLZ">Klassenzuordnung</Klassenzuordnung>
-			<Klassenexplorer object="PKEX">Klassenexplorer</Klassenexplorer>
-			<Klassifizierungsstruktur object="PKLB">Klassifizierungsstruktur</Klassifizierungsstruktur>
-			<Sachmerkmal object="PSMM">Sachmerkmal</Sachmerkmal>
-			<Sachmerkmalswert object="PSMW">Sachmerkmalswert</Sachmerkmalswert>
-			<Sachmerkmalsleiste object="PSML">Sachmerkmalsliste</Sachmerkmalsleiste>
-			<Objektzuordnung object="POBZ">Objektzuordnung</Objektzuordnung>
-			<Objektwertzuordnung object="POWZ">Objektwertzuordnung</Objektwertzuordnung>
-			<Objektsuche object="POSU">Objektsuche</Objektsuche>
+		<Klassifizierung id="224">Klassifizierung
+			<Klasse id="225" object="PKLS">Klasse</Klasse>
+			<Klassenzuordnung id="226" object="PKLZ">Klassenzuordnung</Klassenzuordnung>
+			<Klassenexplorer id="227" object="PKEX">Klassenexplorer</Klassenexplorer>
+			<Klassifizierungsstruktur id="228" object="PKLB">Klassifizierungsstruktur</Klassifizierungsstruktur>
+			<Sachmerkmal id="229" object="PSMM">Sachmerkmal</Sachmerkmal>
+			<Sachmerkmalswert id="230" object="PSMW">Sachmerkmalswert</Sachmerkmalswert>
+			<Sachmerkmalsleiste id="231" object="PSML">Sachmerkmalsliste</Sachmerkmalsleiste>
+			<Objektzuordnung id="232" object="POBZ">Objektzuordnung</Objektzuordnung>
+			<Objektwertzuordnung id="233" object="POWZ">Objektwertzuordnung</Objektwertzuordnung>
+			<Objektsuche id="234" object="POSU">Objektsuche</Objektsuche>
 		</Klassifizierung>
-		<Dokument>Dokument
-			<Dokument object="XDMR">Dokument</Dokument>
-			<Dokumenten_Volltextsuche object="XDMF">Dokumenten_Volltextsuche</Dokumenten_Volltextsuche>
-			<Dokumententyp object="XDTY">Dokumententyp</Dokumententyp>
-			<externes_Dokumentenverwaltungssystem object="XDXS">externes_Dokumentenverwaltungssystem</externes_Dokumentenverwaltungssystem>
+		<Dokument id="235">Dokument
+			<Dokument id="236" object="XDMR">Dokument</Dokument>
+			<Dokumenten_Volltextsuche id="237" object="XDMF">Dokumenten_Volltextsuche</Dokumenten_Volltextsuche>
+			<Dokumententyp id="238" object="XDTY">Dokumententyp</Dokumententyp>
+			<externes_Dokumentenverwaltungssystem id="239" object="XDXS">externes_Dokumentenverwaltungssystem</externes_Dokumentenverwaltungssystem>
 		</Dokument>
 	</Basis>
-	<Auftragsmanagement>Auftragsmanagement
-		<Projekt>Projekt
-			<Projektklammer object="PPRO">Projektklammer</Projektklammer>
-			<Projekt-_-Kundenvorgangsakte object="PPST">Projekt-_-Kundenvorgangsakte</Projekt-_-Kundenvorgangsakte>
+	<Auftragsmanagement id="240">Auftragsmanagement
+		<Projekt id="241">Projekt
+			<Projektklammer id="242" object="PPRO">Projektklammer</Projektklammer>
+			<Projekt-_-Kundenvorgangsakte id="243" object="PPST">Projekt-_-Kundenvorgangsakte</Projekt-_-Kundenvorgangsakte>
 		</Projekt>
-		<Vertrieb>Vertrieb
-			<Kunde object="PKUN">Kunde</Kunde>
-			<Kunde_Finanzbuchhaltungsdaten object="PKFI">Kunde_Finanzbuchhaltungsdaten</Kunde_Finanzbuchhaltungsdaten>
-			<Kunden-Merkmale object="PKUM">Kunden-Merkmale</Kunden-Merkmale>
-			<Kunden-Artikelreferenz>Kunden-Artikelreferenz
-				<Allgemeine_Sicht object="PKRF">Kunden-Artikelreferenz_Allgemein</Allgemeine_Sicht>
-				<Artikelsicht object="PKRA">Kunden-Artikelreferenz_Artikelsicht</Artikelsicht>
-				<Kundensicht object="PKRU">Kunden-Artikelreferenz_Kundensicht</Kundensicht>
+		<Vertrieb id="244">Vertrieb
+			<Kunde id="245" object="PKUN">Kunde</Kunde>
+			<Kunde_Finanzbuchhaltungsdaten id="246" object="PKFI">Kunde_Finanzbuchhaltungsdaten</Kunde_Finanzbuchhaltungsdaten>
+			<Kunden-Merkmale id="247" object="PKUM">Kunden-Merkmale</Kunden-Merkmale>
+			<Kunden-Artikelreferenz id="248">Kunden-Artikelreferenz
+				<Allgemeine_Sicht id="249" object="PKRF">Kunden-Artikelreferenz_Allgemein</Allgemeine_Sicht>
+				<Artikelsicht id="250" object="PKRA">Kunden-Artikelreferenz_Artikelsicht</Artikelsicht>
+				<Kundensicht id="251" object="PKRU">Kunden-Artikelreferenz_Kundensicht</Kundensicht>
 			</Kunden-Artikelreferenz>
-			<ausgehende_Ursprungserklärung object="PUSA">ausgehende_Ursprungserklärung</ausgehende_Ursprungserklärung>
-			<Vertreter object="PVER">Vertreter</Vertreter>
-			<Vertreter-Provisionsreferenz object="PVRF">Vertreter-Provisionsreferenz</Vertreter-Provisionsreferenz>
-			<Preisliste>Preisliste
-				<Artikelsicht>Artikelsicht
-					<Kopf object="PPAK">Artikel-Preislistenkopf</Kopf>
-					<Position object="PPAP">Artikel-Preislistenposition</Position>
-					<Struktur object="PPAG">Artikel-Preisliste</Struktur>
+			<ausgehende_Ursprungserklärung id="252" object="PUSA">ausgehende_Ursprungserklärung</ausgehende_Ursprungserklärung>
+			<Vertreter id="253" object="PVER">Vertreter</Vertreter>
+			<Vertreter-Provisionsreferenz id="254" object="PVRF">Vertreter-Provisionsreferenz</Vertreter-Provisionsreferenz>
+			<Preisliste id="255">Preisliste
+				<Artikelsicht id="256">Artikelsicht
+					<Kopf id="257" object="PPAK">Artikel-Preislistenkopf</Kopf>
+					<Position id="258" object="PPAP">Artikel-Preislistenposition</Position>
+					<Struktur id="259" object="PPAG">Artikel-Preisliste</Struktur>
 				</Artikelsicht>
-				<Kundengruppensicht>Kundengruppensicht
+				<Kundengruppensicht id="260">Kundengruppensicht
 					<Kopf object="PPKK">Kundengruppen-Preislistenkopf</Kopf>
 					<Position object="PPKP">Kundengruppen-Preislistenposition</Position>
 					<Struktur object="PPKG">Kundengruppen-Preisliste</Struktur>

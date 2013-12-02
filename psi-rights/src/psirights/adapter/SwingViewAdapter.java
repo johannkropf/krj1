@@ -64,7 +64,7 @@ public class SwingViewAdapter implements IView {
 
         JMenuItem jMenuAbout = new JMenuItem();
         jMenuHelp.add(jMenuAbout);
-        jMenuAbout.setText("Über...");
+        jMenuAbout.setText("ï¿½ber...");
         jMenuAbout.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // About();
@@ -181,7 +181,7 @@ public class SwingViewAdapter implements IView {
 
     public DefaultMutableTreeNode build(Element e) {
         MenuInfo menuInfo = new MenuInfo(e.getText(), e.attributeValue(
-                "object", ""));
+                "object", ""), 0, e);
 
         DefaultMutableTreeNode result = new DefaultMutableTreeNode(menuInfo);
 
