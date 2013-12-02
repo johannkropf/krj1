@@ -7,13 +7,11 @@ public class MenuInfo {
     public String menuName;
     public String menuObject;
     public String id;
-//    public Element element;
 
-    public MenuInfo(String menu, String object, String id /*, Element element*/) {
+    public MenuInfo(String menu, String object, String id ) {
         this.menuName = menu;
         this.menuObject = object;
         this.id = id;
-//        this.element = element;
     }
 
     public String toString() {
@@ -40,11 +38,4 @@ public class MenuInfo {
         this.id = id;
     }
 
-//    public Element getElement() {
-//        return element;
-//    }
-//
-//    public void setElement(Element element) {
-//        this.element = element;
-//    }
 }

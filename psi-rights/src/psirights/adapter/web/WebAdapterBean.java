@@ -12,6 +12,7 @@ import javax.faces.context.FacesContext;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
+import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
 
 import psirights.adapter.DBRepository;
@@ -29,70 +30,28 @@ public class WebAdapterBean implements IView {
     private RightsManager rightsmanager;
     private IRepository rightsRepo;
     private List<MenuInfo> menuInfos;
-    private List<MenuInfo> currentMenu;
-    private int menuId;
-//    Document doc;
-    private int id;
+    private String menuId;
 
     public WebAdapterBean() {
         rightsmanager = new RightsManager();
         rightsRepo = new DBRepository();
         rightsmanager.uses(this, rightsRepo);
+        
         menuInfos = new ArrayList<MenuInfo>();
-        currentMenu = new ArrayList<MenuInfo>();
-
-//        doc = null;
-        menuId = -1;
-
-        //this.readMenu();
-//        buildMenu();
+        menuId = "1";
     }
 
-    public int getMenuId() {
+    public String getMenuId() {
         return menuId;
     }
 
-    public void setMenuId(int menuId) {
-        System.out.println("setMenuId --> " + Integer.toString(menuId));
+    public void setMenuId(String menuId) {
+        System.out.println("setMenuId --> " + menuId);
         this.menuId = menuId;
     }
 
-    private void buildMenu() {
-        menuInfos.clear();
-
-        try {
-            SAXReader reader = new SAXReader();
-            ExternalContext ec = FacesContext.getCurrentInstance()
-                    .getExternalContext();
-            Document doc = reader.read(ec
-                    .getResourceAsStream("/WEB-INF/Menu.xml"));
-            this.id = 0;
-            build(doc.getRootElement());
-
-        } catch (DocumentException e) {
-            e.printStackTrace();
-        }
-
-    }
-
-    private void build(Element e) {
-        MenuInfo menuInfo = new MenuInfo(e.getText(), e.attributeValue(
-                "object", ""), "id");
-
-        System.out.println("Element: " + e.getUniquePath());
-        System.out.println("Element1: " + e.getQualifiedName());
-
-        menuInfos.add(menuInfo);
-        this.id++;
-
-        for (Object o : e.elements()) {
-            Element child = (Element) o;
-            build(child);
-        }
-    }
-
     public void readMenu() {
-        Element data=null;
+        Element data = null;
 
         try {
             SAXReader reader = new SAXReader();
@@ -101,18 +60,14 @@ public class WebAdapterBean implements IView {
             Document doc = reader.read(ec
                     .getResourceAsStream("/WEB-INF/Menu.xml"));
 
-            menuId = -1;
-            
-            if (menuId == -1) {
+            if (menuId.equals("1")) {
                 data = doc.getRootElement();
             } else {
- //               data = menuInfos.get(this.menuId).getElement();
- //               System.out.println("ungleich -1 " + menuInfos.get(this.menuId).getElement().toString());
+                data = findElementById(doc.getRootElement());
             }
 
             Iterator<Element> childs = data.elementIterator();
 
-            int id = 0;
             menuInfos.clear();
 
             while (childs.hasNext()) {
@@ -122,7 +77,6 @@ public class WebAdapterBean implements IView {
                 MenuInfo menuInfo = new MenuInfo(child.getText(), child.attributeValue(
                         "object", ""), child.attributeValue("id", ""));
                 menuInfos.add(menuInfo);
-                id++;
             }
 
         } catch (DocumentException e) {
@@ -155,24 +109,20 @@ public class WebAdapterBean implements IView {
         // TODO Auto-generated method stub
         return 0;
     }
-}
 
-/*
- @ManagedProperty or <f:viewParam> to set GET parameters as bean properties.
- */
-/*
-public Element elementByID(String elementID) {
-        for (int i = 0, size = nodeCount(); i < size; i++) {
-            Node node = node(i);
+    private Element findElementById(Element root) {
+
+        for (int i = 0, size = root.nodeCount(); i < size; i++) {
+            Node node = root.node(i);
 
             if (node instanceof Element) {
                 Element element = (Element) node;
-                String id = elementID(element);
+                String id = element.attributeValue("id");
 
-                if ((id != null) && id.equals(elementID)) {
+                if ((id != null) && id.equals(this.menuId)) {
                     return element;
                 } else {
-                    element = element.elementByID(elementID);
+                    element = findElementById(element);
 
                     if (element != null) {
                         return element;
@@ -183,10 +133,8 @@ public Element elementByID(String elementID) {
 
         return null;
     }
+}
 
-    protected String elementID(Element element) {
-        // XXX: there will be other ways of finding the ID
-        // XXX: should probably have an IDResolver or something
-        return element.attributeValue("ID");
-    }
-*/
+/*
+ @ManagedProperty or <f:viewParam> to set GET parameters as bean properties.
+ */

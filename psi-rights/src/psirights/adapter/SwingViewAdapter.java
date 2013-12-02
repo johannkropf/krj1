@@ -181,7 +181,7 @@ public class SwingViewAdapter implements IView {
 
     public DefaultMutableTreeNode build(Element e) {
         MenuInfo menuInfo = new MenuInfo(e.getText(), e.attributeValue(
-                "object", ""), 0, e);
+                "object", ""), "0");
 
         DefaultMutableTreeNode result = new DefaultMutableTreeNode(menuInfo);
 
