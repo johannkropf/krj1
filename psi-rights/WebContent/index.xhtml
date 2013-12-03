@@ -6,6 +6,10 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:ui="http://java.sun.com/jsf/facelets">
 
+    <f:metadata>
+        <f:viewParam name="menuId" value="#{webAdapterBean.menuId}" />
+    </f:metadata>
+
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="user-scalable-no, width=device-width"></meta>
@@ -22,14 +26,10 @@
     </h:head>
 
     <h:body>
-        <f:metadata>
-            <f:viewParam name="menuId" value="#{webAdapterBean.menuId}" />
-        </f:metadata>
-
 
         <div id="header">
             <h1>
-              <!--  <a href="index.xhtml">PSI-Rechte</a> -->
+                <!--  <a href="index.xhtml">PSI-Rechte</a> -->
                 <h:link outcome="index" value="PSI-Rechte">
                     <f:param name="menuId" value="1" />
                 </h:link>
@@ -42,9 +42,15 @@
                 <ul>
                     <ui:repeat value="#{webAdapterBean.menuInfos}" var="menu">
 
-                        <li><h:link outcome="index" value="#{menu.menuName}">
+                        <li><h:link outcome="index" value="#{menu.menuName}" rendered="#{menu.menuObject eq ''}">
                                 <f:param name="menuId" value="#{menu.id}" />
-                            </h:link></li>
+                            </h:link>
+
+                            <h:link outcome="operations" value="#{menu.menuName}" rendered="#{menu.menuObject ne ''}">
+                                <f:param name="menuId" value="#{menu.id}" />
+                                <f:param name="object" value="#{menu.menuObject}" />
+                            </h:link>
+                        </li>
                     </ui:repeat>
                 </ul>
 

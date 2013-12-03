@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+    <f:metadata>
+        <f:viewParam name="menuId" value="#{webAdapterBean.menuId}" />
+        <f:viewParam name="object" value="#{webAdapterBean.object}" />
+    </f:metadata>
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="user-scalable-no, width=device-width"></meta>
+        <h:outputStylesheet library="css" name="iphone.css" />
+        <title>PSI-Rechte</title>
+    </h:head>
+
+    <h:body>
+
+        <div id="header">
+            <h1>
+                <h:link outcome="index" value="PSI-Rechte: #{webAdapterBean.object}">
+                    <f:param name="menuId" value="1" />
+                </h:link>
+            </h1>
+        </div>
+
+        <h:form> 
+            <div id="table">
+                <h:selectManyCheckbox id="operations1" layout="pageDirection" 
+                                      value="#{webAdapterBean.operationsSelected}">
+                    <f:selectItems
+                        value="#{webAdapterBean.operations}" var="operation"
+                        itemLabel="#{operation.methode}" itemValue="#{operation.methode}"/>
+                </h:selectManyCheckbox>    
+            </div>
+
+            <!--            <h:commandButton value="Benutzer" action="operations" />-->
+        </h:form>
+
+        <div id="header">
+            <h1><h:link outcome="operations" value="Benutzer">
+                </h:link></h1>
+        </div>
+    </h:body>
+
+</html>

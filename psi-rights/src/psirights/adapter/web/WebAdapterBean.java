@@ -16,7 +16,7 @@ import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
 
 import psirights.adapter.DBRepository;
-import psirights.adapter.MenuInfo;
+import psirights.model.MenuInfo;
 import psirights.dom.IRepository;
 import psirights.dom.IView;
 import psirights.dom.RightsManager;
@@ -27,15 +27,18 @@ import psirights.model.Rights;
 @SessionScoped
 public class WebAdapterBean implements IView {
 
-    private RightsManager rightsmanager;
+    private RightsManager controller;
     private IRepository rightsRepo;
     private List<MenuInfo> menuInfos;
+    private List<Operations> operations;
+    private List<Operations> operationsSelected;
     private String menuId;
-
+    private String object;
+    
     public WebAdapterBean() {
-        rightsmanager = new RightsManager();
+        controller = new RightsManager();
         rightsRepo = new DBRepository();
-        rightsmanager.uses(this, rightsRepo);
+        controller.uses(this, rightsRepo);
         
         menuInfos = new ArrayList<MenuInfo>();
         menuId = "1";
@@ -74,8 +77,12 @@ public class WebAdapterBean implements IView {
 
                 Element child = (Element) childs.next();
 
-                MenuInfo menuInfo = new MenuInfo(child.getText(), child.attributeValue(
-                        "object", ""), child.attributeValue("id", ""));
+                String obj = child.attributeValue("object", "");
+                String txt = obj.isEmpty() ? child.getText() + " ..." : child.getText();
+                
+                MenuInfo menuInfo = new MenuInfo(txt, obj, child.attributeValue("id", ""));
+//                MenuInfo menuInfo = new MenuInfo(child.getText(), child.attributeValue(
+//                        "object", ""), child.attributeValue("id", ""));
                 menuInfos.add(menuInfo);
             }
 
@@ -93,6 +100,32 @@ public class WebAdapterBean implements IView {
         this.menuInfos = menuInfos;
     }
 
+    public String getObject() {
+        return object;
+    }
+
+    public void setObject(String object) {
+        this.object = object;
+    }
+
+    public List<Operations> getOperations() {
+        controller.showOperations(this.getObject());
+        return operations;
+    }
+
+    public void setOperations(List<Operations> operations) {
+        this.operations = operations;
+    }
+
+    public List<Operations> getOperationsSelected() {
+        return operationsSelected;
+    }
+
+    public void setOperationsSelected(List<Operations> operationsSelected) {
+        this.operationsSelected = operationsSelected;
+    }
+
+    
     @Override
     public int showUsers(List<Rights> users) {
         // TODO Auto-generated method stub
@@ -106,7 +139,7 @@ public class WebAdapterBean implements IView {
 
     @Override
     public int showOperations(List<Operations> operations) {
-        // TODO Auto-generated method stub
+        this.operations = operations;
         return 0;
     }
 
@@ -130,7 +163,6 @@ public class WebAdapterBean implements IView {
                 }
             }
         }
-
         return null;
     }
 }

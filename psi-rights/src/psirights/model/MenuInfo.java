@@ -1,4 +1,4 @@
-package psirights.adapter;
+package psirights.model;
 
 import org.dom4j.Element;
 
@@ -19,6 +19,9 @@ public class MenuInfo {
     }
 
     public String getMenuObject() {
+        if (menuObject == null)
+            menuObject = "";
+        System.out.println("MenuObject: >" + this.menuObject + "<");
         return menuObject;
     }
 
