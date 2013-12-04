@@ -31,7 +31,8 @@ public class WebAdapterBean implements IView {
     private IRepository rightsRepo;
     private List<MenuInfo> menuInfos;
     private List<Operations> operations;
-    private List<Operations> operationsSelected;
+    private List<String> operationsSelected;
+    private List<Rights> users;
     private String menuId;
     private String object;
     
@@ -117,18 +118,32 @@ public class WebAdapterBean implements IView {
         this.operations = operations;
     }
 
-    public List<Operations> getOperationsSelected() {
+    public List<String> getOperationsSelected() {
         return operationsSelected;
     }
 
-    public void setOperationsSelected(List<Operations> operationsSelected) {
+    public void setOperationsSelected(List<String> operationsSelected) {
         this.operationsSelected = operationsSelected;
     }
 
+//    public String showUsersClicked(){
+//        controller.showUsers(this.getObject(), this.getOperationsSelected());
+//        return "users";
+////    }
+
+    public List<Rights> getUsers() {
+        controller.showUsers(this.getObject(), this.getOperationsSelected());
+        return users;
+    }
+
+    public void setUsers(List<Rights> users) {
+        this.users = users;
+    }
+    
     
     @Override
     public int showUsers(List<Rights> users) {
-        // TODO Auto-generated method stub
+        this.users = users;
         return 0;
     }
 
