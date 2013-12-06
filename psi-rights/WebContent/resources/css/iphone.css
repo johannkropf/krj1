@@ -64,45 +64,25 @@ body {
     color: #222;
     font-size: 17px;
     font-weight: bold;
-    padding: 12px 10px;
+    xxpadding: 12px 10px;
 }
 
-#usertable {
-    margin: 10px;
-    background-color:#FFF;
-    border: 1px solid #999;
-    color: #222;
-    font-size: 12px;
-    padding: 12px 10px;
+table { 
+  margin: 5px;
+  width: 100%; 
+  border-collapse: collapse; 
 }
-
-.order-table{   
-	border-collapse:collapse;
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
 }
- 
-.order-table-header{
-	text-align:left;
-	background:none repeat scroll 0 0 #E5E5E5;
-	border-bottom:1px solid #BBBBBB;
-	padding:10px;
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
 }
- 
-.order-table-odd-row{
-	text-align:left;
-	background:none repeat scroll 0 0 #FFFFFF;
-	border-top:1px solid #BBBBBB;
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
 }
- 
-.order-table-even-row{
-	text-align:left;
-	background:none repeat scroll 0 0 #F9F9F9;
-	border-top:1px solid #BBBBBB;
-}
-
-
-
-#hinweis {
- 	display: none;
- }
-
- 
