@@ -1,7 +1,5 @@
 package psirights.model;
 
-import org.dom4j.Element;
-
 public class MenuInfo {
 
     public String menuName;
