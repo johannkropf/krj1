@@ -1,49 +1,50 @@
+<!-- 
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:ui="http://java.sun.com/jsf/facelets">
+ -->
 
-    <f:metadata>
-        <f:viewParam name="menuId" value="#{webAdapterBean.menuId}" />
-        <f:viewParam name="object" value="#{webAdapterBean.object}" />
-    </f:metadata>
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pm="http://primefaces.org/mobile" contentType="text/html"
+	renderKitId="PRIMEFACES_MOBILE">
 
-    <h:head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta id="viewport" name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        
-        <h:outputStylesheet library="css" name="iphone.css" />
-        <title>PSI-Rechte</title>
-    </h:head>
+	<f:metadata>
+		<f:viewParam name="menuId" value="#{webAdapterBean.menuId}" />
+		<f:viewParam name="object" value="#{webAdapterBean.object}" />
+	</f:metadata>
 
-    <h:body>
+	<pm:page title="PSI-Rechte">
 
-        <div id="header">
-            <h1>
-                <h:link outcome="index" value="PSI-Rechte: #{webAdapterBean.object}">
-                    <f:param name="menuId" value="1" />
-                </h:link>
-            </h1>
-        </div>
+		<pm:view id="main">
 
-        <h:form> 
-            <div id="table">
-                <h:selectManyCheckbox id="operations1" layout="pageDirection" 
-                                      value="#{webAdapterBean.operationsSelected}">
-                    <f:selectItems
-                        value="#{webAdapterBean.operations}" var="operation"
-                        itemLabel="#{operation.methode}" itemValue="#{operation.methode}"/>
-                </h:selectManyCheckbox>    
-            </div>
+			<pm:header title="#{webAdapterBean.object}" swatch="b">
+				<h:link outcome="index" value="Hauptmenü">
+					<f:param name="menuId" value="1" />
+				</h:link>
+			</pm:header>
 
-            <h:commandButton value="Benutzer anzeigen" type="submit" action="users?faces-redirect=true" />
+			<pm:content>
 
-        </h:form>
+				<h:form>
+					<p:selectManyCheckbox id="operations1" layout="pageDirection"
+						value="#{webAdapterBean.operationsSelected}">
+						<f:selectItems value="#{webAdapterBean.operations}"
+							var="operation" itemLabel="#{operation.methode}"
+							itemValue="#{operation.methode}" />
+					</p:selectManyCheckbox>
 
-    </h:body>
+					<p:commandButton value="Benutzer anzeigen" type="submit"
+						action="users?faces-redirect=true" />
 
-</html>
+				</h:form>
+
+			</pm:content>
+
+		</pm:view>
+
+	</pm:page>
+
+</f:view>
